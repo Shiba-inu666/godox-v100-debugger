@@ -1,6 +1,14 @@
 # V100F 固件调试工作台 · v3
 
+**简体中文** | [English](README.en.md)
+
 在电脑上调试 **Wi-Off（机顶）、Sender（发射）、Receiver（接收）**，以及 TTL、M、Multi 和常用菜单设置。参数调节执行 V100F V1.03 的原始 Thumb 机器码；页面与输入由电脑适配。
+
+**Offline multi-mode firmware debugger for Godox V100F.** Explore Wi-Off, Sender, Receiver, TTL, manual flash and Multi modes in a browser, with original firmware parameter routines, memory inspection and session replay. The interface runs locally; users supply the matching firmware file.
+
+原厂固件由用户自行在本地提供。本项目是独立调试工具，不提供真实闪光、无线通信或刷机功能。
+
+This is an independent debugging tool. It does not operate flash hardware, communicate over radio or flash firmware to a device.
 
 ## 首次安装
 
