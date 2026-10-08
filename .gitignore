@@ -1,0 +1,30 @@
+# Local Python environment and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+
+# Firmware must be supplied locally, never committed
+/firmware/*
+!/firmware/README.md
+*.bin
+*.elf
+*.o
+
+# Local sessions, extracted vendor material and separate experiments
+/sessions/
+/evidence/
+/native-v100-su1/
+/tests/*results.txt
+
+# Superseded local prototypes and previews
+/debug/engine_v1.py
+/debug/app-v2.js
+/debug/NATIVE_SUB_TABLE.json
+/debug-preview.jpg
+/debug-preview-v2.jpg
