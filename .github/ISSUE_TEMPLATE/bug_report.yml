@@ -1,0 +1,45 @@
+name: "问题反馈 / Bug report"
+description: "报告固件行为、UI 或工具问题 / Report firmware, UI or tool behavior"
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: model
+    attributes:
+      label: "机型 / Model"
+      options:
+        - V100F V1.03
+        - V480F V1.03
+        - "其他（请在下方注明完整后缀）/ Other (specify suffix below)"
+    validations:
+      required: true
+  - type: textarea
+    id: identity
+    attributes:
+      label: "BIN 身份 / BIN identity"
+      description: "文件名、SHA-256、补丁修订；未知项请写未知 / Filename, SHA-256 and revision; mark unknown fields."
+    validations:
+      required: true
+  - type: dropdown
+    id: trigger
+    attributes:
+      label: "触发方式 / Trigger"
+      options:
+        - "实体 TEST / Physical TEST"
+        - "相机快门 / Camera shutter"
+        - "无线触发 / Radio trigger"
+        - "旋钮或 UI / Dial or UI"
+        - "电脑工具 / Desktop tool"
+  - type: textarea
+    id: setup
+    attributes:
+      label: "设备与状态 / Setup and state"
+      description: "相机/引闪器、Wi-Off/Sender/Receiver、TTL/M、HSS、主灯和副灯开关/功率 / Camera/transmitter, role, mode, HSS, main/SUB enable and power."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "操作、预期和实际结果 / Steps, expected and actual result"
+      description: "说明能否重复、是否影响曝光；UI 问题可附照片 / Include reproducibility, exposure effect and a photo for UI issues."
+    validations:
+      required: true

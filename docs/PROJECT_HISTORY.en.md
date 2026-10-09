@@ -109,9 +109,9 @@ The result is an **auditable, reproducible experimental R7 for one exact input i
 Physical validation remains necessary for light energy, camera exposure, RF timing, recycling, thermal behavior and sustained stability. A reliable recovery route is not established. Authorization to generate an experimental file does not resolve these engineering gaps; the [gate and recovery record](native/RECOVERY.md) preserves that distinction. New TTL or model support requires its own evidence and tests.
 
 
-## 13. Two-model publication: Godox Flash Lab and ready-made BINs
+## 13. Two-model publication: Godox Firmware Mods and ready-made BINs
 
-On 2026-10-09 the maintainer requested the V480 project and both ready-made BIN downloads, and confirmed modified firmware flashed onto both devices. The repository was renamed **Godox Flash Lab**, currently covering only V100F and V480F.
+On 2026-10-09 the maintainer requested the V480 project and both ready-made BIN downloads, and confirmed modified firmware flashed onto both devices. The repository was renamed **Godox Firmware Mods**, currently covering only V100F and V480F.
 
 The V480 publication is the previously delivered **rotary-direct v2**: Wi-Off direct FEC/manual-power control with stock 0.1/0.3 steps and acceleration. Other screens, including Sender/Receiver, retain stock paths. It does not inherit V100's later RX direct adjustment or SU-1 extensions. Source, an independent patcher, V480 MD5 handling and evidence are included.
 
@@ -120,3 +120,9 @@ The 316-byte V480 helper was rebuilt byte-for-byte. V480-only public reruns pass
 V100 retains its R7 SHA and V480 its existing v2 SHA. This publication packages established firmware rather than adding new firing behavior. The maintainer's two-device flashing report is recorded independently; without installed hashes, it is not expanded into complete physical acceptance of every download revision.
 
 [Both BINs and feature matrix](DOWNLOADS.md) · [V480 project](../v480/README.md) · [Hardware status](HARDWARE_STATUS.md)
+
+## 14. Project naming and documentation structure
+
+Following the maintainer's naming correction, the final name is **Godox Firmware Mods**. Public organization in Hasselblad, Ricoh and FujiHack projects informed a shorter feature/download landing page, model index, documentation map, shared reproduction guide, changelog and issue templates. [References](REFERENCES.md) record the specific inspiration.
+
+V100's `native/` and V480's `v480/` build paths remain stable. Documentation work does not replace source-to-byte evidence. Repository/release names, links and the release manifest were aligned; both BINs and their SHA-256 values remain identical.

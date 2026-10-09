@@ -1,0 +1,32 @@
+{
+  "project": "Godox Firmware Mods",
+  "schema_version": 1,
+  "devices": [
+    {
+      "model": "V100F",
+      "firmware_version": "1.03",
+      "revision": "R7",
+      "source_directory": "native",
+      "patch_record": "native/patches/r7.json",
+      "model_guide": "docs/devices/V100F.md",
+      "original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+      "modified_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+      "bytes": 1002732,
+      "filename": "V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin",
+      "release_tag": "v100-v480-2026-10-09"
+    },
+    {
+      "model": "V480F",
+      "firmware_version": "1.03",
+      "revision": "rotary-direct v2",
+      "source_directory": "v480",
+      "patch_record": "v480/patches/v2.json",
+      "model_guide": "docs/devices/V480F.md",
+      "original_sha256": "84ca232f50a62ceb2d9b24017a3b447a7154bf63f6461ef546a30a6b29077ebf",
+      "modified_sha256": "58dedf69cb23805a8cb72b9b44a4d6dafb2b7997081a7404e2a53f471ba20fb4",
+      "bytes": 753705,
+      "filename": "Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin",
+      "release_tag": "v100-v480-2026-10-09"
+    }
+  ]
+}

@@ -19,8 +19,8 @@ This is an independent debugging tool. It does not operate flash hardware, commu
 1. 克隆仓库：
 
    ```sh
-   git clone https://github.com/Shiba-inu666/godox-flash-lab.git
-   cd godox-flash-lab
+   git clone https://github.com/Shiba-inu666/godox-firmware-mods.git
+   cd godox-firmware-mods
    ```
 
 2. 按 [固件准备说明](../../firmware/README.md) 在本地放入指定的 `V100F_V1.03.bin`。**仓库不包含原厂固件**，也不包含用户调试会话。

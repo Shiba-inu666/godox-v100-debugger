@@ -1,0 +1,22 @@
+name: "功能建议 / Feature request"
+description: "说明目标型号、使用场景和期望行为 / Describe the target device, use case and behavior"
+title: "[Feature] "
+body:
+  - type: input
+    id: model
+    attributes:
+      label: "型号与原厂版本 / Model and original version"
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: "当前操作与期望行为 / Current operation and desired behavior"
+      description: "说明页面、无线角色、触发方式和现有操作如何影响使用 / Include screen, role, trigger and the problem with the current operation."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "可用资料与验证条件 / Available evidence and testing setup"
+      description: "已有文档、固件身份、设备或可复现结果；没有可留空 / Documents, image identity, devices or reproducible observations; optional."

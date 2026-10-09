@@ -1,4 +1,4 @@
-# Godox Flash Lab · 神牛闪光灯实验室
+# Godox Firmware Mods · 神牛闪光灯固件修改项目
 
 **简体中文** | [English](README.en.md)
 
@@ -10,10 +10,10 @@
 
 | 设备 | 当前下载版本 | 文件 | 主要功能 |
 |---|---|---|---|
-| **V100F V1.03** | R7 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin) | 机顶/从属主灯直调、SU-1 主控/从属支持、主灯 OFF 时副灯独立及 UI 修复 |
-| **V480F V1.03** | Rotary-direct v2 | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | Wi-Off 机顶主界面 TTL FEC / M 功率直调，保留原厂步进和加速路径 |
+| **V100F V1.03** | R7 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin) | 机顶/从属主灯直调、SU-1 主控/从属支持、主灯 OFF 时副灯独立及 UI 修复 |
+| **V480F V1.03** | Rotary-direct v2 | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | Wi-Off 机顶主界面 TTL FEC / M 功率直调，保留原厂步进和加速路径 |
 
-[完整发布页与校验文件](https://github.com/Shiba-inu666/godox-flash-lab/releases/tag/v100-v480-2026-10-09) · [下载、功能对照与 SHA-256](docs/DOWNLOADS.md)
+[完整发布页与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09) · [下载、功能对照与 SHA-256](docs/DOWNLOADS.md)
 
 只下载与设备型号后缀一致的文件。两款均为实验修改版，不是官方固件；目前不支持其他相机后缀。**V100 的副灯 TTL 尚未实现，V480 版没有加入 V100 的 SU-1 扩展或 RX 直调。**
 
@@ -30,108 +30,23 @@
 | 菜单、MODE、ZOOM、锁屏等非目标页面 | 回落原逻辑 | 回落原逻辑 |
 | 作者已刷入修改固件 | 已反馈 | 已反馈 |
 
-## 从哪里开始
+## 文档与源码
 
-- 想了解做了什么、为什么反复修改：[完整中文历程](docs/PROJECT_HISTORY.md) / [English history](docs/PROJECT_HISTORY.en.md)。
-- 想在电脑上观察参数与调用：[调试工作台指南](docs/debugger/README.zh-CN.md)。
-- 想复现固件：[V100 补丁指南](native/README.md)、[V480 项目指南](v480/README.md)、[验证报告](docs/native/VALIDATION.md)、[恢复与 Gate 状态](docs/native/RECOVERY.md)。
-- 想了解副灯 TTL：[专项研究](docs/native/SU1_TTL_RESEARCH.md)。**目前未实现副灯 TTL。**
-
-## V100F R7 的详细行为
-
-这里的“实现”指代码已实现且有对应静态或离线执行证据；不等于每种相机、无线组合均完成实测。
-
-| 功能 | R7 行为与范围 | 证据 / 限制 |
-|---|---|---|
-| 机顶、从属主界面旋钮直调 | TTL 调节主灯 FEC；M 调节主灯功率，避免旋钮焦点跑到其他控件 | 复用原厂调整函数；菜单、MODE、ZOOM、锁屏、弹窗和下拉面板保留原路径 |
-| 原厂参数规则 | 保留原厂边界、步进及相关调整路径 | 主灯 TTL 调整的是曝光补偿，没有重写 TTL 测光算法 |
-| Sender 原生副灯行 | 主控页面按 M → **S** → A–D 排列，原厂风格控件调整副灯开关和手动功率 | S 表示本机 SU-1，不是新增无线组；Sender 旋钮导航保持原逻辑 |
-| Receiver 原生副灯入口 | 底部 MODE / ZOOM / S 三列，进入原生副灯设置弹窗 | 修复原先与 ZOOM、下拉面板重叠的问题 |
-| 无线角色下 TEST 副灯 | 主控、从属 TEST 路径支持已开启的 SU-1 | TEST 与相机曝光命令语义不同，不能用 TEST 单独证明拍照链路正常 |
-| 普通拍照 / 无线触发副灯 | 已覆盖的 Sender 快门和 RX 普通触发路径，主灯沿用原厂计算/无线功率，副灯使用本地 UI 功率 | 有界指令执行验证；未新增副灯 HSS、Multi 或 TTL |
-| 主控主灯 OFF 时副灯独立 | 已覆盖的普通曝光路径中，M=OFF、S=ON 可进入副灯单独发光路径 | 保留原无线命令流程；不把实体 TEST 重新定义为“只测试参与曝光的灯” |
-| 未就绪处理 | 复用原厂相关就绪检查，不添加等待充电、排队或延迟补闪 | 原厂已追踪路径表现为跳过不满足条件的请求；不代表所有无线灯存在统一就绪屏障 |
-| UI 修复 | 原生灰色行、功率控件；弹窗布局、对象生命周期、下拉层级与命中修复 | R7 将无法显示的 SUB 标签改为原字体确实包含的单字母 S |
-| 严格版本匹配 | 校验完整原件 SHA、机型、向量、原字节和唯一上下文，生成后核对完整 SHA | 只接受本文指定 V100F V1.03，不将偏移套用到其他型号 |
-
-从属模式的本地主灯设置仍可被后续合法无线命令更新。直调不等于屏蔽无线控制，也不承诺零额外中断延迟。
-
-## V100F 文件身份
-
-| 项目 | 内容 |
+| 想做什么 | 入口 |
 |---|---|
-| 机型 / 版本 | **Godox V100F V1.03** |
-| 原件大小 | **1,002,732 字节** |
-| 原件 SHA-256 | `fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787` |
-| R7 SHA-256 | `8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761` |
-| R7 变化量 | 24 个补丁区域，共 4,018 字节与原件不同；文件长度不变 |
+| 查看每款灯的范围、版本和已知限制 | [V100F R7](docs/devices/V100F.md) · [V480F v2](docs/devices/V480F.md) |
+| 了解开发经过与历次问题修复 | [中文完整历程](docs/PROJECT_HISTORY.md) · [更新记录](CHANGELOG.md) |
+| 核对设备反馈和硬件验收范围 | [两台设备的状态](docs/HARDWARE_STATUS.md) |
+| 从原厂文件复现、还原或验证 | [统一复现指南](docs/REPRODUCE.md) |
+| 阅读实现 | [V100 C / 汇编](native/src/) · [V480 汇编](v480/src/) · [目录说明](DIRECTORY_LAYOUT.md) |
+| 查看固件格式、测试与副灯 TTL 研究 | [技术文档索引](docs/README.md) |
+| 在电脑上观察参数与调用 | [调试工作台](docs/debugger/README.zh-CN.md) |
+| 反馈问题或贡献 | [贡献说明](CONTRIBUTING.md) · [提交问题](https://github.com/Shiba-inu666/godox-firmware-mods/issues/new/choose) |
 
-V480F 使用独立的 v2 源码、补丁和 MD5 尾部处理，详见 [V480 项目](v480/README.md)。两款共享部分框架，不共用裸偏移；R7 工具仍只接受 V100F。
+## 项目走到了哪一步
 
-## 本地复现 R7
+从两款固件的格式与 ARM 输入链路分析开始，先实现旋钮直调，再逐步解决 V100 无线角色下副灯 UI、TEST 与真实曝光分支、主灯 OFF、副灯遮挡及原生字形问题。V480 保持独立的机顶旋钮直调范围。详细的失败现象、修订理由和证据保留在中英文历程中。
 
-先按[固件准备说明](firmware/README.md)放入原件。补丁工具只需 Python 3.11+ 标准库，不需要编译器，也不会连接设备。
+公开包已有可复现源码和离线执行记录：V100 的可移植子集包含 9,399 项功能检查及单列的 90 项 TTL 研究观测；V480 单型号包含 12,489 项功能、746 次中断插入和 1,386 项整镜像检查。**这些是电脑端检查，完整实机验收和失败恢复仍未完成。** [验证说明](docs/native/VALIDATION.md) · [恢复与 Gate](docs/native/RECOVERY.md)
 
-```sh
-git clone https://github.com/Shiba-inu666/godox-flash-lab.git
-cd godox-flash-lab
-# 将自己的指定原件放入 firmware/V100F_V1.03.bin
-python3 native/patcher.py firmware/V100F_V1.03.bin
-python3 native/patcher.py firmware/V100F_V1.03.bin --output-dir native/out/r7
-```
-
-第一条补丁命令只在内存中校验。第二条在**新目录**生成：
-
-- `V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin`
-- `SHA256SUMS.txt`
-- `PATCH_MANIFEST.json`
-
-已有目录会被拒绝，输入文件不会覆盖。生成成功只说明文件精确复现，**不表示已经验证设备刷写、恢复或拍摄效果**。使用前阅读[当前未完成的硬件验证](docs/native/RECOVERY.md)。
-
-## 电脑端调试工作台
-
-```sh
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python debug/server.py --open
-```
-
-浏览器打开 `http://127.0.0.1:8765/`，可探索 Wi-Off、Sender、Receiver、TTL、M、Multi、菜单、内存变化、调用记录和会话回放。它执行选定原厂参数函数，UI 由电脑适配；**浏览器界面不是 R7 固件屏幕的完整仿真**，不具备真实闪光、充电或无线接口。
-
-详细操作：[中文](docs/debugger/README.zh-CN.md) / [English](docs/debugger/README.en.md)。
-
-## V100 验证状态
-
-2026-10-09 公开包验证（作者的两台设备刷入反馈另外记录）：
-
-| 验证层级 | 结果 | 解释 |
-|---|---|---|
-| 补丁工具单元测试 | 10 / 10 通过 | 输入拒绝、补丁范围、完整 SHA、逆变换与不覆盖 |
-| 电脑端工作台测试 | 26 / 26 通过 | 参数、模式、会话及 HTTP 行为 |
-| 可移植原生验证子集 | 9,399 项通过 | 字形、层级、发光分支、就绪、ABI、弹窗等有界检查 |
-| 副灯 TTL 研究 | 90 项观测完成 | 证明当前路径差异，**不是 TTL 功能通过** |
-| 三段补丁源码重编译 | 与 R7 字节完全相同 | LLVM / Clang 20.1.8 |
-| 既有完整工程记录 | 39,851 项离线检查 | 历史存档，包含未移植到公开 runner 的旋钮/事件/ISR 测试 |
-| 完整实机验收 | **未完成** | 真实光能、快门/RF 时序、热行为、失败恢复仍待验证 |
-
-这些数字是不同验证集合，彼此有重叠，不应相加为硬件测试总量。[详细方法、记录与限制](docs/native/VALIDATION.md)。
-
-V480 本次公开版另通过 **12,489 项功能检查、746 次条件中断插入、1,386 项整镜像执行和 10 项工具测试**；316 字节辅助代码重编译与原 v2 相同。见 [V480 验证说明](v480/README.md)。
-
-## 目录
-
-```text
-debug/               电脑端工作台
-tests/               工作台测试
-native/src/          R7 的 C / Thumb 汇编与链接脚本
-native/patches/      R4 / R5 对照与 R7 精确补丁记录
-native/lab/          可移植的原厂指令执行验证
-native/evidence/     已脱离个人路径的验证结果
-native/patcher.py    本地生成 / 文件级逆变换
-native/build.py      源码重编译并核对 R7 字节
-v480/                V480 v2 汇编、独立补丁工具、验证与证据
-docs/                中英文历程、架构、验证、恢复与 TTL 研究
-firmware/            用户自行提供的固件；不提交到 Git
-```
-
-反馈时请附机型、原件/候选 SHA、无线角色、模式、是否 HSS、主灯/副灯开关，以及使用 TEST 还是相机快门。不要仅写“最新版本”：相同 UI 不代表相同发光路径。
+项目名称采用直接描述用途的 **Godox Firmware Mods**。文档组织参考哈苏、理光和 FujiHack 的固件研究项目；具体来源与借鉴范围见[参考项目](docs/REFERENCES.md)。

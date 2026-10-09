@@ -1,5 +1,6 @@
 # R7 原生补丁 / Native patch kit
 
+[型号说明 / Model guide](../docs/devices/V100F.md) · [统一复现 / Reproduction](../docs/REPRODUCE.md)
 [中文项目说明](../README.md) · [English overview](../README.en.md)
 
 V100F R7 BIN 可直接从[双机型下载页](../docs/DOWNLOADS.md)获取。V480 使用[独立项目](../v480/README.md)。

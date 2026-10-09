@@ -1,6 +1,6 @@
 # 固件下载与功能对照 / Firmware downloads
 
-[项目首页 / Home](../README.md) · [Release](https://github.com/Shiba-inu666/godox-flash-lab/releases/tag/v100-v480-2026-10-09)
+[项目首页 / Home](../README.md) · [Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09)
 
 目前仅提供 **V100F 与 V480F，均基于 V1.03**。作者报告两台均已刷入修改固件；[具体证据范围](HARDWARE_STATUS.md)。
 
@@ -8,13 +8,13 @@ Currently **V100F and V480F only, both based on V1.03**. The maintainer reports 
 
 | 设备 / Device | BIN 下载 / Download | 大小 / Size | 实现功能 / Changes |
 |---|---|---:|---|
-| V100F | [V100F V1.03 R7](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin) | 1,002,732 bytes | 机顶/从属主灯直调、SU-1 主控/从属 UI 和普通闪光路径、主灯 OFF 时副灯独立、界面修复 / Wi-Off/RX direct main adjustment, Sender/RX manual SU-1 controls/firing, SUB-only with main OFF, UI fixes |
-| V480F | [V480F V1.03 rotary-direct v2](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | 753,705 bytes | 仅 Wi-Off 主界面 TTL FEC / M 功率直调，保留 0.1/0.3 步进、原厂加速与其他页面 / Wi-Off direct FEC/manual power, original steps, acceleration and excluded pages |
+| V100F | [V100F V1.03 R7](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin) | 1,002,732 bytes | 机顶/从属主灯直调、SU-1 主控/从属 UI 和普通闪光路径、主灯 OFF 时副灯独立、界面修复 / Wi-Off/RX direct main adjustment, Sender/RX manual SU-1 controls/firing, SUB-only with main OFF, UI fixes |
+| V480F | [V480F V1.03 rotary-direct v2](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | 753,705 bytes | 仅 Wi-Off 主界面 TTL FEC / M 功率直调，保留 0.1/0.3 步进、原厂加速与其他页面 / Wi-Off direct FEC/manual power, original steps, acceleration and excluded pages |
 
-- [SHA256SUMS.txt](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/SHA256SUMS.txt)
-- [RELEASE_MANIFEST.json](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/RELEASE_MANIFEST.json)
-- [V100 补丁清单 / V100 patch manifest](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/V100F_R7_PATCH_MANIFEST.json)
-- [V480 补丁清单 / V480 patch manifest](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/V480F_V2_PATCH_MANIFEST.json)
+- [SHA256SUMS.txt](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/SHA256SUMS.txt)
+- [RELEASE_MANIFEST.json](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/RELEASE_MANIFEST.json)
+- [V100 补丁清单 / V100 patch manifest](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/V100F_R7_PATCH_MANIFEST.json)
+- [V480 补丁清单 / V480 patch manifest](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/V480F_V2_PATCH_MANIFEST.json)
 
 ## SHA-256
 

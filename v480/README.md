@@ -1,6 +1,7 @@
 # V480F V1.03 · 旋钮直调 v2 / Direct rotary v2
 
-[项目首页](../README.md) · [English home](../README.en.md) · [BIN 下载 / Download](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin)
+[型号说明 / Model guide](../docs/devices/V480F.md) · [统一复现 / Reproduction](../docs/REPRODUCE.md)
+[项目首页](../README.md) · [English home](../README.en.md) · [BIN 下载 / Download](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin)
 
 ## 实现了什么
 
