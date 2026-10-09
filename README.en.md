@@ -30,6 +30,14 @@ Match the exact model suffix. Both are experimental modified images, not officia
 | Menus, MODE, ZOOM, locks and other excluded screens | Original fallback | Original fallback |
 | Maintainer reports firmware flashed | Yes | Yes |
 
+## Emulator preview
+
+The project also includes a **browser-based V100F offline emulator (debugging workbench)** for exploring Wi-Off, Sender and Receiver modes, parameter changes, memory and call records. Its desktop-adapted interface is not a complete emulation of the device screen. [Setup and usage](docs/debugger/README.en.md).
+
+![V100F offline emulator: Wi-Off Multi screen](debug-preview-v3.jpg)
+
+![V100F offline emulator: Receiver mode and receive debugging](receiver-layout-fixed.jpg)
+
 ## Documentation and source
 
 | Goal | Entry point |
