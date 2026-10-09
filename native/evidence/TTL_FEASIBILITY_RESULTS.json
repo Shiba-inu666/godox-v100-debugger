@@ -1,0 +1,1313 @@
+{
+  "status": "OBSERVATIONS_CONFIRMED_WITHIN_BOUNDED_MODEL_SU1_TTL_NOT_IMPLEMENTED",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+  "counts": {
+    "native_B1_camera_preflash_MAIN_only": 12,
+    "camera_TTL_input_changes_MAIN_but_SUB_stays_manual": 36,
+    "RX_addressed_preflash_MAIN_only": 18,
+    "RX_TTL_parameter_does_not_create_SUB_metering_channel": 18,
+    "Sender_MAIN_OFF_has_no_local_SUB_preflash": 6
+  },
+  "total": 90,
+  "records": [
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B1_preflash",
+      "packet": "b128da",
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": ""
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 1080,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 4500,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 1080,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 4500,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 90,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 1080,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 4500,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 0,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": ""
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b600002800000000df",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 90,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 90
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b60000500000000007",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 1080,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 1080
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B6_normal_exposure",
+      "packet": "b6000064000000001b",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 4500,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 4500
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": "7fd519353b"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 66,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 66
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 266,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 266
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 990,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 1000,
+          "main_duration_code": 990
+        }
+      ],
+      "local_SUB_power": 0,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 66,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 66
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 266,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 266
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 990,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 49,
+          "main_duration_code": 990
+        }
+      ],
+      "local_SUB_power": 30,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 66,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 40,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 66,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 66
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 266,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 80,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 266,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 266
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_01_preflash",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": false,
+      "main_duration_code": 990,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "R7",
+      "role": 4,
+      "event": "RF_B4_09_exposure",
+      "meter_input": 100,
+      "main_trigger_requests": 1,
+      "sub_trigger_request": true,
+      "main_duration_code": 990,
+      "joint_inputs": [
+        {
+          "sub_duration_code": 13,
+          "main_duration_code": 990
+        }
+      ],
+      "local_SUB_power": 70,
+      "radio_serial": "ff3a34"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B1_MAIN_OFF",
+      "main_trigger_requests": 0,
+      "sub_trigger_request": false,
+      "main_duration_code": 0,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B1_MAIN_OFF",
+      "main_trigger_requests": 0,
+      "sub_trigger_request": false,
+      "main_duration_code": 0,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "stock",
+      "role": 3,
+      "event": "camera_B1_MAIN_OFF",
+      "main_trigger_requests": 0,
+      "sub_trigger_request": false,
+      "main_duration_code": 0,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B1_MAIN_OFF",
+      "main_trigger_requests": 0,
+      "sub_trigger_request": false,
+      "main_duration_code": 0,
+      "joint_inputs": [],
+      "local_SUB_power": 0,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B1_MAIN_OFF",
+      "main_trigger_requests": 0,
+      "sub_trigger_request": false,
+      "main_duration_code": 0,
+      "joint_inputs": [],
+      "local_SUB_power": 30,
+      "radio_serial": "7fa950b401353b"
+    },
+    {
+      "version": "R7",
+      "role": 3,
+      "event": "camera_B1_MAIN_OFF",
+      "main_trigger_requests": 0,
+      "sub_trigger_request": false,
+      "main_duration_code": 0,
+      "joint_inputs": [],
+      "local_SUB_power": 70,
+      "radio_serial": "7fa950b401353b"
+    }
+  ],
+  "TTL_patch_generated": false,
+  "hardware_verified": false,
+  "limits": [
+    "Synthetic checked camera bytes and RF FIFO, no physical Fuji handshake or optical exposure measurement",
+    "Native arithmetic and joint pulse inputs executed; timing/transport and selected completion services stubbed",
+    "Only identified standard preflash and normal-sync routes; B4 camera alternate purpose and entire protocol not proven",
+    "Independent SUB TTL is not obtained by copying MAIN output; preflash participation and optical calibration remain unproven"
+  ]
+}

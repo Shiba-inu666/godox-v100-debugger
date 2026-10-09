@@ -1,0 +1,83 @@
+{
+  "status": "PASS_RX_LAYOUT_FULL_REFRESH",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "counts": {
+    "initial_layout": 12,
+    "full_original_tick_dirty_mode": 36,
+    "mode_transition": 72,
+    "attach_detach_tick": 48,
+    "formatter_and_mode_tick": 32,
+    "popup_close_tick": 2,
+    "page_transition_tick": 3
+  },
+  "total": 205,
+  "samples": [
+    [
+      [
+        0,
+        304,
+        155,
+        358
+      ],
+      [
+        162,
+        304,
+        317,
+        358
+      ],
+      [
+        324,
+        304,
+        479,
+        358
+      ]
+    ],
+    [
+      [
+        0,
+        304,
+        155,
+        358
+      ],
+      [
+        162,
+        304,
+        317,
+        358
+      ],
+      [
+        324,
+        304,
+        479,
+        358
+      ]
+    ],
+    [
+      [
+        0,
+        304,
+        155,
+        358
+      ],
+      [
+        162,
+        304,
+        317,
+        358
+      ],
+      [
+        324,
+        304,
+        479,
+        358
+      ]
+    ]
+  ],
+  "root_cause": "080175E8 resets ZOOM to 237px/right, overwriting initial 156px/center layout",
+  "new_hook": "080175E8 stock completion -> owned RX layout",
+  "hardware_verified": false,
+  "limitations": [
+    "Native UI code, periodic refresh and object coordinates executed; actual LCD/touch controller unmeasured",
+    "Missing-frame/glyph renderer anomaly remains an emulator limitation"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "status": "PASS_PORTABLE_R7_LAB_SUBSET",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "functional_checks": 9399,
+  "ttl_research_observations": 90,
+  "suites": {
+    "glyph": {
+      "checks": 37,
+      "status": "PASS_R7_NATIVE_S_GLYPH",
+      "result": "GLYPH_RESULTS.json",
+      "result_sha256": "a44bbfb097d98517381369f7322af042d2e3a4c5c8972a368d68ee292e85d25d"
+    },
+    "drawer": {
+      "checks": 296,
+      "status": "PASS_R6_NATIVE_DRAWER_LAYER_AND_HIT_TEST",
+      "result": "DRAWER_RESULTS.json",
+      "result_sha256": "637e1e891e9d217d3b809653e2ae538239eda2e9581ffaafd050a731b659c1be"
+    },
+    "sender_row": {
+      "checks": 171,
+      "status": "PASS_R5_NATIVE_SENDER_ROW",
+      "result": "SENDER_ROW_RESULTS.json",
+      "result_sha256": "c1370c7f06be3164818c82ee75c4e8499f0c1a22eac913851de0a63854de8987"
+    },
+    "firing": {
+      "checks": 4399,
+      "status": "PASS_BOUNDED_R5_FIRING_AND_READINESS",
+      "result": "FIRING_RESULTS.json",
+      "result_sha256": "979a82926dbcf83beae23b9a5667d2ac60f583bb2ede779db6cfa657821c4464"
+    },
+    "sender_off": {
+      "checks": 1389,
+      "status": "PASS_R5_SENDER_OFF_SUB_ONLY",
+      "result": "SENDER_OFF_RESULTS.json",
+      "result_sha256": "990ea6e07a462b56af1465c3609634bc659562758cd701194b57df8ca94acf02"
+    },
+    "readiness": {
+      "checks": 398,
+      "status": "CONFIRMED_STOCK_READY_SKIP_NO_READY_WAIT_LOOP",
+      "result": "STOCK_READINESS_RESULTS.json",
+      "result_sha256": "67ec890804ac416e8fb5946bf7e6be47af0c2606e72f17bff312ef737a1cf795"
+    },
+    "wrapper": {
+      "checks": 2317,
+      "status": "PASS_EXACT_VERSION_WRAPPER_ABI_AND_SOURCE",
+      "result": "WRAPPER_RESULTS.json",
+      "result_sha256": "05e1a1b4c01b78059fed8797b1525cd3e2ffca0ce153c67e9a507dce7112a658"
+    },
+    "modal": {
+      "checks": 392,
+      "status": "PASS_R4_MODAL_EXACT_HOTSHOE_GEOMETRY",
+      "result": "MODAL_RESULTS.json",
+      "result_sha256": "37fb46406b53200f4f29bf28089bcb92c83c48cce190401374c0e7a1bd20bcdb"
+    },
+    "ttl_research": {
+      "checks": 90,
+      "status": "OBSERVATIONS_CONFIRMED_WITHIN_BOUNDED_MODEL_SU1_TTL_NOT_IMPLEMENTED",
+      "result": "TTL_FEASIBILITY_RESULTS.json",
+      "result_sha256": "0004018d9f25459ecaa1c8cae83dcde6e637055f39eee7f087e3617482875cee"
+    }
+  },
+  "source_sha256": {
+    "lab/analyze_su1_ttl.py": "a248c00cee800396a69048a092b27db4dd5844b5565682907a03839188e2477d",
+    "lab/config.py": "6c1d4087638fc6e508976927d17b69430b0e1c0735a0b48c16b44f2ebbc2014a",
+    "lab/fire_vm.py": "806b86e89e03a0e82d1bd24da987bac674767e7e0a56450e35e530725fa04fd3",
+    "lab/native_vm.py": "eb55cd0a36a7fd3cacc96db6a4adc4df9eab4baf1c07a7df0ff3fb10bce8a45e",
+    "lab/profiles.py": "d4250336a8b505ff33713208bb4d41e5245eb03ed13f1f9b304cc4bdb232937e",
+    "lab/revision_vm.py": "c8a405f5abe864af89c1131ab92686a1673fe012382aad5641ba5dc84778a010",
+    "lab/run.py": "d9aaf93cc593a30952f7b0d245bdc9a60f40ec1ef04a13c42ae300dae03b0182",
+    "lab/stock_trace.py": "9bdc4c7a8d69079d12f88009177539d08511914a637d384b62f344f4557aebb6",
+    "lab/stock_vm.py": "03f2ba590be0f94d4332c94931dbccc0df1d289331df7ca9429457902b1192f7",
+    "lab/test_drawer.py": "d4fa072aeb2d4bd0ce17ed0117a17af651320dbabd2c6a84a86e1e519031984d",
+    "lab/test_firing.py": "e3d683b729e65eb4138ced88b5b136680413b523e5e784ce3be8a353089c79de",
+    "lab/test_glyph.py": "3be3ab9f741fd60eea68ef72a737dc42cdd100a18be1ab25b10852c05640f02b",
+    "lab/test_modal.py": "e97b323296d9d5ef83772f75e73295c3166b7c30d1a3ff18b8b8211b6b6acf37",
+    "lab/test_sender_off.py": "0d929564ec2640800edf2ec5bbaf66e85f4c39f7b542ea7476a39df70586772f",
+    "lab/test_sender_row.py": "7b110b9f27b83b954e59eee55293b0f9ea6303c303b9b3492c5a27837f1ec73e",
+    "lab/test_stock_readiness.py": "37f3ec3b9a17a89bc7b18187f5927208a23330cb4c82604f1c7fd2b148f6ab72",
+    "lab/test_wrapper.py": "2f242b8c7d34dedbaa0eae5e3acc2e2730f23aca52c64101effe0342e0eff27c",
+    "patcher.py": "850cc48d427c0d946b3f99f011fa0c137fc1cdbb818bb93889e1fbc50499d981",
+    "patches/INDEX.json": "e74653a991865704671f1a538aaee1c0e48ea5b21411dcb2942570f3f3521a75",
+    "patches/r4.json": "e5926e5deb4b254758c38d851ca75eda4554462bb4be339a70b838bdef89c910",
+    "patches/r5.json": "417b692c4d65b9c81f03dd915e431a979a47441b35ad22cdfa3b21bd0806db3e",
+    "patches/r7.json": "b7ec2417983a6aee30b563635b3c8cf08812c52e0efe6daff81e35e16e646157",
+    "src/fire_su1.S": "c02e3bb2dbede655665f92b79e0408da7435813744d5ab001167f7e65c71ab02",
+    "src/fixed_main.S": "c36ab6c7f9b9062daff7bbf7a2418ba43e04843b8ec6c8a7530019edfdc1b5db",
+    "src/native.ld": "f7ad88e90ffd4fc5b8707e65d55237000e39183fb741d822a59027c2fb1b0525",
+    "src/native_sub.c": "9357f56c2203eef2aa357557a2e336866e7b9d0783b11a063d2bbc5477dc9bb1",
+    "src/native_trampolines.S": "6bf910200efad3630b93420a6ca90701640b839c2f0c685bd9399dc18d66a355"
+  },
+  "timestamp": "2026-10-09T06:57:54.084824+00:00",
+  "hardware_verified": false,
+  "scope": "Portable subset. The historical 39851-check engineering run is separately archived."
+}

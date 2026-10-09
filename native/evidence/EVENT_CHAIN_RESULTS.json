@@ -1,0 +1,16 @@
+{
+  "status": "PASS_BOUNDED_EVENT_CHAIN",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "counts": {
+    "full_decoder_batched_consumer_GUI_order_parity": 160,
+    "selector_whitelist_all_bytes": 1024,
+    "settings_Sender_GUI_callback_parity": 100
+  },
+  "total": 1284,
+  "hardware_tested": false,
+  "limits": [
+    "Synthetic GPIO phases and explicit consumer/GUI scheduling",
+    "Three wake/beep services substituted; not complete interrupt scheduling",
+    "Settings fallback compares original GUI callback with real allocated group, not every complete menu layout"
+  ]
+}

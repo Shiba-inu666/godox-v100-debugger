@@ -1,27 +1,26 @@
-# 本地固件
+# 本地固件 / Local firmware
 
-此仓库不分发 Godox 原厂固件。运行前，请自行准备与你有权使用的 V100F V1.03 对应的原始二进制，放在：
+本仓库不分发 Godox 完整原厂或修改版固件。请自行准备有权使用的指定原件，放入：
 
-```
+```text
 firmware/V100F_V1.03.bin
 ```
 
-只接受下列精确样本：
+| 项目 / Item | 值 / Value |
+|---|---|
+| Model / version | V100F V1.03 |
+| Size | 1,002,732 bytes |
+| SHA-256 | `fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787` |
+| Main application mapping | `0x08008000` |
 
-- 文件大小：1,002,732 字节
-- SHA-256：`fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787`
-- 模拟加载地址：`0x08008000`
+相同版本名不保证内容相同。工具按精确摘要拒绝未知输入，不要通过改名或取消校验适配其他文件。
 
-版本名称相同不代表二进制内容相同。地址和布局只针对上述样本；校验不匹配时程序会停止。不要绕过校验或把其他版本文件改名后使用。
+电脑工作台读取原件用于离线执行；原生补丁工具读取原件并在新目录生成实验文件。两者均不覆盖输入，也不连接或刷写设备。固件、输出 BIN 和会话均不提交到 Git。
 
-此目录中的二进制被 Git 忽略，固件只在本机模拟器中读取。仓库不提供固件下载、设备刷写或真实闪光接口。
+[原生工具说明](../native/README.md) · [恢复限制](../docs/native/RECOVERY.md)
 
 ## English
 
-Vendor firmware is not distributed with this repository. Supply a copy you are entitled to use at `firmware/V100F_V1.03.bin`.
+Supply your own authorized copy of the exact original at the path above. A version label is not a binary identity; mismatched input is rejected. Do not bypass checks or rename another model/version to make it appear compatible.
 
-The supported sample is exactly **1,002,732 bytes**, with SHA-256 `fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787`. It is loaded at simulated address `0x08008000`.
-
-The same version label does not guarantee identical binary contents. All mapped addresses target this exact sample, and the program stops on a hash mismatch. Do not bypass the check or rename another version to match the expected filename.
-
-Binary files in this directory are ignored by Git and read only by the local emulator. The repository provides no firmware download, device flashing or hardware flash-firing interface.
+The desktop debugger reads the original for offline execution. The native patcher reads it and creates an experimental candidate in a new output directory. Neither overwrites the input or connects to/writes a device. Complete original/candidate firmware files and user sessions are excluded from Git.

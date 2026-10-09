@@ -1,0 +1,192 @@
+{
+  "status": "PASS_R5_NATIVE_SENDER_ROW",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "counts": {
+    "all_power_formats_match_native_M_row_geometry": 44,
+    "row_buttons_native_SUB_steps_no_main_group_focus_changes": 44,
+    "row_buttons_blocked_state_and_SUB_OFF": 14,
+    "background_buttons_blocked_while_editor_open": 2,
+    "non_click_events_do_not_adjust": 14,
+    "OFF_label_head_warning_and_label_fit": 4,
+    "modal_close_restores_native_Sender_not_compact_footer": 44,
+    "rejected_transition_never_frees_live_SUB": 4,
+    "Hotshoe_open_SUB_to_Sender_reclaim_and_reopen": 1
+  },
+  "total": 171,
+  "examples": [
+    {
+      "decimal": 0,
+      "power": 0,
+      "number": [
+        243,
+        151,
+        270,
+        186
+      ],
+      "minus": [
+        46,
+        141,
+        113,
+        197
+      ],
+      "plus": [
+        410,
+        141,
+        477,
+        197
+      ],
+      "label": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "decimal": 0,
+      "power": 30,
+      "number": [
+        243,
+        151,
+        270,
+        186
+      ],
+      "minus": [
+        46,
+        141,
+        113,
+        197
+      ],
+      "plus": [
+        410,
+        141,
+        477,
+        197
+      ],
+      "label": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "decimal": 0,
+      "power": 70,
+      "number": [
+        215,
+        151,
+        298,
+        186
+      ],
+      "minus": [
+        46,
+        141,
+        113,
+        197
+      ],
+      "plus": [
+        410,
+        141,
+        477,
+        197
+      ],
+      "label": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "decimal": 1,
+      "power": 0,
+      "number": [
+        229,
+        151,
+        284,
+        186
+      ],
+      "minus": [
+        46,
+        141,
+        113,
+        197
+      ],
+      "plus": [
+        410,
+        141,
+        477,
+        197
+      ],
+      "label": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "decimal": 1,
+      "power": 30,
+      "number": [
+        222,
+        151,
+        291,
+        186
+      ],
+      "minus": [
+        46,
+        141,
+        113,
+        197
+      ],
+      "plus": [
+        410,
+        141,
+        477,
+        197
+      ],
+      "label": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "decimal": 1,
+      "power": 70,
+      "number": [
+        222,
+        151,
+        291,
+        186
+      ],
+      "minus": [
+        46,
+        141,
+        113,
+        197
+      ],
+      "plus": [
+        410,
+        141,
+        477,
+        197
+      ],
+      "label": [
+        15,
+        149,
+        35,
+        182
+      ]
+    }
+  ],
+  "hardware_verified": false,
+  "limits": [
+    "Actual LVGL objects and event dispatch, native fonts and stock group widget factory",
+    "Touch controller raw coordinate and physical LCD appearance not verified",
+    "R7 single S uses bitmap-verified native font centered within the original 46-pixel group tile"
+  ]
+}

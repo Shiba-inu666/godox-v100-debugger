@@ -1,0 +1,101 @@
+{
+  "model": "V100F",
+  "version": "1.03",
+  "original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+  "source_sha256": "c02e3bb2dbede655665f92b79e0408da7435813744d5ab001167f7e65c71ab02",
+  "builder_sha256": "7d0a8196cf7c5dce394c606f12038866679acec98d9b2564b49c4a63d55df200",
+  "helper_base": "0x80be000",
+  "helper_size": 476,
+  "helper_sha256": "26efe0d775327938743ba2c65b071b25f6b39fd38c32ed4be2ce0f50e202110a",
+  "symbols": {
+    "ttl_wrapper": 0,
+    "restore_ttl": 28,
+    "manual_wrapper": 36,
+    "restore_manual": 64,
+    "exposure_ttl_wrapper": 72,
+    "exposure_ttl_restore": 90,
+    "exposure_m_wrapper": 100,
+    "exposure_m_restore": 116,
+    "radio_wrapper": 128,
+    "radio_original": 172,
+    "sender_off_wrapper": 184,
+    "sender_off_restore": 212,
+    "sub_only_full_width": 224,
+    "qualify_exposure": 252,
+    "qualify_physical_test": 268,
+    "sender": 294,
+    "page": 296,
+    "qualify_wireless": 314,
+    "common": 322,
+    "mod10": 388,
+    "residue": 396,
+    "allow": 408,
+    "reject": 410,
+    "code_end": 412
+  },
+  "hooks": [
+    {
+      "name": "ttl",
+      "address": "0x800d7c6",
+      "offset": "0x57c6",
+      "old_bytes": "12480078",
+      "new_bytes": "b0f01bbc",
+      "target": "0x80be000",
+      "context_offset": "0x57b6",
+      "context": "8a6105220a610a6912f4803ffbd0836212480078002808bf00f00bfe642017f0aefb0122"
+    },
+    {
+      "name": "manual",
+      "address": "0x80121fe",
+      "offset": "0xa1fe",
+      "old_bytes": "9af80000",
+      "new_bytes": "abf011bf",
+      "target": "0x80be024",
+      "context_offset": "0xa1ee",
+      "context": "018841f00201018072b63348007818b19af8000000287ed03148007800287fd001225102"
+    },
+    {
+      "name": "exposure_ttl",
+      "address": "0x800a0d8",
+      "offset": "0x20d8",
+      "old_bytes": "9bf80000",
+      "new_bytes": "b3f0b6bf",
+      "target": "0x80be048",
+      "context_offset": "0x20c8",
+      "context": "018841f00201018072b6c548007820b19bf80000002800f0e382c2480078002800f0d282"
+    },
+    {
+      "name": "exposure_m",
+      "address": "0x800a756",
+      "offset": "0x2756",
+      "old_bytes": "38780028",
+      "new_bytes": "b3f085bc",
+      "target": "0x80be064",
+      "context_offset": "0x2746",
+      "context": "40f00200abf8000072b6ec48007818b13878002800f0e182ea480078002800f0d0820122"
+    },
+    {
+      "name": "radio",
+      "address": "0x8020266",
+      "offset": "0x18266",
+      "old_bytes": "55480078",
+      "new_bytes": "9df00bbf",
+      "target": "0x80be080",
+      "context_offset": "0x18256",
+      "context": "70fdf1f7cefd208840f00200208072b65548007800287ed0012251024b48eff78efc0820"
+    },
+    {
+      "name": "sender_off",
+      "address": "0x800b320",
+      "offset": "0x3320",
+      "old_bytes": "4ff47a60",
+      "new_bytes": "b2f0cabe",
+      "target": "0x80be0b8",
+      "context_offset": "0x3310",
+      "context": "0201218072b6032804bf192009f040ff4ff47a6019f006fe62b62e7070bd03280ad11048"
+    }
+  ],
+  "scope": "TEST_AND_NORMAL_EXPOSURE_SENDER_RX_TTL_M_STOCK_JOINT",
+  "camera_radio_SU1_unlocked": true,
+  "publication_note": "Original engineering build metadata; portable build verification uses patches/r7.json."
+}

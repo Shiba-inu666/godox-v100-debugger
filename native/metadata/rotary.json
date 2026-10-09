@@ -1,0 +1,87 @@
+{
+  "model": "V100F",
+  "version": "1.03",
+  "original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+  "source_sha256": "689df373a3463b65dbbf379db42f9d1b53f9fb6e58b2a2944a0e073764afee20",
+  "builder_sha256": "1c8a9a38e399aa24188e40f55433dce3e2770821bde7c2c8f421f58781dd286c",
+  "helper_base": "0x80bdd00",
+  "helper_size": 508,
+  "helper_sha256": "f627240aa800c69047901342057ac03b0f11febcee6f027c53c27b645a797246",
+  "symbols": {
+    "positive_wrapper": 0,
+    "positive_blocked": 44,
+    "positive_fallback": 50,
+    "negative_wrapper": 60,
+    "negative_blocked": 104,
+    "negative_fallback": 110,
+    "decoder_wrapper": 120,
+    "decoder_fallback": 152,
+    "gui_wrapper": 164,
+    "gui_resume": 188,
+    "screen_guard": 200,
+    "hotshoe": 260,
+    "common": 276,
+    "ttl": 352,
+    "denied": 356,
+    "adjust_allowed": 360,
+    "adjust_loop": 366,
+    "adjust_flags": 380,
+    "blocked": 404,
+    "original_positive": 408,
+    "original_negative": 416,
+    "original_decoder": 424,
+    "original_gui": 432,
+    "adjust_guards": 440,
+    "code_end": 440
+  },
+  "hooks": [
+    {
+      "name": "positive",
+      "address": "0x8010924",
+      "offset": "0x8924",
+      "old_bytes": "f9480022",
+      "context_offset": "0x8914",
+      "context": "68050020014988637047000000000140f9480022007800281cbff8480280f84908784ff0",
+      "new_bytes": "adf0ecb9",
+      "target": "0x80bdd00"
+    },
+    {
+      "name": "negative",
+      "address": "0x800ba84",
+      "offset": "0x3a84",
+      "old_bytes": "e1480022",
+      "context_offset": "0x3a74",
+      "context": "072119f0dcbb00000064024070470000e1480022007800281cbfe0480280e049087810f0",
+      "new_bytes": "b2f05ab9",
+      "target": "0x80bdd3c"
+    },
+    {
+      "name": "decoder",
+      "address": "0x800b564",
+      "offset": "0x3564",
+      "old_bytes": "29490020",
+      "context_offset": "0x3554",
+      "context": "5b1cdbb29342f3d330bc704770470000294900200a6812f4007f18bf0220096811f4807f",
+      "new_bytes": "b2f008bc",
+      "target": "0x80bdd78"
+    },
+    {
+      "name": "gui",
+      "address": "0x8029c0c",
+      "offset": "0x21c0c",
+      "old_bytes": "2de9f047",
+      "context_offset": "0x21bfc",
+      "context": "001b48bf029c204604b0bde8f09f00002de9f04725480d464078dff89480dff89490254f",
+      "new_bytes": "94f0cab8",
+      "target": "0x80bdda4"
+    }
+  ],
+  "release": "OFFLINE_ONLY",
+  "features": {
+    "HOTSHOE_TTL_M_FIXED_TARGET": true,
+    "RX_TTL_M_FIXED_TARGET": true,
+    "NO_GUI_FOCUS_MOVEMENT_ON_MAIN": true,
+    "WIRELESS_SU1_FIRE": false
+  },
+  "publication_note": "Original engineering build metadata; portable build verification uses patches/r7.json."
+}

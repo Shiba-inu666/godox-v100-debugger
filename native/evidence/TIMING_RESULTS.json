@@ -1,0 +1,160 @@
+{
+  "status": "PASS_BOUNDED_ISR_OBSERVATIONS_LATENCY_NOT_RESOLVED",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "total": 2344,
+  "records": [
+    {
+      "mode": 0,
+      "entry": "positive",
+      "packet": "d5190000",
+      "boundaries": 174,
+      "injections": 174,
+      "max_deferred_instructions": 169,
+      "max_contiguous_masked_instructions": 169
+    },
+    {
+      "mode": 0,
+      "entry": "positive",
+      "packet": "a90ab409",
+      "boundaries": 174,
+      "injections": 174,
+      "max_deferred_instructions": 169,
+      "max_contiguous_masked_instructions": 169
+    },
+    {
+      "mode": 0,
+      "entry": "negative",
+      "packet": "d5190000",
+      "boundaries": 173,
+      "injections": 173,
+      "max_deferred_instructions": 168,
+      "max_contiguous_masked_instructions": 168
+    },
+    {
+      "mode": 0,
+      "entry": "negative",
+      "packet": "a90ab409",
+      "boundaries": 173,
+      "injections": 173,
+      "max_deferred_instructions": 168,
+      "max_contiguous_masked_instructions": 168
+    },
+    {
+      "mode": 0,
+      "entry": "decoder",
+      "packet": "d5190000",
+      "boundaries": 93,
+      "injections": 93,
+      "max_deferred_instructions": 88,
+      "max_contiguous_masked_instructions": 88
+    },
+    {
+      "mode": 0,
+      "entry": "decoder",
+      "packet": "a90ab409",
+      "boundaries": 93,
+      "injections": 93,
+      "max_deferred_instructions": 88,
+      "max_contiguous_masked_instructions": 88
+    },
+    {
+      "mode": 0,
+      "entry": "gui",
+      "packet": "d5190000",
+      "boundaries": 114,
+      "injections": 114,
+      "max_deferred_instructions": 62,
+      "max_contiguous_masked_instructions": 62
+    },
+    {
+      "mode": 0,
+      "entry": "gui",
+      "packet": "a90ab409",
+      "boundaries": 114,
+      "injections": 114,
+      "max_deferred_instructions": 62,
+      "max_contiguous_masked_instructions": 62
+    },
+    {
+      "mode": 1,
+      "entry": "positive",
+      "packet": "d5190000",
+      "boundaries": 204,
+      "injections": 204,
+      "max_deferred_instructions": 199,
+      "max_contiguous_masked_instructions": 199
+    },
+    {
+      "mode": 1,
+      "entry": "positive",
+      "packet": "a90ab409",
+      "boundaries": 204,
+      "injections": 204,
+      "max_deferred_instructions": 199,
+      "max_contiguous_masked_instructions": 199
+    },
+    {
+      "mode": 1,
+      "entry": "negative",
+      "packet": "d5190000",
+      "boundaries": 203,
+      "injections": 203,
+      "max_deferred_instructions": 198,
+      "max_contiguous_masked_instructions": 198
+    },
+    {
+      "mode": 1,
+      "entry": "negative",
+      "packet": "a90ab409",
+      "boundaries": 203,
+      "injections": 203,
+      "max_deferred_instructions": 198,
+      "max_contiguous_masked_instructions": 198
+    },
+    {
+      "mode": 1,
+      "entry": "decoder",
+      "packet": "d5190000",
+      "boundaries": 95,
+      "injections": 95,
+      "max_deferred_instructions": 90,
+      "max_contiguous_masked_instructions": 90
+    },
+    {
+      "mode": 1,
+      "entry": "decoder",
+      "packet": "a90ab409",
+      "boundaries": 95,
+      "injections": 95,
+      "max_deferred_instructions": 90,
+      "max_contiguous_masked_instructions": 90
+    },
+    {
+      "mode": 1,
+      "entry": "gui",
+      "packet": "d5190000",
+      "boundaries": 116,
+      "injections": 116,
+      "max_deferred_instructions": 64,
+      "max_contiguous_masked_instructions": 64
+    },
+    {
+      "mode": 1,
+      "entry": "gui",
+      "packet": "a90ab409",
+      "boundaries": 116,
+      "injections": 116,
+      "max_deferred_instructions": 64,
+      "max_contiguous_masked_instructions": 64
+    }
+  ],
+  "hardware_tested": false,
+  "canary_release": "NOT_READY",
+  "limits": [
+    "Only instruction counts, not cycles/microseconds",
+    "Synthetic higher-priority IRQ scheduling; no physical receiver FIFO or priority/tailchain model",
+    "Delay/HSS services and serial I/O stubbed; normal fire-command path original",
+    "Two selected normal fire commands; no complete radio protocol validation",
+    "New main-loop GUI mask is an additional interval; event correctness does not prove sync timing"
+  ]
+}

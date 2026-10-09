@@ -1,0 +1,151 @@
+{
+  "model": "V100F",
+  "firmware_version": "1.03",
+  "size": 1002732,
+  "original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+  "modified_sha256": "c85e7d7d553ae9789ee958424f4307aeed7640b7c15aec17deefbc7e423c85d3",
+  "patches": [
+    {
+      "offset": "0x8924",
+      "old_bytes": "f9480022",
+      "new_bytes": "adf0ecb9",
+      "purpose": "fixed_main:positive"
+    },
+    {
+      "offset": "0x3a84",
+      "old_bytes": "e1480022",
+      "new_bytes": "b2f05ab9",
+      "purpose": "fixed_main:negative"
+    },
+    {
+      "offset": "0x3564",
+      "old_bytes": "29490020",
+      "new_bytes": "b2f008bc",
+      "purpose": "fixed_main:decoder"
+    },
+    {
+      "offset": "0x21c0c",
+      "old_bytes": "2de9f047",
+      "new_bytes": "94f0cab8",
+      "purpose": "fixed_main:gui"
+    },
+    {
+      "offset": "0xb5d00",
+      "old_bytes": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "new_bytes": "7fb5eff3108472b600f05ef888b1064600f0aaf850b16c4d28782e7006460fbc00f0baf82e7084f3108870bd84f310887fbd84f31088bde87f40ade07fb5eff3108472b600f040f888b1064600f08cf850b15d4d28782e7006460fbc00f0a0f82e7084f3108870bd84f310887fbd84f31088bde87f4093e07fb5eff3108472b600f022f840b1514e35680fbc00f08cf8356084f3108870bd84f31088bde87f4082e000bf1fb5eff3108472b600f00cf820b14649002008604549088084f31088bde81f4074e000bf4ff0005191f89f0591f89823904245d1002813d0022841d191f83c23042a3dd1d1f80426002a39d0384b1a68002a35d191f80325013a042a30d807e091f83c23002a2bd1d1f8d825002a27d0304b1a68002a23d12f4b1a68002a1fd191f84827002a1bd191f84a27002a17d191f84b27002a13d191f8e524182a0fd8264b0120904018420ad091f8c30410f0030018b1012803d10220704706207047002070474ff0005112a333f8022b1ab18a5c002a0cd1f8e791f8312012f0080f06d191f8362012f0020f01d1012070470020704712480022dff848f010480022dff844f011490020dff844f02de9f047dff840f04b051e054203310599059a0518000000e504002028000020e409002068180020ac1b00206c15002047400101420000202909010889ba0008100c024069b50008119c0208",
+      "purpose": "fixed_main:helper"
+    },
+    {
+      "offset": "0x4475c",
+      "old_bytes": "2de9f04f",
+      "new_bytes": "70f0dcbe",
+      "purpose": "native_ui:sender"
+    },
+    {
+      "offset": "0x44c88",
+      "old_bytes": "2de9f04f",
+      "new_bytes": "70f022bd",
+      "purpose": "native_ui:rx"
+    },
+    {
+      "offset": "0x24c20",
+      "old_bytes": "70b5484d",
+      "new_bytes": "90f070bb",
+      "purpose": "native_ui:focus"
+    },
+    {
+      "offset": "0x15d20",
+      "old_bytes": "30b5154c",
+      "new_bytes": "9ff084bb",
+      "purpose": "native_ui:close"
+    },
+    {
+      "offset": "0x49aa0",
+      "old_bytes": "0b460128",
+      "new_bytes": "6bf0dcbc",
+      "purpose": "native_ui:activity"
+    },
+    {
+      "offset": "0x3a6bc",
+      "old_bytes": "2de9f04f",
+      "new_bytes": "7bf0f8b8",
+      "purpose": "native_ui:tick"
+    },
+    {
+      "offset": "0x15008",
+      "old_bytes": "0c2828bf7047",
+      "new_bytes": "a0f05abc00bf",
+      "purpose": "native_ui:page"
+    },
+    {
+      "offset": "0x140f4",
+      "old_bytes": "2de9f041",
+      "new_bytes": "a1f0ecb9",
+      "purpose": "native_ui:sender_event"
+    },
+    {
+      "offset": "0x145f0",
+      "old_bytes": "2de9f041",
+      "new_bytes": "a0f080bf",
+      "purpose": "native_ui:rx_event"
+    },
+    {
+      "offset": "0xf5e8",
+      "old_bytes": "30b5b34d",
+      "new_bytes": "a6f07ab8",
+      "purpose": "native_ui:rx_mode"
+    },
+    {
+      "offset": "0xa49c",
+      "old_bytes": "2de9f84f",
+      "new_bytes": "aaf0b0be",
+      "purpose": "native_ui:format"
+    },
+    {
+      "offset": "0xb5200",
+      "old_bytes": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "new_bytes": "2de9f04f85b0119d06469a4617460c46039510980290ddf83c80cdf804800e980090304600f00cfc214885423dd121480068864239d100f049f8b0b31e481f4900224ff0000900f5bb73384698471c4809216ff004026ff04103a0f11c0583463046a8476ff001053846314612226ff001030095d8472046394612224ff0ff33cdf80090d84750463146152203230095d8470c480c498847074b014640464ff4003205b0bde8f04f184705b0bde8f08fc004002078150020e7e603084cbd0b082fa203080a9ffd00fd110308b0b500f0dbf804460848056864b15db107492846884738b1064928468847a04202d1bde8b04067e00020b0bd6c150020bdcd030889b703082de9f04100f062fb00f05af828b100f07bf810b1fff7d8ff08b1bde8f081234e234d306805f5057188478046306805f5217188471f48204f0178306801290dd1b96ea84730683968a8470024102c13d039193068c96ea8470434f7e7d7f81013a8473068d7f89412a8473068d7f8d812a84707f53d7104e007f5097007f50271074630680968a84730683968a847b8f1000fc2d00949404688470028bdd005f1f4014046bde8f041084700bfe8090020fd6903089f05002050150020bdcd030870b500f05ff80c4e356890b18db10b4904462846884760b109492846884709490978012908bf746e001bb0fa80f0400970bd002070bd00bf50150020bdcd030889b703089f0500200648017801291cbf0020704790f82d0000f00300023818bf012070479604002010b5fff74dff044600f0d4fa5cb1fff7c3ff40b1fff7e4ff28b1034803490068bde81040084710bd50150020f16a0308b0b50d460446fff733ff30b106480068854202d100f00af8054620462946bde8b04000f0b7ba00bfd805002010b50e480e490278012a05d10a78032a02d1d0f8614000e000240278022a04d10978042908bfd0f865401cb105492046884700b90024204610bd00bf9f0500203c030020bdcd030810b50446fff7fafe20b105492046bde8104008472046bde8104000f095ba00bf51a9010810b50446fff7e8fe20b105492046bde8104008472046bde8104000f089ba00bf51a9010880b500f04dfa0120bde8804000e000bf2de9fe4f8046fff7abffb0b141f2505141f269524ff000530024914202d2cc500431fae74e4eb8f1000f08d0706e002156234ff4f072522406e0bde8fe8f06214ff0ff339c22372401258de83400454aa2f5157492460022a047434c002100220546306004f5947398474048404fb847014628460522bb46a0473e48b8473e4908220223cde901013c48012100f5014000902846d0477060b146394e3046b847384c092100220a23cde90104364800902846d047c9f80c003046b847334fcde901042846092100220a230097d047c9f810003046d847cde900702846092100220a230294d047c9f814003046d84723496ff005020423cde901012548032100902846d0472349244cc9f81800284600220023a047b8f1000f03d0204a284601219047fff7dffe00f059f8fff7dbfe20b904f19e0228460121904700f011f9184890f80a11017290f834110170154991f88320827009784172bde8fe4ffff73ebe50150020f159040809e703080a9ffd00b5110308999999004cda0b0884af0408cbcbcb0050da0b08d413060860370508841c0a08f1d80b083da0030855d003088c030020c104002080b500f077f90020bde8804024e700bf80b500f0a5f906480078022807d1fff769fe20b1fff78afebde8804002e080bd9f0500202de9ff41214991f8dc20012a12d156211f4f234e0025484300f156041d488046102d31d07819002122468059c04756340435f5e7097801f00301022924d0144e052414499c25002808bf062408bfed25306801f1b00729463722b847f06929463722b847f0690c4d214600224ff0ff33a847f069316a726ab36af46a356b766b8de87000054ca047bde8ff81c30400202818002045e3030813a20308d5c3000894fdfffff0b585b0fff70afe002857d02c4f3d68fff728fe2b4a0446284601219047064614b19eb1284a06e0fff77cfd08b1fff729fe5eb9254a2846012190472046fff78dfffff76ffd08b9fff788fd204c2148217a94f80a2191420dd1217894f83421914208d1a17890f88320914203d1617a0278914222d094f80a11217294f83411217090f88310a1700078607200f028f8fff748fd90b104f59a74b86af96a3a6b7b6bbd6bfe6b3f6c03940b4c8de8e000a0470a4805b0bde8f040004705b0f0bd5015002017c6030803aa0308dba003088c030020c10400209d2401080d7f04087fb5074c20686168a268e36825696669a4690294034ccde90056a0477fbd00bf501500202de1000880b500f0a3f8bde88040fff775bf00bfb0b50c4605460b280ad8084881798d4206d0007820b9fff7f9fc08b1fff7a6fd28462146bde8b04000f08eb8990500202de9f041264f0446b8470646fff7c4fd90b10546fff75efd70b13046294600f06ff8042e08d11f4e96f84e0020b996f84f0008b9307808b1bde8f081fff76efd0028f9d01848007896f854108842f3d116488046006818b1154988470028ebd196f85400012814bf124813488047134928468847d8f808001149884707f12c01204688470f490a689042d5d1d8f808000a6807f18c030421bde8f041184700bf3d5f03084b050020980300206c150020bdcd030851c3010845bf0108658c0408f16a0308e00900202de9f04fdff800f061c704082de9f04fdff800f08dcc040870b5014ddff804f0e809002025cc020830b5014cdff804f0a814002025dd01080b460128dff800f0a51a05082de9f04fdff800f0c12604080c2828bf7047dff804f000000fd001082de9f041dff800f0f9c001082de9f041dff800f0f5c5010830b5014ddff804f0c3040020ed7501082de9f84fdff800f0a12401085355420000",
+      "purpose": "native_ui:helper"
+    },
+    {
+      "offset": "0x57c6",
+      "old_bytes": "12480078",
+      "new_bytes": "b0f01bbc",
+      "purpose": "su1_fire:ttl"
+    },
+    {
+      "offset": "0xa1fe",
+      "old_bytes": "9af80000",
+      "new_bytes": "abf011bf",
+      "purpose": "su1_fire:manual"
+    },
+    {
+      "offset": "0x20d8",
+      "old_bytes": "9bf80000",
+      "new_bytes": "b3f0b6bf",
+      "purpose": "su1_fire:exposure_ttl"
+    },
+    {
+      "offset": "0x2756",
+      "old_bytes": "38780028",
+      "new_bytes": "b3f085bc",
+      "purpose": "su1_fire:exposure_m"
+    },
+    {
+      "offset": "0x18266",
+      "old_bytes": "55480078",
+      "new_bytes": "9df00bbf",
+      "purpose": "su1_fire:radio"
+    },
+    {
+      "offset": "0xb6000",
+      "old_bytes": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "new_bytes": "0eb54ff0005191f83c03002806d0059a514b9a4202d10b9a00f056f8bde80e40dff838f10eb59af80000002808d04ff000510d9a4a4b9a4202d1139a00f044f8bde80e40dff81cf10eb59bf80000002803d04ff0005100f02ff8bde80e40dff808f100bf0eb53878002803d04ff0005100f022f8bde80e400028dff8f0f000bf2de90f504ff0005191f83c0304280dd191f8fd240a2a09d100f02df8002805d1334b9847bde80f50dff8c8f0bde80f5031480078dff8c4f091f812250a2a1ad08a2a18d0704700bf2d4b9a4243d191f84b25002a3fd1032803d004283bd1022300e0012391f89f259a4234d191f898239a4230d103e0032801d004282bd191f8c32412f0100f26d112f00302012a22d891f89624012a1ed191f80c25012a1ad191f83125002a16d191f83625002a12d191f83c25002a0ed191f8c024462a0ad80a2a01d30a3afbe7002a03d0032a01d0072a00d10020704717f00008cbd70008e9ef000803220108dda000085ba70008d1a9020825030208200400206b02020831120108",
+      "purpose": "su1_fire:helper"
+    }
+  ],
+  "revision": "r4",
+  "release_status": "EXPERIMENTAL_NOT_HARDWARE_VALIDATED",
+  "checksum_status": "UNKNOWN_NOT_BYPASSED",
+  "digital_signature": "UNKNOWN_NOT_BYPASSED"
+}

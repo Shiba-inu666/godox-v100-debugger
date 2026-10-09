@@ -1,0 +1,28 @@
+{
+  "status": "PASS_EXACT_R7_SOURCE_BUILD",
+  "modules": {
+    "fixed_main": {
+      "size": 508,
+      "sha256": "f627240aa800c69047901342057ac03b0f11febcee6f027c53c27b645a797246",
+      "exact_R7_match": true
+    },
+    "fire_su1": {
+      "size": 476,
+      "sha256": "26efe0d775327938743ba2c65b071b25f6b39fd38c32ed4be2ce0f50e202110a",
+      "exact_R7_match": true
+    },
+    "native_sub": {
+      "size": 3003,
+      "sha256": "bf7b5d51ba7743c0144ee592b67d614ceb5bf562b226b2fe4cb908177f405f09",
+      "exact_R7_match": true
+    }
+  },
+  "clang_version": "Homebrew clang version 20.1.8",
+  "source_sha256": {
+    "fire_su1.S": "c02e3bb2dbede655665f92b79e0408da7435813744d5ab001167f7e65c71ab02",
+    "fixed_main.S": "c36ab6c7f9b9062daff7bbf7a2418ba43e04843b8ec6c8a7530019edfdc1b5db",
+    "native.ld": "f7ad88e90ffd4fc5b8707e65d55237000e39183fb741d822a59027c2fb1b0525",
+    "native_sub.c": "9357f56c2203eef2aa357557a2e336866e7b9d0783b11a063d2bbc5477dc9bb1",
+    "native_trampolines.S": "6bf910200efad3630b93420a6ca90701640b839c2f0c685bd9399dc18d66a355"
+  }
+}

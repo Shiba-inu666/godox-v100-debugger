@@ -1,0 +1,104 @@
+{
+  "status": "PASS_NATIVE_UI_BOUNDED",
+  "counts": {
+    "stock_hotshoe_reference": 44,
+    "native_sender_forward_focus": 8,
+    "native_sender_reverse_focus": 8,
+    "native_row_geometry_no_overlap": 1,
+    "native_sender_SET_index_and_SUB_isolation": 5,
+    "native_modal_rotary_clamp_and_isolation": 352,
+    "native_modal_touch_buttons": 176,
+    "native_modal_ON_OFF": 8,
+    "native_slider_Hotshoe_parity": 264,
+    "native_close_returns_to_SUB": 4,
+    "native_entry_scope_guards": 12,
+    "native_detach_close_reattach_reopen": 2,
+    "native_modal_back_gesture_stays_on_origin_page": 2,
+    "native_formatter_parity": 88,
+    "native_rx_footer_geometry_no_overlap": 1,
+    "native_page_transition_delete_reuse": 24,
+    "native_radio_ABCD_group_ID_regression": 81
+  },
+  "total": 1080,
+  "examples": [
+    {
+      "page": 1,
+      "actual_native_row_rectangles": [
+        [
+          0,
+          42,
+          479,
+          123
+        ],
+        [
+          0,
+          128,
+          479,
+          209
+        ],
+        [
+          0,
+          214,
+          479,
+          295
+        ],
+        [
+          0,
+          300,
+          479,
+          381
+        ],
+        [
+          0,
+          386,
+          479,
+          467
+        ],
+        [
+          0,
+          472,
+          479,
+          553
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "actual_native_footer_rectangles": [
+        [
+          0,
+          304,
+          155,
+          358
+        ],
+        [
+          162,
+          304,
+          317,
+          358
+        ],
+        [
+          324,
+          304,
+          479,
+          358
+        ]
+      ]
+    }
+  ],
+  "original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+  "helper_sha256": "bf7b5d51ba7743c0144ee592b67d614ceb5bf562b226b2fe4cb908177f405f09",
+  "firmware_emitted": false,
+  "fire_unlocked": false,
+  "hardware_tested": false,
+  "boundaries": [
+    "Original allocator, display registration, object creation, labels, event dispatch, power callbacks, focus and deletion executed",
+    "Only physical LCD transfer substituted during screenshot capture; RGB565 produced by original renderer",
+    "RF transport and delays substituted for packet regression; no over-air timing measurement",
+    "Synthetic event target dispatch plus actual rectangles; touch-controller raw-coordinate processing not tested",
+    "Animation completion driven synchronously through stock loader, not real elapsed-time scheduling",
+    "No proof of thermal/voltage/HSS protection closure in newly enabled firing path, because no such path is enabled"
+  ],
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "suite_source_sha256": "4b1ebae7f86358d6a74d7df3dc1431ae900431fea231cca316cd3578381963c9"
+}

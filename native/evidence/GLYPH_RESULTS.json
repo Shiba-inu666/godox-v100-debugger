@@ -1,0 +1,267 @@
+{
+  "status": "PASS_R7_NATIVE_S_GLYPH",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "counts": {
+    "R6_sender_numeric_font_has_no_letter_glyph": 3,
+    "R7_real_native_S_bitmap_exists": 2,
+    "native_page_label_glyph_style_and_bounds": 16,
+    "native_refresh_editor_close_preserves_S": 16
+  },
+  "total": 37,
+  "glyphs": [
+    {
+      "font": "0x805b304",
+      "letter": "S",
+      "found": false
+    },
+    {
+      "font": "0x805b304",
+      "letter": "U",
+      "found": false
+    },
+    {
+      "font": "0x805b304",
+      "letter": "B",
+      "found": false
+    },
+    {
+      "font": "0x80bbbe8",
+      "letter": "S",
+      "found": true,
+      "advance": 21,
+      "width": 19,
+      "height": 24,
+      "x": 1,
+      "y": 0,
+      "bitmap_address": "0x80ba01c",
+      "bitmap_sha256": "81fca453c06791ec28241303442ebc8065b01d31477f2d894d6da3fa97e54160"
+    },
+    {
+      "font": "0x8053084",
+      "letter": "S",
+      "found": true,
+      "advance": 9,
+      "width": 9,
+      "height": 11,
+      "x": 0,
+      "y": 0,
+      "bitmap_address": "0x8052b7c",
+      "bitmap_sha256": "4e06b19d9c9a28a65abea0f355a283e2b0b856daa58f682ba93b770fbad905d1"
+    }
+  ],
+  "samples": [
+    {
+      "page": 1,
+      "language": 0,
+      "on": 0,
+      "decimal": 0,
+      "font": "0x80bbbe8",
+      "title_rect": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "page": 1,
+      "language": 0,
+      "on": 0,
+      "decimal": 1,
+      "font": "0x80bbbe8",
+      "title_rect": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "page": 1,
+      "language": 0,
+      "on": 1,
+      "decimal": 0,
+      "font": "0x80bbbe8",
+      "title_rect": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "page": 1,
+      "language": 0,
+      "on": 1,
+      "decimal": 1,
+      "font": "0x80bbbe8",
+      "title_rect": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "page": 1,
+      "language": 1,
+      "on": 0,
+      "decimal": 0,
+      "font": "0x80bbbe8",
+      "title_rect": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "page": 1,
+      "language": 1,
+      "on": 0,
+      "decimal": 1,
+      "font": "0x80bbbe8",
+      "title_rect": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "page": 1,
+      "language": 1,
+      "on": 1,
+      "decimal": 0,
+      "font": "0x80bbbe8",
+      "title_rect": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "page": 1,
+      "language": 1,
+      "on": 1,
+      "decimal": 1,
+      "font": "0x80bbbe8",
+      "title_rect": [
+        15,
+        149,
+        35,
+        182
+      ]
+    },
+    {
+      "page": 2,
+      "language": 0,
+      "on": 0,
+      "decimal": 0,
+      "font": "0x8053084",
+      "title_rect": [
+        334,
+        308,
+        342,
+        322
+      ]
+    },
+    {
+      "page": 2,
+      "language": 0,
+      "on": 0,
+      "decimal": 1,
+      "font": "0x8053084",
+      "title_rect": [
+        334,
+        308,
+        342,
+        322
+      ]
+    },
+    {
+      "page": 2,
+      "language": 0,
+      "on": 1,
+      "decimal": 0,
+      "font": "0x8053084",
+      "title_rect": [
+        334,
+        308,
+        342,
+        322
+      ]
+    },
+    {
+      "page": 2,
+      "language": 0,
+      "on": 1,
+      "decimal": 1,
+      "font": "0x8053084",
+      "title_rect": [
+        334,
+        308,
+        342,
+        322
+      ]
+    },
+    {
+      "page": 2,
+      "language": 1,
+      "on": 0,
+      "decimal": 0,
+      "font": "0x8053084",
+      "title_rect": [
+        334,
+        308,
+        342,
+        322
+      ]
+    },
+    {
+      "page": 2,
+      "language": 1,
+      "on": 0,
+      "decimal": 1,
+      "font": "0x8053084",
+      "title_rect": [
+        334,
+        308,
+        342,
+        322
+      ]
+    },
+    {
+      "page": 2,
+      "language": 1,
+      "on": 1,
+      "decimal": 0,
+      "font": "0x8053084",
+      "title_rect": [
+        334,
+        308,
+        342,
+        322
+      ]
+    },
+    {
+      "page": 2,
+      "language": 1,
+      "on": 1,
+      "decimal": 1,
+      "font": "0x8053084",
+      "title_rect": [
+        334,
+        308,
+        342,
+        322
+      ]
+    }
+  ],
+  "hardware_verified": false,
+  "limits": [
+    "Native font callbacks and bitmap bytes verified; no physical LCD confirmation",
+    "R6 checked label strings and geometry but did not check font character coverage; this test closes that gap"
+  ]
+}

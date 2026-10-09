@@ -1,0 +1,226 @@
+.syntax unified
+.thumb
+.cpu cortex-m4
+.text
+.balign 4
+// Exact V100F V1.03. Never change role RAM or add a persistent bypass flag.
+// Each wrapper replaces a role load; the stock CMP/branch remains intact.
+.global ttl_wrapper
+.thumb_func
+ttl_wrapper:
+ push {r1,r2,r3,lr}
+ ldr r1,=0x20000000
+ ldrb.w r0,[r1,#0x33c]
+ cmp r0,#0
+ beq restore_ttl
+ // D6E0 frame 8 bytes, incoming LR at +4; EF78 frame 24, LR +20.
+ ldr r2,[sp,#20]
+ ldr r3,=0x0800f017
+ cmp r2,r3
+ bne restore_ttl
+ ldr r2,[sp,#44]
+ bl qualify_physical_test
+restore_ttl:
+ pop {r1,r2,r3,lr}
+ ldr pc,=0x0800d7cb
+
+.balign 4
+.global manual_wrapper
+.thumb_func
+manual_wrapper:
+ push {r1,r2,r3,lr}
+ ldrb.w r0,[r10]
+ cmp r0,#0
+ beq restore_manual
+ ldr r1,=0x20000000
+ // 11E74 frame 40 bytes, LR +36; EF78 LR at frame +40+20.
+ ldr r2,[sp,#52]
+ ldr r3,=0x0800efe9
+ cmp r2,r3
+ bne restore_manual
+ ldr r2,[sp,#76]
+ bl qualify_physical_test
+restore_manual:
+ pop {r1,r2,r3,lr}
+ ldr pc,=0x08012203
+
+.balign 4
+.global exposure_ttl_wrapper
+.thumb_func
+exposure_ttl_wrapper:
+ push {r1,r2,r3,lr}
+ ldrb.w r0,[r11]
+ cmp r0,#0
+ beq exposure_ttl_restore
+ ldr r1,=0x20000000
+ bl qualify_exposure
+exposure_ttl_restore:
+ pop {r1,r2,r3,lr}
+ ldr pc,=0x0800a0dd
+
+.balign 4
+.global exposure_m_wrapper
+.thumb_func
+exposure_m_wrapper:
+ push {r1,r2,r3,lr}
+ ldrb r0,[r7]
+ cmp r0,#0
+ beq exposure_m_restore
+ ldr r1,=0x20000000
+ bl qualify_exposure
+exposure_m_restore:
+ pop {r1,r2,r3,lr}
+ // Displaced CMP is part of this hook; preserve its result into stock BEQ.W.
+ cmp r0,#0
+ ldr pc,=0x0800a75b
+
+.balign 4
+.global radio_wrapper
+.thumb_func
+radio_wrapper:
+ push {r0,r1,r2,r3,r12,lr}
+ ldr r1,=0x20000000
+ ldrb.w r0,[r1,#0x33c]
+ cmp r0,#4
+ bne radio_original
+ ldrb.w r2,[r1,#0x4fd]
+ cmp r2,#10
+ bne radio_original
+ bl qualify_wireless
+ cmp r0,#0
+ bne radio_original
+ // Original RX preparation has already set main duration 0x522.
+ // Stock joint routine reads that unchanged and independent SUB power 0x4C0.
+ ldr r3,=0x0802a9d1
+ blx r3
+ pop {r0,r1,r2,r3,r12,lr}
+ ldr pc,=0x08020325
+radio_original:
+ pop {r0,r1,r2,r3,r12,lr}
+ ldr r0,=0x20000420
+ ldrb r0,[r0]
+ ldr pc,=0x0802026b
+
+.balign 4
+.global sender_off_wrapper
+.thumb_func
+sender_off_wrapper:
+ // This site is exclusively the normal-sync, radio-only B2F4 branch.
+ // Original Sender packet is already sent; CPSID remains active throughout.
+ push {r0,r1,r2,r3,r12,lr}
+ ldr r1,=0x20000000
+ ldrb.w r0,[r1,#0x33c]
+ cmp r0,#3
+ bne sender_off_restore
+ bl qualify_wireless
+ cmp r0,#0
+ bne sender_off_restore
+ bl sub_only_full_width
+sender_off_restore:
+ pop {r0,r1,r2,r3,r12,lr}
+ mov.w r0,#4000
+ ldr pc,=0x0800b325
+
+.balign 4
+.thumb_func
+sub_only_full_width:
+ // Reproduce E3E8's frame and table preparation, using the same U16 table
+ // width as the stock photographic joint routine 2A9D0 (TEST uses U8).
+ // Continue into untouched native SUB readiness/head/ON checks and pulse.
+ // Never enter any main tube firing routine or write main duration 0x522.
+ push {r4,r5,r6,r7,r8,lr}
+ ldr r0,=0x200004c0
+ ldr r1,=0x080528d6
+ ldr r5,=0x200004c2
+ ldrb r0,[r0]
+ movs r6,#0
+ rsb.w r0,r0,#80
+ ldrh.w r4,[r1,r0,lsl #1]
+ ldr pc,=0x0800e3ff
+
+.balign 4
+.thumb_func
+qualify_exposure:
+ ldrb.w r2,[r1,#0x512]
+ cmp r2,#10
+ beq qualify_wireless
+ cmp r2,#0x8a
+ beq qualify_wireless
+ bx lr
+
+.balign 4
+.thumb_func
+qualify_physical_test:
+ // EF78 must have been reached by the physical-key BL at 0801122C.
+ ldr r3,=0x08011231
+ cmp r2,r3
+ bne reject
+ ldrb.w r2,[r1,#0x54b]
+ cmp r2,#0
+ bne reject
+ cmp r0,#3
+ beq sender
+ cmp r0,#4
+ bne reject
+ movs r3,#2
+ b page
+sender:
+ movs r3,#1
+page:
+ ldrb.w r2,[r1,#0x59f]
+ cmp r2,r3
+ bne reject
+ ldrb.w r2,[r1,#0x398]
+ cmp r2,r3
+ bne reject
+ b common
+.thumb_func
+qualify_wireless:
+ // UI locks/pages do not inhibit photography. Actual flash mode/role does.
+ cmp r0,#3
+ beq common
+ cmp r0,#4
+ bne reject
+common:
+ ldrb.w r2,[r1,#0x4c3]
+ tst r2,#0x10
+ bne reject
+ ands r2,r2,#3
+ cmp r2,#1
+ bhi reject
+ // Do NOT prefilter SUB-ready/ON/head here. Original E3E8/2A9D0 own them.
+ // In particular 2A9D0 returns without either pulse if attached SUB not ready.
+ .irp off,0x496,0x50c
+ ldrb.w r2,[r1,#\off]
+ cmp r2,#1
+ bne reject
+ .endr
+ .irp off,0x531,0x536,0x53c
+ ldrb.w r2,[r1,#\off]
+ cmp r2,#0
+ bne reject
+ .endr
+ // Stock SU-1 index = 80 - power. Only native 1/3-stop codes 0..70.
+ ldrb.w r2,[r1,#0x4c0]
+ cmp r2,#70
+ bhi reject
+mod10:
+ cmp r2,#10
+ blo residue
+ subs r2,#10
+ b mod10
+residue:
+ cmp r2,#0
+ beq allow
+ cmp r2,#3
+ beq allow
+ cmp r2,#7
+ bne reject
+allow:
+ movs r0,#0
+reject:
+ bx lr
+.balign 4
+.global code_end
+code_end:
+.ltorg

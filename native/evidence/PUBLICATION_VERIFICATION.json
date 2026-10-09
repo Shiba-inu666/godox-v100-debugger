@@ -1,0 +1,20 @@
+{
+  "status": "PASS_CLEAN_PUBLIC_TREE_REPRODUCTION",
+  "timestamp": "2026-10-09T07:11:15.865225+00:00",
+  "original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "original_unchanged": true,
+  "checks": {
+    "clean_tree_apply": true,
+    "clean_tree_inverse": true,
+    "patcher_tests": 10,
+    "desktop_tests": 26,
+    "clean_tree_native_glyph_checks": 37
+  },
+  "package_scope": "Only tracked/staged public files and one locally supplied official firmware fixture; no private project modules",
+  "portable_lab_summary": "PUBLIC_LAB_RESULTS.json",
+  "source_build_summary": "BUILD_VERIFICATION.json",
+  "no_vendor_image_published": true,
+  "hardware_verified": false,
+  "device_written": false
+}

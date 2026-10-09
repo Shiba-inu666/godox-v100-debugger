@@ -1,0 +1,14 @@
+{
+  "r7": {
+    "spec_sha256": "b7ec2417983a6aee30b563635b3c8cf08812c52e0efe6daff81e35e16e646157",
+    "output_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761"
+  },
+  "r5": {
+    "spec_sha256": "417b692c4d65b9c81f03dd915e431a979a47441b35ad22cdfa3b21bd0806db3e",
+    "output_sha256": "7cb6a3a634a366adc0ae166ae6e1c35781a6e2989020db45fe1b2d3647a23244"
+  },
+  "r4": {
+    "spec_sha256": "e5926e5deb4b254758c38d851ca75eda4554462bb4be339a70b838bdef89c910",
+    "output_sha256": "c85e7d7d553ae9789ee958424f4307aeed7640b7c15aec17deefbc7e423c85d3"
+  }
+}

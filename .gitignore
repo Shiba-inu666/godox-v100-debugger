@@ -20,6 +20,11 @@ __pycache__/
 /sessions/
 /evidence/
 /native-v100-su1/
+/README_NATIVE_FIRMWARE.md
+/native/.build/
+/native/.lab/
+/native/out/
+/native/*.module
 /tests/*results.txt
 
 # Superseded local prototypes and previews

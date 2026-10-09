@@ -1,0 +1,90 @@
+{
+  "status": "PASS_BOUNDED_R7_SINGLE_S",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "timestamp": "2026-10-08T16:33:05.222251+00:00",
+  "suites": {
+    "glyph": {
+      "file": "GLYPH_RESULTS.json",
+      "status": "PASS_R7_NATIVE_S_GLYPH",
+      "total": 37,
+      "sha256": "a44bbfb097d98517381369f7322af042d2e3a4c5c8972a368d68ee292e85d25d"
+    },
+    "drawer": {
+      "file": "DRAWER_RESULTS.json",
+      "status": "PASS_R6_NATIVE_DRAWER_LAYER_AND_HIT_TEST",
+      "total": 296,
+      "sha256": "637e1e891e9d217d3b809653e2ae538239eda2e9581ffaafd050a731b659c1be"
+    },
+    "sender_off": {
+      "file": "SENDER_OFF_RESULTS.json",
+      "status": "PASS_R5_SENDER_OFF_SUB_ONLY",
+      "total": 1389,
+      "sha256": "990ea6e07a462b56af1465c3609634bc659562758cd701194b57df8ca94acf02"
+    },
+    "sender_row": {
+      "file": "SENDER_ROW_RESULTS.json",
+      "status": "PASS_R5_NATIVE_SENDER_ROW",
+      "total": 171,
+      "sha256": "c1370c7f06be3164818c82ee75c4e8499f0c1a22eac913851de0a63854de8987"
+    },
+    "firing": {
+      "file": "FIRING_RESULTS.json",
+      "status": "PASS_BOUNDED_R5_FIRING_AND_READINESS",
+      "total": 4399,
+      "sha256": "979a82926dbcf83beae23b9a5667d2ac60f583bb2ede779db6cfa657821c4464"
+    },
+    "stock_readiness": {
+      "file": "STOCK_READINESS_RESULTS.json",
+      "status": "CONFIRMED_STOCK_READY_SKIP_NO_READY_WAIT_LOOP",
+      "total": 398,
+      "sha256": "67ec890804ac416e8fb5946bf7e6be47af0c2606e72f17bff312ef737a1cf795"
+    },
+    "wrapper": {
+      "file": "WRAPPER_RESULTS.json",
+      "status": "PASS_EXACT_VERSION_WRAPPER_ABI_AND_SOURCE",
+      "total": 2317,
+      "sha256": "05e1a1b4c01b78059fed8797b1525cd3e2ffca0ce153c67e9a507dce7112a658"
+    },
+    "modal": {
+      "file": "MODAL_RESULTS.json",
+      "status": "PASS_R4_MODAL_EXACT_HOTSHOE_GEOMETRY",
+      "total": 392,
+      "sha256": "37fb46406b53200f4f29bf28089bcb92c83c48cce190401374c0e7a1bd20bcdb"
+    },
+    "layout": {
+      "file": "LAYOUT_RESULTS.json",
+      "status": "PASS_RX_LAYOUT_FULL_REFRESH",
+      "total": 205,
+      "sha256": "072baffa5b8b62372944eb85f6c237af04f08f207fda2e1644d5c684a2cf04dc"
+    },
+    "fixed_main": {
+      "file": "FUNCTIONAL_RESULTS.json",
+      "status": "PASS_BOUNDED_FIXED_MAIN_FUNCTIONAL",
+      "total": 25539,
+      "sha256": "32ae237d01aca3625eb9d72ed01bc0f07f70405ca5b47294c986f0b61ab67737"
+    },
+    "event_chain": {
+      "file": "EVENT_CHAIN_RESULTS.json",
+      "status": "PASS_BOUNDED_EVENT_CHAIN",
+      "total": 1284,
+      "sha256": "5398cb219d9373ce560aa8dbe4337ef879b9faa2e638923dd1813ba829ce7606"
+    },
+    "native_SUB": {
+      "file": "NATIVE_UI_TEST_RESULTS.json",
+      "status": "PASS_NATIVE_UI_BOUNDED",
+      "total": 1080,
+      "sha256": "cb24ce56097258b6b955aa5bee90599a830cf300f065f9b47d50ddf8d1acdd38"
+    },
+    "RF_order": {
+      "file": "TIMING_RESULTS.json",
+      "status": "PASS_BOUNDED_ISR_OBSERVATIONS_LATENCY_NOT_RESOLVED",
+      "total": 2344,
+      "sha256": "1ac62ceff55e344b3b27efe7ece3dc3d41436ee8e08d3931d811fb6b71aadb8d"
+    }
+  },
+  "total": 39851,
+  "hardware_verified": false,
+  "agent_device_written": false,
+  "publication_note": "39,851 archived engineering checks. Portable public lab reruns a documented subset; these are not hardware tests.",
+  "source_report_sha256": "59d4d8e534bf3e7d4534b7bd48427942b69deb1c946fd6c2f9f78ed77adcd5fa"
+}

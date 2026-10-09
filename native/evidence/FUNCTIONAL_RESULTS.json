@@ -1,0 +1,34 @@
+{
+  "status": "PASS_BOUNDED_FIXED_MAIN_FUNCTIONAL",
+  "candidate_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "counts": {
+    "all_byte_original_numeric_parity": 24576,
+    "inhibited_main_no_other_field_change": 504,
+    "outside_numeric_exact_fallback": 26,
+    "decoder_numeric_counters_preserved_navigation_consumed": 84,
+    "hook_branch_decode": 21,
+    "input_tamper_rejected": 8,
+    "output_tamper_rejected": 8,
+    "native_main_focus_and_inline_selection_fixed": 272,
+    "native_SET_press_release_preserved": 4,
+    "native_inhibited_no_focus_movement": 28,
+    "unpatched_native_focus_moves_negative_control": 1,
+    "native_touch_SUB_modal_original_editor": 3,
+    "native_touch_ZOOM_modal_excluded": 2,
+    "native_Sender_focus_movement_preserved": 1,
+    "native_touch_group_modal_excluded": 1
+  },
+  "total": 25539,
+  "audit": {
+    "sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+    "size": 1002732,
+    "restored_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+    "changed_bytes": 4018
+  },
+  "native_GUI_task": "08037F34 with actual LVGL objects, callbacks, group engine",
+  "hardware_tested": false,
+  "limitations": [
+    "Offline bounded original machine-code execution; no hardware timing/display/touch-controller acceptance",
+    "Native radio TTL exposure effect not measured; original receiver FEC edit routine reused"
+  ]
+}
