@@ -1,0 +1,87 @@
+{
+  "model": "V480F",
+  "firmware_version": "1.03",
+  "original_sha256": "84ca232f50a62ceb2d9b24017a3b447a7154bf63f6461ef546a30a6b29077ebf",
+  "modified_sha256": "58dedf69cb23805a8cb72b9b44a4d6dafb2b7997081a7404e2a53f471ba20fb4",
+  "filename": "Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin",
+  "bytes": 753705,
+  "patches": [
+    {
+      "offset": "0x34f0",
+      "old_bytes": "f0b42848",
+      "new_bytes": "81f0b2bd",
+      "reason": "Scoped input wrapper"
+    },
+    {
+      "offset": "0x8850",
+      "old_bytes": "fd480022",
+      "new_bytes": "7cf0d6bb",
+      "reason": "Scoped input wrapper"
+    },
+    {
+      "offset": "0x39f0",
+      "old_bytes": "e3480022",
+      "new_bytes": "81f01cbb",
+      "reason": "Scoped input wrapper"
+    },
+    {
+      "offset": "0x85000",
+      "old_bytes": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "new_bytes": "7fb5eff3108472b600f03cf848b1444d28700fbc00f06af800262e7084f3108870bd84f31088bde87f405fe07fb5eff3108472b600f026f848b1394d28700fbc00f058f800262e7084f3108870bd84f31088bde87f404de07fb5eff3108472b600f010f840b12f4e35680fbc00f03af8356084f3108870bd84f31088bde87f4030e000bf4ff0005191f83d05002827d11aa333f8022b1ab18a5c002a20d1f8e791f8312012f0080f1ad191f83a2012f0020f15d1d1f83c2692b117a333f8022b1ab18a58002a0bd1f8e791f81b2512f003021ab1012a03d1022070470620704700207047f0b41048dff840f010480022dff840f00e480022dff83cf0fb055003af03a305760558038905f505f605ae07b007b10718000000b41be415000000bf3d0500202800002010040240f5b400084600002055080108f5b90008",
+      "reason": "Bounded helper within existing payload padding"
+    }
+  ],
+  "checksum_changes": [
+    {
+      "offset": "0xb8000",
+      "old_bytes": "a75793b47c57d23518a7c957f20766d1",
+      "new_bytes": "d649089abf6a4c082e6e85a57865ecd7",
+      "algorithm": "MD5",
+      "coverage": [
+        0,
+        753664
+      ]
+    }
+  ],
+  "changed_byte_count": 344,
+  "patch_revision": "v2",
+  "source_sha256": {
+    "rotary_direct.S": "bf2a6afaa55b5e980bbc4f0fe1f8df329c1e2b804e22837117c998c9e4369fc9"
+  },
+  "contexts": [
+    {
+      "name": "decoder",
+      "address": "0x800b4f0",
+      "offset": "0x34f0",
+      "original": "f0b42848",
+      "original_literal": "0x40020410",
+      "context_offset": "0x34e0",
+      "context": "5b1cdbb29342f3d330bc704770470000f0b428480021026812f0020f18bf0221006810f0",
+      "replacement": "81f0b2bd",
+      "target": "0x808d058"
+    },
+    {
+      "name": "positive",
+      "address": "0x8010850",
+      "offset": "0x8850",
+      "original": "fd480022",
+      "original_literal": "0x20000046",
+      "context_offset": "0x8840",
+      "context": "9b050020c00500204ff0804188637047fd480022007800281cbffc480280fc4908784ff0",
+      "replacement": "7cf0d6bb",
+      "target": "0x808d000"
+    },
+    {
+      "name": "negative",
+      "address": "0x800b9f0",
+      "offset": "0x39f0",
+      "original": "e3480022",
+      "original_literal": "0x20000046",
+      "context_offset": "0x39e0",
+      "context": "07211af0ceb900000064024070470000e3480022007800281cbfe2480280e249087810f0",
+      "replacement": "81f01cbb",
+      "target": "0x808d02c"
+    }
+  ],
+  "helper_sha256": "673267de9ee3397daf1bc0e6f822d8ae23e2c2d54619ddbc0fd57e4fdc0ac7a4"
+}

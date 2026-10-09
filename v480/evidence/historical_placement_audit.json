@@ -1,0 +1,35 @@
+{
+  "status": "PASS_STATIC_PLACEMENT_ONLY",
+  "offset": "0x85000",
+  "virtual_range": [
+    "0x808d000",
+    "0x808d13c"
+  ],
+  "bytes": 316,
+  "original_region": "All FF, after main resources/scatter source, before stock auxiliary source region",
+  "unaligned_literal_references": [],
+  "scatter_end": "0x0808CE34",
+  "stock_aux_read": {
+    "function": "0x0802DD80",
+    "source": "0x080B8000",
+    "length": "0x8000",
+    "literal_offset": "0x26078",
+    "implication": "Stock code reads the end of this same application-relative payload mapping; supports placement inference, not an updater write guarantee"
+  },
+  "aux_additive_checksum": 5033541,
+  "nmi_handler": "0x8013d5c",
+  "nmi_behavior": "BX LR",
+  "hardfault_handler": "0x800f99e",
+  "hardfault_behavior": "self loop",
+  "payload_size_changed": false,
+  "ram_layout_changed": false,
+  "flash_capacity": "Placement fits the minimum 1MiB branch seen in settings code",
+  "confidence": "PROBABLE_FOR_EXPERIMENT; static non-overlap confirmed",
+  "unknowns": [
+    "Dynamic references not formally excluded",
+    "Device-side Flash programming/erase bounds unobserved",
+    "Bootloader code and device signature verification not available",
+    "No hardware execution/MPU/cache proof"
+  ],
+  "publication_note": "Historical v2 engineering evidence; some suites include both model helpers. See public-run evidence for V480-only reruns."
+}

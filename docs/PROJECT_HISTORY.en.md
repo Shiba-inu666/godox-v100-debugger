@@ -100,10 +100,23 @@ On 2026-10-09, the experiments were organized into a portable package:
 4. Remove runtime dependencies on personal absolute paths; reconstruct R4/R5 comparison images in memory from the user's original.
 5. Rerun the portable subset: 9,399 functional checks and 90 TTL observations, plus 10 patcher and 26 desktop tests.
 6. Archive the 39,851-check engineering record, clearly separating unported runners and offline evidence from physical testing.
-7. Publish bilingual history, feature tables, source, reports and recovery limits without vendor images, complete candidate BINs, user sessions or private device photographs.
+7. Publish bilingual history, feature tables, source, reports and recovery limits. That first source-only publication omitted complete BINs; the later two-model download release is recorded in section 13. Official originals, sessions and private photographs remain excluded.
 
 ## 12. Present result and next work
 
 The result is an **auditable, reproducible experimental R7 for one exact input image**: main-screen direct rotary control, native wireless-role SUB controls, covered normal firing paths, Sender SUB-only operation with main OFF, and successive UI repairs.
 
 Physical validation remains necessary for light energy, camera exposure, RF timing, recycling, thermal behavior and sustained stability. A reliable recovery route is not established. Authorization to generate an experimental file does not resolve these engineering gaps; the [gate and recovery record](native/RECOVERY.md) preserves that distinction. New TTL or model support requires its own evidence and tests.
+
+
+## 13. Two-model publication: Godox Flash Lab and ready-made BINs
+
+On 2026-10-09 the maintainer requested the V480 project and both ready-made BIN downloads, and confirmed modified firmware flashed onto both devices. The repository was renamed **Godox Flash Lab**, currently covering only V100F and V480F.
+
+The V480 publication is the previously delivered **rotary-direct v2**: Wi-Off direct FEC/manual-power control with stock 0.1/0.3 steps and acceleration. Other screens, including Sender/Receiver, retain stock paths. It does not inherit V100's later RX direct adjustment or SU-1 extensions. Source, an independent patcher, V480 MD5 handling and evidence are included.
+
+The 316-byte V480 helper was rebuilt byte-for-byte. V480-only public reruns passed 12,489 functional checks, 746 ordinary communication interrupt injections, 1,386 whole-image executions and 10 patcher tests. Earlier dual-model totals of 24,978 / 1,491 remain historical evidence, not V480-only counts.
+
+V100 retains its R7 SHA and V480 its existing v2 SHA. This publication packages established firmware rather than adding new firing behavior. The maintainer's two-device flashing report is recorded independently; without installed hashes, it is not expanded into complete physical acceptance of every download revision.
+
+[Both BINs and feature matrix](DOWNLOADS.md) · [V480 project](../v480/README.md) · [Hardware status](HARDWARE_STATUS.md)

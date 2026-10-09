@@ -1,0 +1,281 @@
+{
+  "candidate_sha256": "58dedf69cb23805a8cb72b9b44a4d6dafb2b7997081a7404e2a53f471ba20fb4",
+  "publication_scope": "V480F_ONLY_PUBLIC_RERUN",
+  "status": "PASS_OFFLINE_CANDIDATE",
+  "counts": {
+    "all_parameter_byte_equivalence": 2560,
+    "nonzero_selector_guard": 255,
+    "all_excluded_byte_values": 6630,
+    "all_mode_bits": 256,
+    "flags": 512,
+    "actual_dispatch_fallback": 44,
+    "unchanged_GUI_SET_fallback": 44,
+    "decoder_all_states": 2048,
+    "PRIMASK_preservation": 12,
+    "real_decoder_acceleration_pipeline": 80,
+    "TC02_TC06_no_replay_after_page_change": 48
+  },
+  "total": 12489,
+  "bounds": {
+    "V480F": {
+      "max_observed_masked_instructions": 194,
+      "max_observed_call_stack_bytes": 32,
+      "wall_clock_WCET": "NOT_MEASURED",
+      "note": "Instruction count is not a hardware latency guarantee"
+    }
+  },
+  "examples": [
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "positive",
+      "before": 0,
+      "after": 254
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "positive",
+      "before": 18,
+      "after": 16
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "positive",
+      "before": 40,
+      "after": 0
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "positive",
+      "before": 80,
+      "after": 0
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "positive",
+      "before": 238,
+      "after": 238
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "negative",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "negative",
+      "before": 18,
+      "after": 18
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "negative",
+      "before": 40,
+      "after": 0
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "negative",
+      "before": 80,
+      "after": 0
+    },
+    {
+      "model": "V480F",
+      "mode": 0,
+      "step": 0,
+      "direction": "negative",
+      "before": 238,
+      "after": 240
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "positive",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "positive",
+      "before": 18,
+      "after": 17
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "positive",
+      "before": 40,
+      "after": 39
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "positive",
+      "before": 80,
+      "after": 79
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "positive",
+      "before": 238,
+      "after": 237
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "negative",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "negative",
+      "before": 18,
+      "after": 19
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "negative",
+      "before": 40,
+      "after": 41
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "negative",
+      "before": 80,
+      "after": 80
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 0,
+      "direction": "negative",
+      "before": 238,
+      "after": 238
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "positive",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "positive",
+      "before": 18,
+      "after": 17
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "positive",
+      "before": 40,
+      "after": 37
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "positive",
+      "before": 80,
+      "after": 77
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "positive",
+      "before": 238,
+      "after": 80
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "negative",
+      "before": 0,
+      "after": 3
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "negative",
+      "before": 18,
+      "after": 20
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "negative",
+      "before": 40,
+      "after": 43
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "negative",
+      "before": 80,
+      "after": 80
+    },
+    {
+      "model": "V480F",
+      "mode": 1,
+      "step": 1,
+      "direction": "negative",
+      "before": 238,
+      "after": 0
+    }
+  ],
+  "helper_hashes": {
+    "V480F": "673267de9ee3397daf1bc0e6f822d8ae23e2c2d54619ddbc0fd57e4fdc0ac7a4"
+  },
+  "hardware_tested": false,
+  "canary_generated": false,
+  "limitations": [
+    "Synthetic SRAM, not boot-to-state proof",
+    "Original numeric consumer helpers execute; GUI styling hook remains stubbed",
+    "TC02/06 source ownership invariant does not require executing complete group lifecycle",
+    "Physical clockwise direction inherits stock editing; not measured",
+    "Touch code unchanged; complete touchscreen hardware regression not run"
+  ]
+}

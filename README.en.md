@@ -1,19 +1,43 @@
-# Godox V100F Firmware Research, Native Patches and Debugger
+# Godox Flash Lab
 
 [简体中文](README.md) | **English**
 
-This project started with direct rotary adjustment and grew into native SU-1 controls for V100F V1.03, experimental Sender/Receiver firing support, and successive fixes informed by device feedback. It also includes the original desktop debugging workbench.
+Firmware research and practical improvements for Godox flashes. **The project currently covers two models: V100 and V480, specifically V100F / V480F V1.03.** It started with direct rotary adjustment and grew to include V100 SU-1 extensions, native UI repairs, offline debugging and reproducible patch tools.
 
-**Latest native revision: R7 experimental.** End-to-end hardware acceptance is incomplete. The repository contains source, patch records, reproduction tools and evidence. Users supply the exact official firmware and generate complete candidate BIN files locally; neither full vendor images nor full patched images are distributed here. This is an independent project, unaffiliated with Godox.
+**The maintainer reports having flashed project-modified firmware onto both their V100F and V480F** (2026-10-09). Their feature sets differ. Deployment feedback and complete acceptance coverage are recorded separately in [hardware status](docs/HARDWARE_STATUS.md). This project is independent of Godox.
+
+## BIN downloads
+
+| Device | Download version | File | Main changes |
+|---|---|---|---|
+| **V100F V1.03** | R7 experimental | [Download V100F BIN](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin) | Wi-Off/RX main direct adjustment, Sender/RX SU-1 support, main-OFF SUB-only exposure and UI repairs |
+| **V480F V1.03** | Rotary-direct v2 | [Download V480F BIN](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | Wi-Off main-screen TTL FEC / manual-power adjustment, retaining factory step and acceleration paths |
+
+[Release and checksum files](https://github.com/Shiba-inu666/godox-flash-lab/releases/tag/v100-v480-2026-10-09) · [Download matrix and SHA-256](docs/DOWNLOADS.md)
+
+Match the exact model suffix. Both are experimental modified images, not official firmware; other camera suffixes are not supported. **SU-1 TTL remains unimplemented on V100; V480 v2 does not include V100's SU-1 extensions or RX direct adjustment.**
+
+## Implemented features by model
+
+| Feature | V100F R7 | V480F v2 |
+|---|---|---|
+| Wi-Off direct TTL FEC adjustment | Implemented with factory ±3 EV / one-third-stop rules | Implemented with factory ±3 EV / one-third-stop rules |
+| Wi-Off direct manual-power adjustment | Implemented with factory rules | Implemented; retains 0.1 / 0.3 step selection and acceleration |
+| Receiver main direct adjustment | Implemented; later radio commands still apply | Not added; stock operation |
+| Native Sender/RX SUB controls and normal firing | Implemented; local manual SUB setting | Not added |
+| Sender main OFF with SUB-only normal exposure | Implemented for the covered path | Not added |
+| SUB overlap, drawer and missing-glyph repairs | Implemented; single S label | Not part of this patch |
+| Menus, MODE, ZOOM, locks and other excluded screens | Original fallback | Original fallback |
+| Maintainer reports firmware flashed | Yes | Yes |
 
 ## Start here
 
 - [Detailed project history](docs/PROJECT_HISTORY.en.md) / [中文历程](docs/PROJECT_HISTORY.md): what changed and why.
 - [Desktop debugger guide](docs/debugger/README.en.md): inspect parameters and calls on a computer.
-- [Native reproduction guide](native/README.md), [validation](docs/native/VALIDATION.md), [recovery and gates](docs/native/RECOVERY.md).
+- [V100 reproduction guide](native/README.md), [V480 project guide](v480/README.md), [validation](docs/native/VALIDATION.md), [recovery and gates](docs/native/RECOVERY.md).
 - [SU-1 TTL research](docs/native/SU1_TTL_RESEARCH.md): **SU-1 TTL is not implemented.**
 
-## What the native patch implements
+## Detailed V100F R7 behavior
 
 “Implemented” means present in code with static or bounded execution evidence. It does not mean every camera/radio combination has passed physical testing.
 
@@ -32,7 +56,7 @@ This project started with direct rotary adjustment and grew into native SU-1 con
 
 Later valid radio commands can still update RX main-flash settings. Direct adjustment does not lock out radio control, and zero additional interrupt latency has not been established.
 
-## Supported image
+## V100F image identity
 
 | Item | Value |
 |---|---|
@@ -42,15 +66,15 @@ Later valid radio commands can still update RX main-flash settings. Direct adjus
 | R7 SHA-256 | `8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761` |
 | R7 difference | 24 patch regions; 4,018 changed bytes; unchanged total length |
 
-Early work also examined V480F and found strong shared-framework evidence as well as packaging differences. **This public R7 tool supports V100F only.** It does not offer equivalent V480F features or compatibility with V100C/N/S/O.
+V480F has a separate v2 source module, patcher and MD5 trailer handling; see the [V480 project](v480/README.md). Shared framework evidence does not justify sharing offsets. The R7 tool remains specific to V100F.
 
 ## Reproduce R7 locally
 
 Follow the [firmware preparation notes](firmware/README.md). The patcher requires Python 3.11+ and the standard library; no compiler or device connection is needed.
 
 ```sh
-git clone https://github.com/Shiba-inu666/godox-v100-debugger.git
-cd godox-v100-debugger
+git clone https://github.com/Shiba-inu666/godox-flash-lab.git
+cd godox-flash-lab
 # Place your matching original at firmware/V100F_V1.03.bin
 python3 native/patcher.py firmware/V100F_V1.03.bin
 python3 native/patcher.py firmware/V100F_V1.03.bin --output-dir native/out/r7
@@ -76,9 +100,9 @@ Open `http://127.0.0.1:8765/` to explore Wi-Off, Sender, Receiver, TTL, M, Multi
 
 [English operating guide](docs/debugger/README.en.md) / [中文操作指南](docs/debugger/README.zh-CN.md).
 
-## Validation status
+## V100 validation status
 
-Publication checks on 2026-10-09:
+Publication checks on 2026-10-09; the maintainer’s deployment reports are recorded separately:
 
 | Layer | Result | Meaning |
 |---|---|---|
@@ -92,6 +116,8 @@ Publication checks on 2026-10-09:
 
 These sets overlap and must not be added together as a hardware-test total. See [methods, evidence and limitations](docs/native/VALIDATION.md).
 
+The V480 public package separately passed **12,489 functional checks, 746 conditional interrupt injections, 1,386 whole-image execution checks and 10 tool tests**. Its 316-byte helper rebuild matches the existing v2 exactly. See [V480 validation](v480/README.md).
+
 ## Repository layout
 
 ```text
@@ -103,6 +129,7 @@ native/lab/          Portable execution lab for original instructions
 native/evidence/     Validation records without personal paths
 native/patcher.py    Local generation / file-level inverse transformation
 native/build.py      Recompile source and compare with recorded R7 bytes
+v480/                V480 v2 assembly, independent patcher, lab and evidence
 docs/                Bilingual history, architecture, validation, recovery, TTL
 firmware/            Locally supplied firmware; excluded from Git
 ```

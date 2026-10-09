@@ -1,0 +1,15 @@
+{
+  "updated_date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "evidence_source": "Direct maintainer report in the project conversation",
+  "supported_models": ["V100F", "V480F"],
+  "devices": [
+    {"model": "V100F", "modified_firmware_flashed_reported": true, "installed_sha256": null, "published_revision": "V1.03 R7"},
+    {"model": "V480F", "modified_firmware_flashed_reported": true, "installed_sha256": null, "published_revision": "V1.03 rotary-direct v2"}
+  ],
+  "exact_release_hash_bound_to_device_report": false,
+  "complete_hardware_acceptance": false,
+  "agent_performed_device_write": false,
+  "recovery_guaranteed": false,
+  "SU1_TTL_implemented": false
+}

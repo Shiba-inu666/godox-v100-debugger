@@ -9,7 +9,7 @@ __pycache__/
 !.env.example
 *.log
 
-# Firmware must be supplied locally, never committed
+# Firmware stays out of Git; reviewed modified BINs are distributed through Releases
 /firmware/*
 !/firmware/README.md
 *.bin
@@ -33,3 +33,9 @@ __pycache__/
 /debug/NATIVE_SUB_TABLE.json
 /debug-preview.jpg
 /debug-preview-v2.jpg
+
+# V480 public build and lab outputs
+/v480/.build/
+/v480/.lab/
+/v480/out/
+/release-assets/

@@ -1,0 +1,40 @@
+{
+  "status": "PASS_PUBLIC_V480_ONLY_LAB",
+  "candidate_sha256": "58dedf69cb23805a8cb72b9b44a4d6dafb2b7997081a7404e2a53f471ba20fb4",
+  "suites": {
+    "functional": {
+      "status": "PASS_OFFLINE_CANDIDATE",
+      "count": 12489,
+      "result": "functional_tests.json",
+      "result_sha256": "f59db6c59d009e8bed0f472206d9e58b6fa4513453d213f18811e18c60353fd9"
+    },
+    "interrupt": {
+      "status": "PASS_CONDITIONAL_IRQ_MODEL",
+      "count": 746,
+      "result": "interrupt_tests.json",
+      "result_sha256": "188f7eb465bebb9c5491aca1d2ba6059e44a7d98ab1acde5a02d8f72165cca42"
+    },
+    "whole_image": {
+      "status": "PASS_INDEPENDENT_OFFLINE_AUDIT",
+      "count": 1386,
+      "result": "prebuild_audit.json",
+      "result_sha256": "3a598b8d950f53d29a2ae3309fc6fa47280d5b1f170d1e30f5bbb437c6e4cfc7"
+    }
+  },
+  "source_sha256": {
+    "lab/audit_candidate.py": "781b564adfa0a09e111179b8460a80f9452781a257eaa1413b107a91c68417a5",
+    "lab/candidate_vm.py": "4d310b9bce1bf9eae649a6b12cc087b13d51a35d27174222364aac334e22be5c",
+    "lab/config.py": "c24a4c702970756a5e2796dd7ff69819a5cf9045e982382662c55740670f6625",
+    "lab/run.py": "383261d1bf72587b24085efb4b70769b8bd8bb84cc2f613603d621a6d1ca5408",
+    "lab/stock_vm.py": "e817c4627f1fc82e4e73a4b41525a48a65a850a0e8c036938fc1c772a55239f4",
+    "lab/test_candidate.py": "c5be6bfe8de3f64fe3a7bd40e4b79dfd150c1fb73d980942ef4d10a0f7a2ee7e",
+    "lab/test_candidate_interrupts.py": "ff8007313abdd8044ee3319fd8520835c3aa050c63a6094c1c2fa70b286d93cb",
+    "metadata/build.json": "796048e05197dc3492f5259effaeddf1de2a39e46f9bdab5842adbc2540f64e1",
+    "patcher.py": "d4ad2098fad7ea7bba9c045eee236033553631366fbed585a0a0b6dca1a4e8ad",
+    "patches/v2.json": "efe37ec930f43985ec1a4eef42bbd29f7b223ac43837c89f7d6df3576163f9ac",
+    "src/rotary_direct.S": "bf2a6afaa55b5e980bbc4f0fe1f8df329c1e2b804e22837117c998c9e4369fc9"
+  },
+  "timestamp": "2026-10-09T07:38:33.690076+00:00",
+  "hardware_tested_by_runner": false,
+  "scope": "V480-only rerun; earlier dual-model totals are archived separately"
+}

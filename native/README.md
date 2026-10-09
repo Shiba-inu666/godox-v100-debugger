@@ -2,6 +2,10 @@
 
 [中文项目说明](../README.md) · [English overview](../README.en.md)
 
+V100F R7 BIN 可直接从[双机型下载页](../docs/DOWNLOADS.md)获取。V480 使用[独立项目](../v480/README.md)。
+
+V100F R7 BIN is available on the [two-model download page](../docs/DOWNLOADS.md). V480 uses a [separate package](../v480/README.md).
+
 ## 中文
 
 本目录独立复现 V100F V1.03 R7。`src/` 是三段原生辅助代码，`patches/r7.json` 记录完整修改区域、原字节、新字节和源文件摘要。`metadata/` 保留原工程的符号/钩子记录，里面的旧 builder 摘要仅作历史标识；公开构建入口是 `build.py`。

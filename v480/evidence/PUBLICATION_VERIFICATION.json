@@ -1,0 +1,13 @@
+{
+  "status": "PASS_CLEAN_V480_PUBLIC_PACKAGE",
+  "timestamp": "2026-10-09T07:38:03.959810+00:00",
+  "original_sha256": "84ca232f50a62ceb2d9b24017a3b447a7154bf63f6461ef546a30a6b29077ebf",
+  "candidate_sha256": "58dedf69cb23805a8cb72b9b44a4d6dafb2b7997081a7404e2a53f471ba20fb4",
+  "exact_file_restore": true,
+  "patcher_tests": 10,
+  "reopened_file_execution_checks": 1386,
+  "private_project_dependency": false,
+  "original_unchanged": true,
+  "device_written_by_check": false,
+  "maintainer_device_report": "See docs/HARDWARE_STATUS.json; separate from these offline checks"
+}

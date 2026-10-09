@@ -17,8 +17,8 @@ Requires Python 3.11 or later. Verified locally on macOS with Python 3.14.
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/Shiba-inu666/godox-v100-debugger.git
-   cd godox-v100-debugger
+   git clone https://github.com/Shiba-inu666/godox-flash-lab.git
+   cd godox-flash-lab
    ```
 
 2. Place your own matching firmware file at `firmware/V100F_V1.03.bin`. Only this exact sample is supported:

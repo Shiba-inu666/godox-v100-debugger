@@ -1,0 +1,171 @@
+{
+  "status": "PASS_INDEPENDENT_OFFLINE_AUDIT",
+  "source": "IN_MEMORY_PREBUILD",
+  "input_name": null,
+  "sha256": "58dedf69cb23805a8cb72b9b44a4d6dafb2b7997081a7404e2a53f471ba20fb4",
+  "changed_byte_count": 344,
+  "helper_bytes": 316,
+  "helper_instruction_count": 94,
+  "patched_entry_instructions": 3,
+  "entry_bytes": 12,
+  "checksum_bytes": 16,
+  "code_instructions_size": 252,
+  "literal_and_guard_data_bytes": 64,
+  "branches": [
+    {
+      "pc": "0x808d008",
+      "target": "0x808d084",
+      "instruction": "bl"
+    },
+    {
+      "pc": "0x808d00c",
+      "target": "0x808d022",
+      "instruction": "cbz"
+    },
+    {
+      "pc": "0x808d014",
+      "target": "0x808d0ec",
+      "instruction": "bl"
+    },
+    {
+      "pc": "0x808d02a",
+      "target": "0x808d0ec",
+      "instruction": "b"
+    },
+    {
+      "pc": "0x808d034",
+      "target": "0x808d084",
+      "instruction": "bl"
+    },
+    {
+      "pc": "0x808d038",
+      "target": "0x808d04e",
+      "instruction": "cbz"
+    },
+    {
+      "pc": "0x808d040",
+      "target": "0x808d0f4",
+      "instruction": "bl"
+    },
+    {
+      "pc": "0x808d056",
+      "target": "0x808d0f4",
+      "instruction": "b"
+    },
+    {
+      "pc": "0x808d060",
+      "target": "0x808d084",
+      "instruction": "bl"
+    },
+    {
+      "pc": "0x808d064",
+      "target": "0x808d078",
+      "instruction": "cbz"
+    },
+    {
+      "pc": "0x808d06c",
+      "target": "0x808d0e4",
+      "instruction": "bl"
+    },
+    {
+      "pc": "0x808d080",
+      "target": "0x808d0e4",
+      "instruction": "b"
+    },
+    {
+      "pc": "0x808d08e",
+      "target": "0x808d0e0",
+      "instruction": "bne"
+    },
+    {
+      "pc": "0x808d096",
+      "target": "0x808d0a0",
+      "instruction": "cbz"
+    },
+    {
+      "pc": "0x808d09c",
+      "target": "0x808d0e0",
+      "instruction": "bne"
+    },
+    {
+      "pc": "0x808d09e",
+      "target": "0x808d092",
+      "instruction": "b"
+    },
+    {
+      "pc": "0x808d0a8",
+      "target": "0x808d0e0",
+      "instruction": "bne"
+    },
+    {
+      "pc": "0x808d0b2",
+      "target": "0x808d0e0",
+      "instruction": "bne"
+    },
+    {
+      "pc": "0x808d0b8",
+      "target": "0x808d0e0",
+      "instruction": "cbz"
+    },
+    {
+      "pc": "0x808d0c0",
+      "target": "0x808d0ca",
+      "instruction": "cbz"
+    },
+    {
+      "pc": "0x808d0c6",
+      "target": "0x808d0e0",
+      "instruction": "bne"
+    },
+    {
+      "pc": "0x808d0c8",
+      "target": "0x808d0bc",
+      "instruction": "b"
+    },
+    {
+      "pc": "0x808d0d2",
+      "target": "0x808d0dc",
+      "instruction": "cbz"
+    },
+    {
+      "pc": "0x808d0d6",
+      "target": "0x808d0e0",
+      "instruction": "bne"
+    }
+  ],
+  "literal_returns": [
+    {
+      "pc": "0x808d0e8",
+      "resume": "0x800b4f5"
+    },
+    {
+      "pc": "0x808d0f0",
+      "resume": "0x8010855"
+    },
+    {
+      "pc": "0x808d0f8",
+      "resume": "0x800b9f5"
+    }
+  ],
+  "whole_image_execution_checks": 1386,
+  "checks": [
+    "Every changed byte is in an explicitly allowed range",
+    "vectors unchanged",
+    "scatter/init unchanged",
+    "auxiliary unchanged",
+    "footer metadata unchanged",
+    "GUI callback unchanged",
+    "All helper instructions decode with Cortex-M mode",
+    "All direct branch targets are Thumb instruction starts",
+    "All literal pools and original resumed instructions checked",
+    "PRIMASK save/restore structure verified",
+    "Complete candidate image executes original math and decoder; callee registers/SP restored"
+  ],
+  "vector_unchanged": true,
+  "auxiliary_unchanged": true,
+  "bootloader_bytes": "Not contained in provided image; updater erase range unverified",
+  "exact_hardware_model": "Not physically read",
+  "device_acceptance": "NOT_TESTED",
+  "hardware_safety_confirmed": false,
+  "rollback_guaranteed": false
+}

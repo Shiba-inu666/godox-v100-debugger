@@ -1,0 +1,7 @@
+{
+  "status": "PASS_EXACT_V480_V2_SOURCE_BUILD",
+  "helper_size": 316,
+  "helper_sha256": "673267de9ee3397daf1bc0e6f822d8ae23e2c2d54619ddbc0fd57e4fdc0ac7a4",
+  "source_sha256": "bf2a6afaa55b5e980bbc4f0fe1f8df329c1e2b804e22837117c998c9e4369fc9",
+  "llvm_version": "Homebrew LLVM version 20.1.8"
+}

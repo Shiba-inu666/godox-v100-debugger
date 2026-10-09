@@ -68,6 +68,10 @@ The archived record has **39,851 checks**, including broader rotary, event-chain
 
 ## 实机反馈与未完成项 / Device feedback and open work
 
+后续更新：作者已确认 V100F 与 V480F 均已刷入项目修改固件。原离线报告不追溯改写；最新设备状态见 [HARDWARE_STATUS](../HARDWARE_STATUS.md)。
+
+Update: the maintainer reports both V100F and V480F flashed. Historical offline reports remain unchanged; see [current device status](../HARDWARE_STATUS.md).
+
 工程收到过原机顶副灯/TEST 正常、无线角色 UI 已出现、TEST 与快门不一致，以及重叠/缺字的用户反馈。这些反馈推动 R2–R7，但不能视为最终 R7 所有模式的验收。归档 R7 报告未取得 R7 实机显示照片；本次发布也未增加设备测试。
 
 User reports established useful observations during development, including working on-camera SUB/TEST, visible wireless-role controls, mismatches between TEST and shutter behavior, overlaps and missing glyphs. They motivated revisions, not complete R7 acceptance. The archived R7 report had no R7 device-display confirmation, and publication adds no hardware test.

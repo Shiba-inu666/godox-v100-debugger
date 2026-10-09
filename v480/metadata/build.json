@@ -1,0 +1,138 @@
+{
+  "version": "0.6.0-experimental-v2",
+  "model": "V480F",
+  "official_sha256": "84ca232f50a62ceb2d9b24017a3b447a7154bf63f6461ef546a30a6b29077ebf",
+  "profile": {
+    "selector": 1341,
+    "page": 1531,
+    "role": 848,
+    "mode": 1307,
+    "fec": 1347,
+    "power": 1320,
+    "step": 94,
+    "lock": 1443,
+    "auto": 1398,
+    "error": 1417,
+    "busy": [
+      1525,
+      1526
+    ],
+    "drawer": [
+      1966,
+      1968,
+      1969
+    ],
+    "pending": 943,
+    "comm": 856,
+    "flags2": 58,
+    "root": 1596,
+    "modals": [
+      7092,
+      5604
+    ],
+    "positive": 134285392,
+    "negative": 134265328,
+    "sites": [
+      134285484,
+      134265410
+    ],
+    "gui": 134391708,
+    "gui_site": 134391758,
+    "gui_resume": 134391798,
+    "gui_fall": 134391762,
+    "gui_state": 2636,
+    "group": 2656,
+    "get_focus": 134444956,
+    "state_test": 134468016,
+    "add_state": 134458590,
+    "key_gpio": 1073874960,
+    "key_bit": 32,
+    "fec_fn": 134339376,
+    "power_fn": 134339576,
+    "mainwidgets": [
+      5408,
+      5520,
+      5548,
+      5576
+    ],
+    "zero_byte_guards": [
+      1531,
+      848,
+      943,
+      1443,
+      1398,
+      856,
+      1417,
+      1525,
+      1526,
+      1966,
+      1968,
+      1969,
+      24
+    ],
+    "decoder": 134264048,
+    "base": 134795264,
+    "sha": "84ca232f50a62ceb2d9b24017a3b447a7154bf63f6461ef546a30a6b29077ebf"
+  },
+  "symbols": {
+    "positive_wrapper": 0,
+    "positive_fallback": 34,
+    "negative_wrapper": 44,
+    "negative_fallback": 78,
+    "decoder_wrapper": 88,
+    "decoder_fallback": 120,
+    "scope_guard": 132,
+    "guard_loop": 146,
+    "guard_flags": 160,
+    "guard_word_loop": 188,
+    "guard_mode_load": 202,
+    "ttl": 220,
+    "denied": 224,
+    "original_decoder": 228,
+    "original_positive": 236,
+    "original_negative": 244,
+    "byte_guards": 252,
+    "code_end": 252,
+    "word_guards": 280
+  },
+  "helper_size": 316,
+  "helper_sha256": "673267de9ee3397daf1bc0e6f822d8ae23e2c2d54619ddbc0fd57e4fdc0ac7a4",
+  "helper_base": "0x808d000",
+  "hooks": [
+    {
+      "name": "decoder",
+      "address": "0x800b4f0",
+      "offset": "0x34f0",
+      "original": "f0b42848",
+      "original_literal": "0x40020410",
+      "context_offset": "0x34e0",
+      "context": "5b1cdbb29342f3d330bc704770470000f0b428480021026812f0020f18bf0221006810f0",
+      "replacement": "81f0b2bd",
+      "target": "0x808d058"
+    },
+    {
+      "name": "positive",
+      "address": "0x8010850",
+      "offset": "0x8850",
+      "original": "fd480022",
+      "original_literal": "0x20000046",
+      "context_offset": "0x8840",
+      "context": "9b050020c00500204ff0804188637047fd480022007800281cbffc480280fc4908784ff0",
+      "replacement": "7cf0d6bb",
+      "target": "0x808d000"
+    },
+    {
+      "name": "negative",
+      "address": "0x800b9f0",
+      "offset": "0x39f0",
+      "original": "e3480022",
+      "original_literal": "0x20000046",
+      "context_offset": "0x39e0",
+      "context": "07211af0ceb900000064024070470000e3480022007800281cbfe2480280e249087810f0",
+      "replacement": "81f01cbb",
+      "target": "0x808d02c"
+    }
+  ],
+  "generated_firmware": false,
+  "scope": "OFFLINE_CANDIDATE_NOT_A_HARDWARE_RELEASE"
+}

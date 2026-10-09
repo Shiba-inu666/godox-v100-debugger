@@ -2,9 +2,13 @@
 
 ## 当前结论 / Current conclusion
 
-**R7 是用户授权范围内生成的实验候选；正式 Canary 状态仍为 NOT_READY。** 公开源码和生成器没有新增刷机授权，也没有证明可靠恢复路径。
+**作者已确认 V100F 与 V480F 均刷入项目修改固件。** 这是一项新的设备反馈，见[设备状态](../HARDWARE_STATUS.md)。此前报告中的 `NOT_READY` 是当时正式 Canary 证据门槛的记录，不应再解读成“两台从未刷入”。
 
-**R7 is an authorized experimental candidate; formal Canary readiness remains NOT_READY.** Publishing source and reproduction tools does not establish reliable recovery or device acceptance.
+**The maintainer now reports modified firmware flashed onto both V100F and V480F.** See [device status](../HARDWARE_STATUS.md). Earlier `NOT_READY` records describe the formal Canary evidence threshold at that time; they must not be interpreted as saying neither device has ever been flashed.
+
+目前对具体下载 SHA 的完整实机验收仍未完成，失败恢复仍未建立。源码、下载资产与设备反馈分别保留。
+
+Complete hardware acceptance tied to the exact downloadable hashes and reliable failed-update recovery remain unresolved. Source evidence, download identity and deployment reports are recorded separately.
 
 项目没有经验证的“主程序损坏后仍可进升级模式”证据，也没有可验证的 bootloader 备份、SWD 恢复流程或官方失败恢复说明。常规 G3 能识别设备、能发送官方固件，并不等于每一种失败后都能刷回。
 
@@ -31,10 +35,10 @@ The initial request used a nine-step reverse-engineering plan. Later risk review
 | Gate | 当前状态 / State | 依据与缺口 / Evidence and gap |
 |---|---|---|
 | 1–5：格式、架构、输入与调整路径、状态 / Format, architecture, handlers, adjusters, state | Strong static and bounded evidence | 精确样本、原函数与状态限制已建立；器件型号及完整验证机制仍非全部确认 / Exact-image evidence, with remaining hardware unknowns |
-| 6：设备完整性 / Device integrity | **BLOCKED** | 主向量和辅助区保留、全文件可复现；V100 设备端校验/签名机制不明 / Reproducibility is established, device verifier is not |
+| 6：设备完整性 / Device integrity | **PARTIAL** | 两款文件可复现，V480 MD5 已处理；作者报告刷入；在机 SHA 未绑定，V100 设备验证机制未解明 / Reproducible images and reported deployment; installed SHA and complete verifier remain unresolved |
 | 7：恢复 / Recovery | **BLOCKED** | 未证实损坏主应用后可靠进入升级/恢复 / Reliable recovery after main-application failure not established |
-| 8：HIL / Hardware in the loop | **PARTIAL** | 有开发过程用户反馈，无完整 R7 光学、时序、热和长稳证据 / Development feedback, incomplete R7 physical validation |
-| 9：实验文件交付 / Experimental artifact | User-authorized experimental generation | 可在本地复现；不提升为正式 Canary 通过 / Reproducible local candidate, not formal Canary approval |
+| 8：HIL / Hardware in the loop | **PARTIAL — DEPLOYMENT REPORTED** | 两台均有作者刷入反馈；完整光学、时序、热和长稳证据未齐 / Both devices reported flashed; complete physical validation remains open |
+| 9：实验交付与部署 / Experimental delivery and deployment | **FILES PUBLISHED / USER FLASHING REPORTED** | 提供两款 BIN、作者已刷入；不等于所有场景验收或恢复保证 / Two BINs published and deployment reported, without full acceptance or recovery guarantee |
 
 总体刷写/失效恢复风险目前不能可靠量化，记为 **UNKNOWN**。不得将离线通过、用户愿意实验或原件可重建改写成 LOW。
 

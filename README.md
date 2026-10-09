@@ -1,19 +1,43 @@
-# Godox V100F 固件研究、原生补丁与调试工作台
+# Godox Flash Lab · 神牛闪光灯实验室
 
 **简体中文** | [English](README.en.md)
 
-从“旋钮直接调节闪光参数”开始，逐步实现 V100F V1.03 的原生 SU-1 副灯界面、主控/从属普通闪光支持，并根据实机反馈修复布局、下拉面板层级和字体问题。本仓库同时保留电脑端离线调试工作台。
+神牛闪光灯固件研究与功能改进项目，**目前包含 V100 和 V480 两款灯，具体适配 V100F / V480F V1.03**。项目从旋钮直调出发，逐步加入 V100 的 SU-1 副灯扩展、原生界面修复、离线调试和可复现补丁工具。
 
-**最新原生版本：R7 experimental。** 这是指定固件的实验性补丁，尚未完成整机验收。仓库提供源码、补丁记录、复现工具及验证资料；原厂固件和完整修改版 BIN 由使用者在本地准备、生成，不随仓库分发。项目与 Godox 官方无隶属关系。
+**作者已在自己的 V100F 和 V480F 上刷入项目修改固件**（2026-10-09 作者反馈）。当前两款灯功能范围不同，见下表；刷入反馈与完整场景验收分别记录于[设备状态](docs/HARDWARE_STATUS.md)。项目与 Godox 官方无隶属关系。
+
+## BIN 下载
+
+| 设备 | 当前下载版本 | 文件 | 主要功能 |
+|---|---|---|---|
+| **V100F V1.03** | R7 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin) | 机顶/从属主灯直调、SU-1 主控/从属支持、主灯 OFF 时副灯独立及 UI 修复 |
+| **V480F V1.03** | Rotary-direct v2 | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-flash-lab/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | Wi-Off 机顶主界面 TTL FEC / M 功率直调，保留原厂步进和加速路径 |
+
+[完整发布页与校验文件](https://github.com/Shiba-inu666/godox-flash-lab/releases/tag/v100-v480-2026-10-09) · [下载、功能对照与 SHA-256](docs/DOWNLOADS.md)
+
+只下载与设备型号后缀一致的文件。两款均为实验修改版，不是官方固件；目前不支持其他相机后缀。**V100 的副灯 TTL 尚未实现，V480 版没有加入 V100 的 SU-1 扩展或 RX 直调。**
+
+## 两款灯实现了什么
+
+| 功能 | V100F R7 | V480F v2 |
+|---|---|---|
+| Wi-Off 主界面旋钮直接调 TTL 曝光补偿 | 已实现，复用原厂 ±3 EV / 1/3 EV 规则 | 已实现，复用原厂 ±3 EV / 1/3 EV 规则 |
+| Wi-Off 主界面旋钮直接调 M 功率 | 已实现，复用原厂功率规则 | 已实现，尊重 0.1 / 0.3 步进及原厂加速 |
+| Receiver 主界面主灯直调 | 已实现；后续无线命令仍可更新主灯 | 未加入；保持原厂操作 |
+| 主控/从属原生副灯 UI 与普通发光支持 | 已实现；副灯按本地手动功率 | 未加入 |
+| Sender 主灯 OFF、副灯单独普通曝光 | 已实现对应路径 | 未加入 |
+| 副灯与 ZOOM/下拉栏重叠、缺字修复 | 已修复；标识为单字母 S | 不涉及本补丁 |
+| 菜单、MODE、ZOOM、锁屏等非目标页面 | 回落原逻辑 | 回落原逻辑 |
+| 作者已刷入修改固件 | 已反馈 | 已反馈 |
 
 ## 从哪里开始
 
 - 想了解做了什么、为什么反复修改：[完整中文历程](docs/PROJECT_HISTORY.md) / [English history](docs/PROJECT_HISTORY.en.md)。
 - 想在电脑上观察参数与调用：[调试工作台指南](docs/debugger/README.zh-CN.md)。
-- 想复现 R7 文件：[原生补丁指南](native/README.md)、[验证报告](docs/native/VALIDATION.md)、[恢复与 Gate 状态](docs/native/RECOVERY.md)。
+- 想复现固件：[V100 补丁指南](native/README.md)、[V480 项目指南](v480/README.md)、[验证报告](docs/native/VALIDATION.md)、[恢复与 Gate 状态](docs/native/RECOVERY.md)。
 - 想了解副灯 TTL：[专项研究](docs/native/SU1_TTL_RESEARCH.md)。**目前未实现副灯 TTL。**
 
-## 原生固件已经实现什么
+## V100F R7 的详细行为
 
 这里的“实现”指代码已实现且有对应静态或离线执行证据；不等于每种相机、无线组合均完成实测。
 
@@ -32,7 +56,7 @@
 
 从属模式的本地主灯设置仍可被后续合法无线命令更新。直调不等于屏蔽无线控制，也不承诺零额外中断延迟。
 
-## 支持的固件
+## V100F 文件身份
 
 | 项目 | 内容 |
 |---|---|
@@ -42,15 +66,15 @@
 | R7 SHA-256 | `8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761` |
 | R7 变化量 | 24 个补丁区域，共 4,018 字节与原件不同；文件长度不变 |
 
-项目早期同时研究了 V480F，发现共同框架的强证据，也发现封装差异。**本次公开 R7 工具只支持 V100F**；不提供 V480F、V100C/N/S/O 的同等功能或兼容承诺。
+V480F 使用独立的 v2 源码、补丁和 MD5 尾部处理，详见 [V480 项目](v480/README.md)。两款共享部分框架，不共用裸偏移；R7 工具仍只接受 V100F。
 
 ## 本地复现 R7
 
 先按[固件准备说明](firmware/README.md)放入原件。补丁工具只需 Python 3.11+ 标准库，不需要编译器，也不会连接设备。
 
 ```sh
-git clone https://github.com/Shiba-inu666/godox-v100-debugger.git
-cd godox-v100-debugger
+git clone https://github.com/Shiba-inu666/godox-flash-lab.git
+cd godox-flash-lab
 # 将自己的指定原件放入 firmware/V100F_V1.03.bin
 python3 native/patcher.py firmware/V100F_V1.03.bin
 python3 native/patcher.py firmware/V100F_V1.03.bin --output-dir native/out/r7
@@ -76,9 +100,9 @@ python3 -m venv .venv
 
 详细操作：[中文](docs/debugger/README.zh-CN.md) / [English](docs/debugger/README.en.md)。
 
-## 验证状态
+## V100 验证状态
 
-2026-10-09 公开包验证：
+2026-10-09 公开包验证（作者的两台设备刷入反馈另外记录）：
 
 | 验证层级 | 结果 | 解释 |
 |---|---|---|
@@ -92,6 +116,8 @@ python3 -m venv .venv
 
 这些数字是不同验证集合，彼此有重叠，不应相加为硬件测试总量。[详细方法、记录与限制](docs/native/VALIDATION.md)。
 
+V480 本次公开版另通过 **12,489 项功能检查、746 次条件中断插入、1,386 项整镜像执行和 10 项工具测试**；316 字节辅助代码重编译与原 v2 相同。见 [V480 验证说明](v480/README.md)。
+
 ## 目录
 
 ```text
@@ -103,6 +129,7 @@ native/lab/          可移植的原厂指令执行验证
 native/evidence/     已脱离个人路径的验证结果
 native/patcher.py    本地生成 / 文件级逆变换
 native/build.py      源码重编译并核对 R7 字节
+v480/                V480 v2 汇编、独立补丁工具、验证与证据
 docs/                中英文历程、架构、验证、恢复与 TTL 研究
 firmware/            用户自行提供的固件；不提交到 Git
 ```
