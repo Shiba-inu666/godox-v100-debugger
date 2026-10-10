@@ -25,9 +25,9 @@ Entries follow publication dates and firmware revision order. Dates are not inve
 
 ## 2026-10-10 · V100F R9
 
-- 发布 R9 实验 BIN、源码、完整补丁和摘要绑定的验证记录；保留 R7 与中间 R8 源码。
-- 主控 M/A–D 保留原厂长按 TTL/M/OFF 与滑动调节，新增单击进入独立页；左侧 TTL/M、右侧暂停/恢复，旋钮固定调当前灯功率或 TTL 补偿。
-- 修复从属页“副灯”命名和退出时提前消失、主控 S 字号；副灯仍为手动。
+- 发布 R9 实验 BIN、源码、完整补丁和带摘要绑定的验证记录；保留 R7 与中间版本 R8 的源码。
+- 主控列表保留原厂长按切换 TTL/M/OFF、滑动调节功率；新增单击 M/A–D 进入独立页，页面左侧 TTL/M 切换、右侧暂停/恢复，旋钮只固定调节当前灯的功率或 TTL 补偿。
+- 保留 R8 对从属页"副灯"命名、退出时提前消失和主控 S 字号的修复；副灯仍为手动功率。
 - 12,159 项原生功能检查和 37 项镜像检查通过；R9 尚待真机验收。
 
 - Published R9 experimental BIN, source, full patch and hash-bound validation, retaining R7 and intermediate R8 source.

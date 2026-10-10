@@ -1,0 +1,1 @@
+神牛闪光灯固件修改项目｜支持 V100F 1.03、V100C 1.11、V100N 1.05、V100S 1.06、V100O 1.04、V480F 1.03，提供 BIN、源码和复现说明。Godox Firmware Mods: direct rotary control, V100 SU-1 extensions and reproducible patches.

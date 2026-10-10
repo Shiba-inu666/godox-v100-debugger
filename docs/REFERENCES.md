@@ -2,7 +2,7 @@
 
 [首页 / Home](../README.md) · [目录结构 / Layout](../DIRECTORY_LAYOUT.md)
 
-2026-10-09，为重新命名与整理公开项目，阅读了下列项目的首页和目录。采用“品牌 + firmware + 用途”的直白命名 **Godox Firmware Mods**，并借鉴其入口组织方式；这不表示固件格式兼容，也不表示引入其代码或继承其许可证。
+2026-10-09，为重新命名与整理公开项目，阅读了下列项目的首页和目录。本项目采用"品牌 + firmware + 用途"的直白命名 **Godox Firmware Mods**，并借鉴其入口组织方式；这不表示固件格式兼容，也不表示引入其代码或继承其许可证。
 
 On 2026-10-09 these repositories were reviewed for naming and organization. **Godox Firmware Mods** uses a descriptive brand/firmware/purpose name. Their information architecture informed this repository; that does not imply compatible firmware, imported code or inherited licensing.
 

@@ -6,7 +6,7 @@ SHA-256: `8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761`.
 
 ## 如何理解“通过” / What a pass means
 
-本项目分为四层：文件可复现、原厂指令的有界执行、电脑端操作、实机物理效果。前三层通过不能自动推出第四层通过。脚本中的一次 check 可以是一项参数组合、一条不变量或一个观测，不等于一次独立硬件实验。
+本项目分四层：文件可复现、原厂指令的有界执行、电脑端操作、实机物理效果。前三层通过不能自动推出第四层通过。脚本里的一次 check 可以是一项参数组合、一条不变量或一个观测，不等于一次独立硬件实验。
 
 There are four layers: file reproducibility, bounded execution of original instructions, desktop interactions, and physical device behavior. Passing the first three does not establish the fourth. A “check” can be a parameter case, invariant or observation, not an independent hardware experiment.
 
@@ -26,7 +26,7 @@ There are four layers: file reproducibility, bounded execution of original instr
 | Modal | 392 | 原厂机顶弹窗几何及状态 / Factory-style modal geometry/state |
 | TTL research | 90 | 观察主副灯预闪、测光与手动时长差异 / Preflash, metering and manual-duration observations |
 
-八项原生功能 suite 合计 **9,399**；TTL 的 **90** 项单独记录。公开 runner 运行前后锁定源码摘要，所有结果必须指向同一候选 SHA。
+八项原生功能 suite 合计 **9,399**；TTL 的 **90** 项单独记录。公开 runner 在运行前后锁定源码摘要，所有结果必须指向同一个候选 SHA。
 
 The eight native functional suites total **9,399**. The **90 TTL observations are separate**. Source digests are checked before/after the run and each result must identify the same candidate.
 
@@ -47,15 +47,15 @@ The eight native functional suites total **9,399**. The **90 TTL observations ar
 | fire_su1 | 476 | `26efe0d775327938743ba2c65b071b25f6b39fd38c32ed4be2ce0f50e202110a` |
 | native_sub | 3,003 | `bf7b5d51ba7743c0144ee592b67d614ceb5bf562b226b2fe4cb908177f405f09` |
 
-总文件长度保持 1,002,732 字节，原件→R7→原件逆变换精确成立；向量和辅助负载保护区不变。其他编译器未宣称可产生相同字节，工具遇到差异会停止。
+总文件长度保持 1,002,732 字节，原件→R7→原件逆变换精确成立；向量和辅助负载保护区不变。其他编译器没有宣称能产生相同字节，工具遇到差异会停止。
 
 All three rebuilt helpers match exactly. Complete image length is unchanged; original→R7→original is byte-exact, with vector and auxiliary regions preserved. Other compiler versions are not qualified and differing output is rejected.
 
 ## 历史完整工程记录 / Archived engineering run
 
-[R7_VALIDATION_SUMMARY.json](../../native/evidence/R7_VALIDATION_SUMMARY.json) 汇总 **39,851** 项，原记录时间为 `2026-10-08T16:33:05.222251+00:00`（北京时间 10 月 9 日）。这是历史执行结果，不是本次公开 runner 完整重跑。
+[R7_VALIDATION_SUMMARY.json](../../native/evidence/R7_VALIDATION_SUMMARY.json) 汇总 **39,851** 项，原记录时间为 `2026-10-08T16:33:05.222251+00:00`（北京时间 10 月 9 日）。这是历史执行结果，不是本次公开 runner 的完整重跑。
 
-另外包含：旋钮功能 25,539、事件链 1,284、RX 布局 205、原生 UI 1,080、RF/ISR 顺序 2,344。对应 JSON 报告已公开；这些更广的 runner 尚未全部移植。它们和上面的可移植子集存在重叠，不能相加成新的测试总数。
+另外还包括：旋钮功能 25,539、事件链 1,284、RX 布局 205、原生 UI 1,080、RF/ISR 顺序 2,344。对应的 JSON 报告已经公开，但这些更广的 runner 还没有全部移植过来。它们和上面的可移植子集有重叠，不能相加得到新的测试总数。
 
 The archived record has **39,851 checks**, including broader rotary, event-chain, layout, native UI and RF/ISR coverage. Result JSON files are published, but not every historical runner is ported. The portable suite overlaps this record; the counts must not be summed as new coverage.
 
@@ -64,7 +64,7 @@ The archived record has **39,851 checks**, including broader rotary, event-chain
 - 执行原厂和补丁的 Thumb 指令，观测模拟 RAM、调用、寄存器和选定外设请求。Original and patched Thumb instructions execute against simulated RAM and selected peripheral interfaces.
 - 原生 UI 检查控件结构、字形、层级、生命周期和命中；不是 LCD 光学截图。Native UI checks model objects, glyphs, stacking, lifetime and hit testing, not an optical LCD capture.
 - 就绪/发光验证使用虚拟 SysTick 与外设替身；发光请求不等于实际放电。Readiness/firing checks use virtual timing and stand-ins; a trigger request is not physical discharge.
-- RF/ISR 顺序报告标题保留 `LATENCY_NOT_RESOLVED`，没有把顺序观测写成真实延迟预算已闭合。RF/ISR ordering does not resolve physical latency.
+- RF/ISR 顺序报告标题保留 `LATENCY_NOT_RESOLVED`，没有把顺序观测写成真实延迟预算已经闭合。RF/ISR ordering does not resolve physical latency.
 
 ## 实机反馈与未完成项 / Device feedback and open work
 
@@ -72,7 +72,7 @@ The archived record has **39,851 checks**, including broader rotary, event-chain
 
 Update: the maintainer reports both V100F and V480F flashed. Historical offline reports remain unchanged; see [current device status](../HARDWARE_STATUS.md).
 
-工程收到过原机顶副灯/TEST 正常、无线角色 UI 已出现、TEST 与快门不一致，以及重叠/缺字的用户反馈。这些反馈推动 R2–R7，但不能视为最终 R7 所有模式的验收。归档 R7 报告未取得 R7 实机显示照片；本次发布也未增加设备测试。
+开发期间收到过一些用户反馈：原机顶副灯/TEST 正常、无线角色 UI 已出现、TEST 与快门不一致，以及重叠/缺字。这些反馈推动了 R2–R7 的修改，但不能视为 R7 所有模式的最终验收。归档 R7 报告没有取得 R7 实机显示照片；本次发布也没有增加设备测试。
 
 User reports established useful observations during development, including working on-camera SUB/TEST, visible wireless-role controls, mismatches between TEST and shutter behavior, overlaps and missing glyphs. They motivated revisions, not complete R7 acceptance. The archived R7 report had no R7 device-display confirmation, and publication adds no hardware test.
 

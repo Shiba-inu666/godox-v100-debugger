@@ -7,7 +7,7 @@
 | V100F V1.03 | 1,002,732 | `fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787` |
 | V480F V1.03，历史对照 / historical comparison | 753,705 | `84ca232f50a62ceb2d9b24017a3b447a7154bf63f6461ef546a30a6b29077ebf` |
 
-以下是对精确样本的研究记录，不是对整个产品系列的推断。CONFIRMED 表示文件/指令证据；PROBABLE 表示尚需板级确认；UNKNOWN 表示未得到证据。
+以下记录针对这两个精确样本，不是对整个产品系列的推断。CONFIRMED 表示有文件或指令证据；PROBABLE 表示还需要板级确认；UNKNOWN 表示没有拿到证据。
 
 These observations concern the exact samples. CONFIRMED means file/instruction evidence, PROBABLE requires further confirmation, and UNKNOWN means unresolved.
 
@@ -24,7 +24,7 @@ These observations concern the exact samples. CONFIRMED means file/instruction e
 | 辅助负载 / Auxiliary payload | 两者相同的 19,692 字节；独立映射 `0x08002000`，SP `0x20000AB8`、Reset `0x08002139` | Shared bytes CONFIRMED; controller role PROBABLE |
 | 可恢复 bootloader / Recovery bootloader | 辅助负载不足以证明主应用损坏后可恢复 / Auxiliary code alone is not recovery evidence | UNKNOWN |
 
-共享辅助负载 SHA-256：`c5dbaca630a3002d0fb090c886a9b8b6a68a0ebd9785f7efc6c0a43db379875a`。共同启动/UI 结构与该负载支持框架关联，但 V480 偏移从未用于本次 V100 R7。
+共享辅助负载 SHA-256：`c5dbaca630a3002d0fb090c886a9b8b6a68a0ebd9785f7efc6c0a43db379875a`。两款设备在共同启动与 UI 结构上和这个负载对应的框架有关联，但 V480 的偏移从来没有被用到本次 V100 R7 上。
 
 The shared payload and startup/UI similarities support a framework relationship. They do not justify transplanting offsets. This public R7 operates on V100F only.
 
@@ -49,11 +49,11 @@ flowchart TD
 | 发光 / Firing | `0x080BE000` | 476 | [fire_su1.S](../../native/src/fire_su1.S) |
 | UI | `0x080BE800` | 3,003 | [native_sub.c](../../native/src/native_sub.c)、[trampolines](../../native/src/native_trampolines.S) |
 
-这些是映射后的 MCU 地址，文件偏移需减去 `0x08008000`。生成器使用精确记录，不要求使用者手工改偏移。入口钩子包括 4 处旋钮、6 处发光、11 处 UI，加上 3 个辅助区，共 24 处。实际不同字节 4,018；区域长度总和与差异字节数不是同一个计数。
+上面是映射后的 MCU 地址，文件偏移需要减去 `0x08008000`。生成器直接使用精确记录，不需要使用者手工改偏移。入口钩子包括 4 处旋钮、6 处发光、11 处 UI，再加上 3 个辅助区，共 24 处。实际不同的字节是 4,018；区域长度总和和差异字节数是两个不同的计数。
 
 These are mapped MCU addresses; subtract the image base for file offsets. The patcher applies recorded changes rather than asking users to edit offsets. Four rotary, six firing and eleven UI hooks plus three helper areas make 24 regions. The count of bytes that actually differ is 4,018.
 
-向量区前 `0x1B4` 字节及文件 `0xF0000` 之后辅助负载保持不变。补丁不是只改一个分支：随着需求从旋钮扩展到 UI 和发光，代码增加到三个受限模块，不能继续称为最初设想的“几十字节修改”。
+向量区前 `0x1B4` 字节，以及文件 `0xF0000` 之后的辅助负载保持不变。补丁不是只改一个分支：需求从旋钮一路扩展到 UI 和发光，代码最终落到三个受限模块，不能再叫最初设想的"几十字节修改"。
 
 The first `0x1B4` vector bytes and auxiliary bytes from file offset `0xF0000` remain unchanged. Scope expanded from a rotary branch to UI and firing support, so the final result is three bounded helpers, not the initially hoped-for few-byte patch.
 
@@ -67,6 +67,6 @@ The first `0x1B4` vector bytes and auxiliary bytes from file offset `0xF0000` re
 
 ## 原则与限制 / Design boundaries
 
-原厂未就绪、无线发送、主曝光、预闪与 TEST 不被当成一个路径。复用某段原函数仍需核对 ABI、寄存器、对象生命周期和调用条件。公开 lab 执行部分原厂指令并替代外设，不代表完整芯片仿真。
+原厂未就绪、无线发送、主曝光、预闪与 TEST 不是同一条路径。复用某段原函数仍然要核对 ABI、寄存器、对象生命周期和调用条件。公开 lab 执行部分原厂指令并替代外设，这不是完整的芯片仿真。
 
 Readiness, radio transmission, main exposure, preflash and TEST are distinct paths. Reusing stock functions still requires correct ABI, registers, object lifetime and entry conditions. The public lab executes selected original instructions with peripheral stand-ins, not a complete MCU model.
