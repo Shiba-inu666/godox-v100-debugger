@@ -4,7 +4,7 @@
 
 这是一个神牛闪光灯固件逆向与功能修改项目，**目前覆盖 V100F/C/N/S/O 与 V480F；各型号均使用了最新原厂固件改写**。项目最初实现了旋钮直接调整 TTL 曝光补偿与 M 手动功率，之后为 V100 加入 SU-1 副灯手动控制和界面使用体验优化，并提供了离线调试工具。
 
-作者在自用的 V100F 与 V480F 两台设备上已成功刷入本项目的修改固件；各型号支持的功能见下表，实机反馈与验收范围记录在[设备状态](docs/HARDWARE_STATUS.md)。本项目为个人开源研究项目，与 Godox 官方无隶属关系。
+作者在自用的 V100F 与 V480F 两台设备上已刷入本项目的固件，正常使用没遇到问题；各型号支持的功能见下表，实机反馈与验收范围记录在[设备状态](docs/HARDWARE_STATUS.md)。本项目为个人开源研究项目，与 Godox 官方无隶属关系。
 
 ## BIN 下载
 
@@ -12,17 +12,18 @@
 
 | 设备 | 当前下载版本 | 文件 | 主要功能 |
 |---|---|---|---|
-| **V100F V1.03** | R10 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) | 保留 R9 单灯控制与原厂手势，新增原厂彩色组名和主控 S 行拖动调功率 |
-| **V100C V1.11** | R10 experimental | [下载 V100C BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100c-r10-2026-10-10/v1.11r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
-| **V100N V1.05** | R10 experimental | [下载 V100N BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100n-r10-2026-10-10/v1.05r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
-| **V100S V1.06** | R10 experimental | [下载 V100S BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100s-r10-2026-10-10/v1.06r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
-| **V100O V1.04** | R10 experimental | [下载 V100O BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100o-r10-2026-10-10/v1.04r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
+| **V100F V1.03** | R10 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) | 机顶/从属模式 滚轮直接调整功率、从属/主控模式 副灯操控 、主控模式使用体验优化；已实机验收 |
+| **V100C V1.11** | R10 experimental | [下载 V100C BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100c-r10-2026-10-10/v1.11r10.bin) | 机顶/从属模式 滚轮直接调整功率、从属/主控模式 副灯操控 、主控模式使用体验优化；未实机验收 |
+| **V100N V1.05** | R10 experimental | [下载 V100N BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100n-r10-2026-10-10/v1.05r10.bin) | 机顶/从属模式 滚轮直接调整功率、从属/主控模式 副灯操控 、主控模式使用体验优化；未实机验收 |
+| **V100S V1.06** | R10 experimental | [下载 V100S BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100s-r10-2026-10-10/v1.06r10.bin) | 机顶/从属模式 滚轮直接调整功率、从属/主控模式 副灯操控 、主控模式使用体验优化；未实机验收 |
+| **V100O V1.04** | R10 experimental | [下载 V100O BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100o-r10-2026-10-10/v1.04r10.bin) | 机顶/从属模式 滚轮直接调整功率、从属/主控模式 副灯操控 、主控模式使用体验优化；未实机验收 |
 
 ### V480
 
 | 设备 | 当前下载版本 | 文件 | 主要功能 |
 |---|---|---|---|
-| **V480F V1.03** | R10b experimental | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v480-r10b-2026-10-10/v480f-v1.03r10b.bin) | 主控单灯页、TTL/M 与暂停；机顶/从属旋钮直调；从属 A–E 组别断电记忆 |
+| **V480F V1.03** | R10b experimental | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v480-r10b-2026-10-10/v480f-v1.03r10b.bin) | 机顶/从属模式 滚轮直接调整ttl/M 档功率、主控模式使用体验优化；已实机验收 |
+
 
 [R7 / V480 基线发布与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09) · [全部型号下载、功能对照与 SHA-256 校验](docs/DOWNLOADS.md)
 
@@ -45,7 +46,7 @@
 | 主控模式主灯 OFF 时，副灯可独立发光 | 已覆盖对应普通曝光路径 | 未加入 |
 | 副灯与 ZOOM/下拉栏重叠、缺字修复 | 已修复；标识简化为单字母 S | 不涉及本补丁 |
 | 菜单、MODE、ZOOM、锁屏等非目标页面 | 原厂逻辑 | 原厂逻辑 |
-| 作者实机刷入反馈 | 已报告（R7 时期） | 已报告（v2 时期） |
+
 
 ## 模拟器预览
 
