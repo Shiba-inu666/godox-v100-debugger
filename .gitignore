@@ -59,3 +59,9 @@ __pycache__/
 # Cross-model analysis intermediates
 /native/ports/.work/
 /native/ports/.lab/
+
+# V480 R10 model-specific build and native UI verification
+/v480/r10/.build/
+/v480/r10/.lab/
+/v480/r10/.work/
+/v480/r10/out/

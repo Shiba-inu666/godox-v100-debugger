@@ -1,0 +1,36 @@
+{
+  "status": "PASS_V480_R10A_RX_AND_BADGE",
+  "candidate_sha256": "a97628e92d62b2918ff3091da264c155c4525abf7fc850734b1cbe8445d55bc2",
+  "total": 6875,
+  "counts": {
+    "native_RX_badge_text": 12,
+    "native_44x44_badge_header_geometry": 12,
+    "exact_RX_badge_shape_font_colour_pixels": 12,
+    "badge_is_not_interactive": 12,
+    "all_values_match_explicit_native_RX_adjustment": 2000,
+    "no_other_group_or_mode_changes": 2000,
+    "temporary_selection_and_PRIMASK_restored": 2000,
+    "full_RX_pipeline_native_parameter_parity": 240,
+    "RX_rotation_does_not_navigate": 240,
+    "RX_rotation_changes_requested_parameter": 240,
+    "RX_TTL_display_uses_native_numeric_sign_and_thirds": 19,
+    "display_does_not_spoof_page_or_role": 19,
+    "RX_excluded_state_has_no_direct_target": 26,
+    "explicit_RX_selection_stays_native": 3,
+    "selected_ZOOM_mode_group_adjustment_matches_stock": 6,
+    "native_RX_chooser_blocks_direct_rotary": 2,
+    "RX_chooser_rotary_does_not_adjust_power": 4,
+    "RX_adjust_preserves_entry_PRIMASK_and_ABI": 8,
+    "RX_decoder_preserves_preexisting_GUI_delta_and_PRIMASK": 20
+  },
+  "hardware_verified": false,
+  "reference_original_sha256": "84ca232f50a62ceb2d9b24017a3b447a7154bf63f6461ef546a30a6b29077ebf",
+  "preview_sha256": {
+    "group_A.png": "0234e8c8339f3023dd4688152b79450258ce83028d5799bfdf69afcd2dbaa2e6",
+    "group_B.png": "62b676d007f3eb3323845dedabd2aa92ffd87d9a7ef30c60f94a2d7d11203e1d",
+    "group_C.png": "16428b8206d365efd6f768ddb7b36dc7c7dc3fa3ce06355f512c6e82fb829ae3",
+    "group_D.png": "9bdbfeb55c9699011e615a268a76c2c1c6965fd44d20aba105b0195a6ad524d3",
+    "receiver_ttl.png": "553e29e2be2c0d4db95badc1368fa7cbaea324a0c11f06e24162459b741bd425",
+    "receiver_manual.png": "fd79ca7acd3937f1e8f8489a6a8bcbabbc86f0cd899a65c5fd802875a3e635f5"
+  }
+}

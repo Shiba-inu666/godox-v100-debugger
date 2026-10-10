@@ -1,0 +1,71 @@
+{
+  "candidate_sha256": "a97628e92d62b2918ff3091da264c155c4525abf7fc850734b1cbe8445d55bc2",
+  "publication_scope": "V480F_ONLY_PUBLIC_RERUN",
+  "status": "PASS_CONDITIONAL_IRQ_MODEL",
+  "injection_cases": 842,
+  "results": [
+    {
+      "model": "V480F",
+      "case": "TC-08",
+      "from_mode": 0,
+      "to_mode": 1,
+      "direction": "positive",
+      "arrival_boundaries": 200,
+      "delayed": 190,
+      "immediate": 10,
+      "maximum_deferred_instructions": 171,
+      "stale_mode_stores": 0
+    },
+    {
+      "model": "V480F",
+      "case": "TC-08",
+      "from_mode": 0,
+      "to_mode": 1,
+      "direction": "negative",
+      "arrival_boundaries": 198,
+      "delayed": 188,
+      "immediate": 10,
+      "maximum_deferred_instructions": 169,
+      "stale_mode_stores": 0
+    },
+    {
+      "model": "V480F",
+      "case": "TC-08",
+      "from_mode": 1,
+      "to_mode": 0,
+      "direction": "positive",
+      "arrival_boundaries": 222,
+      "delayed": 212,
+      "immediate": 10,
+      "maximum_deferred_instructions": 193,
+      "stale_mode_stores": 0
+    },
+    {
+      "model": "V480F",
+      "case": "TC-08",
+      "from_mode": 1,
+      "to_mode": 0,
+      "direction": "negative",
+      "arrival_boundaries": 222,
+      "delayed": 212,
+      "immediate": 10,
+      "maximum_deferred_instructions": 193,
+      "stale_mode_stores": 0
+    }
+  ],
+  "helper_hashes": {
+    "V480F": "673267de9ee3397daf1bc0e6f822d8ae23e2c2d54619ddbc0fd57e4fdc0ac7a4"
+  },
+  "closure": {
+    "TC-08": "CLOSED_FOR_V2_INSTRUCTION_MODEL"
+  },
+  "real_stock_isr_and_checksum": true,
+  "stale_mode_stores": 0,
+  "hardware_tested": false,
+  "limitations": [
+    "UART calls stubbed; synthetic full valid packet",
+    "Pending IRQ delivery follows PRIMASK in harness; not peripheral/NVIC emulation",
+    "NMI/HardFault are not masked; no identified normal UI mode writer through those exceptions",
+    "No measured wall-clock IRQ latency or hardware acceptance proof"
+  ]
+}

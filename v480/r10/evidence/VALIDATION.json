@@ -1,0 +1,71 @@
+{
+  "status": "PASS_V480_R10B_NATIVE_REGRESSION",
+  "candidate_sha256": "a97628e92d62b2918ff3091da264c155c4525abf7fc850734b1cbe8445d55bc2",
+  "source_sha256": {
+    "v480/lab/audit_candidate.py": "781b564adfa0a09e111179b8460a80f9452781a257eaa1413b107a91c68417a5",
+    "v480/lab/candidate_vm.py": "4d310b9bce1bf9eae649a6b12cc087b13d51a35d27174222364aac334e22be5c",
+    "v480/lab/config.py": "c24a4c702970756a5e2796dd7ff69819a5cf9045e982382662c55740670f6625",
+    "v480/lab/run.py": "383261d1bf72587b24085efb4b70769b8bd8bb84cc2f613603d621a6d1ca5408",
+    "v480/lab/stock_vm.py": "e817c4627f1fc82e4e73a4b41525a48a65a850a0e8c036938fc1c772a55239f4",
+    "v480/lab/test_candidate.py": "c5be6bfe8de3f64fe3a7bd40e4b79dfd150c1fb73d980942ef4d10a0f7a2ee7e",
+    "v480/lab/test_candidate_interrupts.py": "ff8007313abdd8044ee3319fd8520835c3aa050c63a6094c1c2fa70b286d93cb",
+    "v480/metadata/build.json": "796048e05197dc3492f5259effaeddf1de2a39e46f9bdab5842adbc2540f64e1",
+    "v480/patcher.py": "d4ad2098fad7ea7bba9c045eee236033553631366fbed585a0a0b6dca1a4e8ad",
+    "v480/patches/v2.json": "efe37ec930f43985ec1a4eef42bbd29f7b223ac43837c89f7d6df3576163f9ac",
+    "v480/r10/build.py": "07fb69e01af62be2a219e1550d62e2fa2a9ff007e9d7732bb9507597297f960b",
+    "v480/r10/lab/check_image.py": "db4fb564c23da901bbe91dde2854986989bfddf540fc915939e5b7a9ef2f402f",
+    "v480/r10/lab/input_driver.py": "f322d98c7dea3ade7d34f04663142a385ce094100ec8e3edfb41d9866b5c82cc",
+    "v480/r10/lab/run_legacy.py": "c60ac6bb0d3e73af2329636f25c9c90809008cea1157a2f38e00aa32d7b47e1d",
+    "v480/r10/lab/test_persistence.py": "3a5bbcc3ec448199b593ca3e068df4784e216119fa065bcfd4d9e5d380d50257",
+    "v480/r10/lab/test_receiver.py": "1bbfe14fc8cc269a9c92bc618d2f92229788fd1637920f433763b3c27c283ebd",
+    "v480/r10/lab/test_receiver_interrupts.py": "48025c288591e4a211a10b3f614f42f6bcb95982c90aafebfcb422bce480ae00",
+    "v480/r10/lab/test_ui.py": "867cb2d4103b211d6a61328119bfb725d593acc04bb177b40ae2c04c3d4b2107",
+    "v480/r10/lab/vm.py": "c1734fc6dc014ee0b4991afda1e7db82b1d8571f38fbe58f0ada9706c1e5596b",
+    "v480/r10/package.py": "24e19b6c82513ae4c4839b8446998a285fcb360555b2dcb95dde9bae7ea2260b",
+    "v480/r10/src/group_ui.c": "c443da0ad770c0601df79e803245e324139f65db8e4b6936369ab2466d429cb1",
+    "v480/r10/src/trampolines.S": "349b3c097af7dd5ee793bafdd4e2967cc24d7f86ea01f1e4e8dc23793d08f42f",
+    "v480/r10/src/ui.ld": "a1385d6e300e2e30130ee5459d59941ef63e35efa350faef2c835eb8691122a8",
+    "v480/r10/validate.py": "960faa61337ccd7149958cdcc3cef6a500287bf60672ca9eaa59f10174da5b97"
+  },
+  "suites": {
+    "image": {
+      "result": "IMAGE_INTEGRITY.json",
+      "result_sha256": "f53f365b719d3c7eeb2bf9930f55fdfed35febdc03d4981d90280d9b5485ad26",
+      "checks": 53
+    },
+    "persistence": {
+      "result": "RX_PERSISTENCE_RESULTS.json",
+      "result_sha256": "c132a3f78127e48b19ec40f95f057f3e92791f60bbdc6b314a923f645eef0b75",
+      "checks": 1522
+    },
+    "ui": {
+      "result": "R10_UI_RESULTS.json",
+      "result_sha256": "a87b52cfc5ac445d96c4270fe4ab755cd6201aec3f6af34cc831b6bce5531c6d",
+      "checks": 2766
+    },
+    "receiver": {
+      "result": "RX_BADGE_RESULTS.json",
+      "result_sha256": "e828142337a70cc9f040e1aa7e3fcd69c64eb8da6d89f32589b6a2b81e1c8da9",
+      "checks": 6875
+    },
+    "baseline": {
+      "result": "legacy/analysis/functional_tests.json",
+      "result_sha256": "120ba7e25dc0ed46469b6b499a6dd834ea14b209b35fbce8d8f4ff27a71956cd",
+      "checks": 12489
+    },
+    "interrupt": {
+      "result": "legacy/analysis/interrupt_tests.json",
+      "result_sha256": "230a4148450f55b386718147ac188190806c28bd08b4b06ea43191a6cd1be7aa",
+      "checks": 842
+    },
+    "receiver_interrupt": {
+      "result": "receiver_irq/analysis/interrupt_tests.json",
+      "result_sha256": "6c4db485589fa36c044e96376317afccbfa7e6dd71ff806115961292fa8dca20",
+      "checks": 720
+    }
+  },
+  "functional_checks": 23652,
+  "interrupt_cases": 1562,
+  "integrity_checks": 53,
+  "hardware_verified": false
+}

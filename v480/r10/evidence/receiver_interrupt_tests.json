@@ -1,0 +1,73 @@
+{
+  "candidate_sha256": "a97628e92d62b2918ff3091da264c155c4525abf7fc850734b1cbe8445d55bc2",
+  "publication_scope": "V480F_R10A_RECEIVER_DIRECT_ROTARY",
+  "status": "PASS_CONDITIONAL_IRQ_MODEL",
+  "injection_cases": 720,
+  "results": [
+    {
+      "model": "V480F",
+      "case": "RX_MODE_AND_PAGE_TRANSITION_RACE",
+      "from_mode": 0,
+      "to_mode": 1,
+      "packet_role_bits": 0,
+      "direction": "positive",
+      "arrival_boundaries": 164,
+      "delayed": 159,
+      "immediate": 5,
+      "maximum_deferred_instructions": 159,
+      "stale_mode_stores": 0
+    },
+    {
+      "model": "V480F",
+      "case": "RX_MODE_AND_PAGE_TRANSITION_RACE",
+      "from_mode": 0,
+      "to_mode": 1,
+      "packet_role_bits": 0,
+      "direction": "negative",
+      "arrival_boundaries": 162,
+      "delayed": 157,
+      "immediate": 5,
+      "maximum_deferred_instructions": 157,
+      "stale_mode_stores": 0
+    },
+    {
+      "model": "V480F",
+      "case": "RX_MODE_AND_PAGE_TRANSITION_RACE",
+      "from_mode": 1,
+      "to_mode": 0,
+      "packet_role_bits": 0,
+      "direction": "positive",
+      "arrival_boundaries": 197,
+      "delayed": 192,
+      "immediate": 5,
+      "maximum_deferred_instructions": 192,
+      "stale_mode_stores": 0
+    },
+    {
+      "model": "V480F",
+      "case": "RX_MODE_AND_PAGE_TRANSITION_RACE",
+      "from_mode": 1,
+      "to_mode": 0,
+      "packet_role_bits": 0,
+      "direction": "negative",
+      "arrival_boundaries": 197,
+      "delayed": 192,
+      "immediate": 5,
+      "maximum_deferred_instructions": 192,
+      "stale_mode_stores": 0
+    }
+  ],
+  "new_module_sha256": "bc226101d77c7bf7c3bde4bd508d332eb4f2301331935492edb194c4d8015d8a",
+  "closure": {
+    "RX_MODE_AND_PAGE_TRANSITION_RACE": "CLOSED_FOR_INSTRUCTION_MODEL"
+  },
+  "real_stock_isr_and_checksum": true,
+  "stale_mode_stores": 0,
+  "hardware_tested": false,
+  "limitations": [
+    "UART calls stubbed; synthetic full valid packet",
+    "Pending IRQ delivery follows PRIMASK in harness; not peripheral/NVIC emulation",
+    "NMI/HardFault are not masked; no identified normal UI mode writer through those exceptions",
+    "No measured wall-clock IRQ latency or hardware acceptance proof"
+  ]
+}

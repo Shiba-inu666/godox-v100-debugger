@@ -1,0 +1,38 @@
+{
+  "status": "PASS_V480_R10B_RX_GROUP_PERSISTENCE",
+  "candidate_sha256": "a97628e92d62b2918ff3091da264c155c4525abf7fc850734b1cbe8445d55bc2",
+  "total": 1522,
+  "counts": {
+    "original_touch_choice_does_not_request_commit": 1,
+    "original_non_RX_boot_resets_saved_E_to_A": 1,
+    "candidate_reads_existing_native_record_without_migration": 1,
+    "confirmed_touch_choice_commits_native_record": 30,
+    "group_commit_preserves_other_record_bytes": 30,
+    "one_native_record_per_changed_confirmed_group": 30,
+    "idle_and_same_group_do_not_write_again": 30,
+    "cold_boot_group_radio_and_colour_agree": 92,
+    "cold_boot_preserves_role_and_mode": 92,
+    "cold_boot_native_RX_badge_matches_saved_group": 92,
+    "cold_boot_preserves_channel_ID_FEC_and_each_power": 90,
+    "native_SET_selects_RX_group": 2,
+    "active_group_encoder_edit_does_not_force_flash_write": 2,
+    "native_SET_confirms_RX_group": 2,
+    "confirmed_encoder_choice_commits": 2,
+    "save_request_scope_guard": 6,
+    "ordinary_parameters_retain_native_debounce": 1,
+    "native_debounce_eventually_commits_other_parameters": 1,
+    "native_shutdown_flush_counter_still_commits": 1,
+    "native_25_record_wear_rotation": 120,
+    "latest_group_survives_record_rotation_and_cold_boot": 120,
+    "native_rotation_program_and_erase_counts": 2,
+    "native_group_bounds_retained_for_all_saved_bytes": 768,
+    "blank_flash_keeps_factory_A_default": 3,
+    "factory_reset_still_clears_remembered_group": 3
+  },
+  "hardware_verified": false,
+  "flash_model": "MCU capacity, W1C status and 4 KiB erase-window effects substituted; native ARM serializer, comparer, flash word stores, record rotation and cold-boot scanner execute",
+  "limits": [
+    "No physical NVM retention or timing measurement",
+    "Power loss during the native flash write/erase remains unverified; no atomicity guarantee"
+  ]
+}
