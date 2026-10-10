@@ -6,6 +6,17 @@
 
 Entries follow publication dates and firmware revision order. Dates are not invented for early revisions. Repository naming changes do not imply new firmware behavior.
 
+## 2026-10-10 · V100F R10
+
+- 发布 `v1.03r10.bin`、源码和校验文件；简化文件名，BIN 字节与本地 R10 候选一致。
+- 单灯页 A/B/C/D 使用原厂字体、颜色和圆角色块；主控 S 行增加相对左右拖动功率，短按和纵向滚动保留。
+- 保留 R9 单灯控制、TTL/M 与暂停/恢复、原厂长按和滑动；单灯页旋钮只调当前灯功率或 TTL 补偿。
+- 13,966 项原生功能检查和 37 项镜像检查通过；尚待真机验收。只适用于 V100F V1.03。
+
+- Published `v1.03r10.bin` with source and checksums; shortened filename, identical bytes to the local R10 candidate.
+- Adds exact native A/B/C/D badges and relative Sender S-row power dragging, retaining R9 controls and gestures.
+- 13,966 native functional checks and 37 image checks passed; V100F V1.03 only, hardware acceptance pending.
+
 ## 2026-10-10 · V100F R9
 
 - 发布 R9 实验 BIN、源码、完整补丁和摘要绑定的验证记录；保留 R7 与中间 R8 源码。

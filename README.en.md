@@ -10,14 +10,14 @@ Firmware research and practical improvements for Godox flashes. **The project cu
 
 | Device | Download version | File | Main changes |
 |---|---|---|---|
-| **V100F V1.03** | R9 experimental | [Download V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r9-2026-10-10/V100F_V1.03_GROUP_CONTROL_R9_EXPERIMENTAL.bin) | R7 features plus dedicated M/A–D editors, preserved long press/swipe, power-only editor encoder and SUB UI repairs |
+| **V100F V1.03** | R10 experimental | [Download V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) | R9 controls and native gestures, plus native colored group badges and Sender S-row power dragging |
 | **V480F V1.03** | Rotary-direct v2 | [Download V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | Wi-Off main-screen TTL FEC / manual-power adjustment, retaining factory step and acceleration paths |
 
 [Release and checksum files](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09) · [Download matrix and SHA-256](docs/DOWNLOADS.md)
 
 Match the exact model suffix. Both are experimental modified images, not official firmware; other camera suffixes are not supported. **SU-1 TTL remains unimplemented on V100; V480 v2 does not include V100's SU-1 extensions or RX direct adjustment.**
 
-**V100F R9 (2026-10-10):** [Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r9-2026-10-10) · [Controls, source and native previews](native/r9/README.md). 12,159 native functional checks and 37 image checks passed. R9 hardware acceptance is pending; the earlier deployment report does not validate R9. The table below records the R7/V480 baseline.
+**V100F R10 (2026-10-10):** [Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10) · [Controls, source and native previews](native/r10/README.md). The simplified filename is `v1.03r10.bin`, for V100F V1.03 only. 13,966 native functional checks and 37 image checks passed; hardware acceptance remains pending. The earlier deployment report does not validate R10. The table below records the R7/V480 baseline.
 
 ## Implemented features by model
 

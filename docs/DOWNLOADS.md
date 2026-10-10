@@ -2,11 +2,23 @@
 
 [项目首页 / Home](../README.md) · [Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09)
 
+## V100F R10 · 2026-10-10
+
+当前 V100F 实验版：[下载 v1.03r10.bin](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) · [发布页与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10) · [操作与原生预览](../native/r10/README.md)。单灯页使用原厂 A/B/C/D 彩色字母块，主控列表 S 行支持左右拖动功率，保留 R9 单灯页、长按、滑动和旋钮操作。副灯仍为手动。简化文件名不改变 BIN 内容；只适用于 V100F V1.03。
+
+Current V100F experimental revision: native colored group badges and relative Sender S-row power dragging, retaining R9 controls. The shorter filename does not change firmware bytes. **V100F V1.03 only; 13,966 native functional checks + 37 image checks passed; hardware acceptance is pending.**
+
+Size: **1,002,732 bytes**. SHA-256:
+
+```text
+250523b8634d75e2ccb3124cd80695def5e8b056c79e71cee4fd4c0e4924353d  v1.03r10.bin
+```
+
 ## V100F R9 · 2026-10-10
 
-最新 V100F 实验版：[下载 R9 BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r9-2026-10-10/V100F_V1.03_GROUP_CONTROL_R9_EXPERIMENTAL.bin) · [发布页与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r9-2026-10-10) · [操作、源码与原生预览](../native/r9/README.md)。新增 M/A–D 独立控制页，保留原厂长按切换和滑动调节，单灯页旋钮只调功率 / TTL 补偿，修复副灯命名、退出显示与 S 字号。副灯仍为手动。
+历史 V100F R9：[下载 R9 BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r9-2026-10-10/V100F_V1.03_GROUP_CONTROL_R9_EXPERIMENTAL.bin) · [发布页与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r9-2026-10-10) · [操作、源码与原生预览](../native/r9/README.md)。新增 M/A–D 独立控制页，保留原厂长按切换和滑动调节，单灯页旋钮只调功率 / TTL 补偿，修复副灯命名、退出显示与 S 字号。副灯仍为手动。
 
-Latest V100F experimental revision: dedicated M/A–D editors, native long press/swipe, power-only editor encoder and SUB UI repairs. SUB remains manual. **12,159 native functional checks + 37 image checks; R9 hardware acceptance remains pending.**
+Previous V100F R9 revision: dedicated M/A–D editors, native long press/swipe, power-only editor encoder and SUB UI repairs. SUB remains manual. **12,159 native functional checks + 37 image checks; R9 hardware acceptance remains pending.**
 
 Size: **1,002,732 bytes**. SHA-256:
 

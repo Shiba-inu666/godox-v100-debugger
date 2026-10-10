@@ -4,7 +4,7 @@ import argparse,json,sys
 from validate import ROOT,REPO,sources,sha
 sys.path.insert(0,str(ROOT.parent))
 from patcher import original,transform,R7_SHA256,require
-NAME='V100F_V1.03_GROUP_CONTROL_R10_EXPERIMENTAL.bin'
+NAME='v1.03r10.bin'
 def package(directory):
  spec=json.loads((ROOT/'.build/r10.json').read_text())
  data=(ROOT/'.build/candidate.bin').read_bytes()
@@ -18,7 +18,7 @@ def package(directory):
  r7=transform(raw);require(sha(r7)==R7_SHA256,'R7 baseline mismatch')
  meta=json.loads((ROOT/'.build/ui.json').read_text())
  require(meta['candidate_sha256']==sha(data),'Build metadata mismatch')
- manifest=dict(model='V100F',firmware_version='1.03',revision='R10',base_sha256=R7_SHA256,
+ manifest=dict(model='V100F',firmware_version='1.03',revision='R10',output_filename=NAME,base_sha256=R7_SHA256,
   original_sha256=sha(raw),output_sha256=sha(data),size=len(data),changed_bytes_from_R7=sum(a!=b for a,b in zip(r7,data)),
   changed_bytes_from_original=sum(a!=b for a,b in zip(raw,data)),patches=spec['patches'],
   source_sha256=report['source_sha256'],functional_checks=report['functional_checks'],integrity_checks=report['integrity_checks'],hardware_verified=False,

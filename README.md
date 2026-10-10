@@ -10,14 +10,14 @@
 
 | 设备 | 当前下载版本 | 文件 | 主要功能 |
 |---|---|---|---|
-| **V100F V1.03** | R9 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r9-2026-10-10/V100F_V1.03_GROUP_CONTROL_R9_EXPERIMENTAL.bin) | 保留 R7 功能，新增 M/A–D 独立控制页、保留长按/滑动、单灯页旋钮只调功率及副灯 UI 修复 |
-| **V480F V1.03** | Rotary-direct v2 | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | 机顶/从属模式下TTL / M 功率直调，完整保留了原厂步进与加速逻辑 |
+| **V100F V1.03** | R10 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) | 保留 R9 单灯控制与原厂手势，新增原厂彩色组名和主控 S 行拖动调功率 |
+| **V480F V1.03** | Rotary-direct v2 | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | 机顶 Wi-Off 主界面 TTL / M 功率直调，保留原厂步进与加速逻辑 |
 
 [完整发布页与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09) · [下载说明、功能对照与 SHA-256 校验](docs/DOWNLOADS.md)
 
 请务必下载与设备型号后缀完全匹配的固件，两款不可混用。两者均为实验修改版，非官方固件；暂不支持其他相机后缀机型。**V100 副灯 TTL 暂未实现；V480 版不含 V100 的 SU-1 扩展与 RX 直调功能。**
 
-**V100F R9（2026-10-10）：** [发布与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r9-2026-10-10) · [操作、源码与原生预览](native/r9/README.md)。已通过 12,159 项原生功能检查及 37 项镜像检查，R9 尚待真机验收；此前的刷入反馈不代表 R9 已验收。下表保留 R7/V480 基线功能记录。
+**V100F R10（2026-10-10）：** [发布与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10) · [操作、源码与原生预览](native/r10/README.md)。下载文件简化为 `v1.03r10.bin`，仅用于 V100F V1.03。已通过 13,966 项原生功能检查及 37 项镜像检查，尚待真机验收；此前的刷入反馈不代表 R10 已验收。下表保留 R7/V480 基线功能记录。
 
 ## 功能对比
 

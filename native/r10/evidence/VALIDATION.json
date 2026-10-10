@@ -28,7 +28,7 @@
     "native/r10/lab/run_legacy.py": "0d5c766512739e40a4c6635ff72452c2a675b87e86ba00b3eab429e710c2c8c8",
     "native/r10/lab/test_changes.py": "97ae2250bd402f1ed77deb71d37dacdaa38cd4688dabbf23bae7d3b6919f97db",
     "native/r10/lab/test_r10.py": "17eb071f49fda48272f0fe54b6f75c944b1ca3fccd267e5f67df7e51e9fa5c19",
-    "native/r10/package.py": "6b67060ace3e8f48347816cc2a2c45b555808a0b56f9e93ba78dde56db8bdfd8",
+    "native/r10/package.py": "932793fb74537ae1968b12577c4257ab7d05e737a92298bc4ecd2a6c5bae55be",
     "native/r10/src/native.ld": "f7ad88e90ffd4fc5b8707e65d55237000e39183fb741d822a59027c2fb1b0525",
     "native/r10/src/native_sub.c": "1ebcd387f24d8e3ad3fa68a92f7f33b5ef558c629bcb74971d2a71d61ec48a98",
     "native/r10/src/native_trampolines.S": "40218c0fd06b0adac1cccfbee164997e56bb01734ca1071edf7831842b7607e7",

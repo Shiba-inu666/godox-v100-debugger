@@ -1,5 +1,7 @@
 # V100F V1.03 · R10 彩色组名与副灯拖动
 
+[下载 v1.03r10.bin](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) · [发布与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10)。仅适用于 V100F V1.03；简化文件名，固件内容和 SHA-256 不变。 / V100F V1.03 only; shorter filename, unchanged firmware bytes and SHA-256.
+
 在 [GitHub R9](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r9-2026-10-10) 的独立灯组页和输入逻辑上，补上原厂彩色组名以及主控列表 S 行的功率拖动。R9 发布文件和源码保留不变。
 
 ## 变化
