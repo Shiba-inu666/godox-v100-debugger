@@ -8,6 +8,8 @@ Firmware research and practical improvements for Godox flashes. **The project co
 
 ## BIN downloads
 
+### V100
+
 | Device | Download version | File | Main changes |
 |---|---|---|---|
 | **V100F V1.03** | R10 experimental | [Download V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) | R9 controls and native gestures, plus native colored group badges and Sender S-row power dragging |
@@ -15,17 +17,24 @@ Firmware research and practical improvements for Godox flashes. **The project co
 | **V100N V1.05** | R10 experimental | [Download V100N BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100n-r10-2026-10-10/v1.05r10.bin) | Separate R10 port; group editors, native badges and SUB dragging; no hardware acceptance |
 | **V100S V1.06** | R10 experimental | [Download V100S BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100s-r10-2026-10-10/v1.06r10.bin) | Separate R10 port; group editors, native badges and SUB dragging; no hardware acceptance |
 | **V100O V1.04** | R10 experimental | [Download V100O BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100o-r10-2026-10-10/v1.04r10.bin) | Separate R10 port; group editors, native badges and SUB dragging; no hardware acceptance |
-| **V480F V1.03** | Rotary-direct v2 | [Download V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | Wi-Off main-screen TTL FEC / manual-power adjustment, retaining factory step and acceleration paths |
+
+### V480
+
+| Device | Download version | File | Main changes |
+|---|---|---|---|
+| **V480F V1.03** | R10b experimental | [Download V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v480-r10b-2026-10-10/v480f-v1.03r10b.bin) | Sender group editors, TTL/M and pause; Wi-Off/RX direct rotary; persistent RX A–E group |
 
 [Release and checksum files](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09) · [Download matrix and SHA-256](docs/DOWNLOADS.md)
 
-Match the exact model suffix. All are experimental modified images, not official firmware. The new C/N/S/O ports have no hardware acceptance. **SU-1 TTL remains unimplemented on V100; V480 v2 does not include V100's SU-1 extensions or RX direct adjustment.**
+Match the exact model suffix. All are experimental modified images, not official firmware. The V100 R10 and V480 R10b revisions have no hardware acceptance. **SU-1 TTL remains unimplemented on V100; V480 R10b adds RX direct adjustment but does not include V100's SU-1 extensions.**
 
 **V100F R10 (2026-10-10):** [Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10) · [Controls, source and native previews](native/r10/README.md). The simplified filename is `v1.03r10.bin`, for V100F V1.03 only. 13,966 native functional checks and 37 image checks passed; hardware acceptance remains pending. The earlier deployment report does not validate R10. The table below records the R7/V480 baseline.
 
 **V100 C/N/S/O R10:** [Per-model controls, sources and evidence](native/ports/README.md). Canon retains A–E; N/S/O retain M/A–D. Each port uses its own exact original.
 
-## Implemented features by model
+**V480F R10b (2026-10-10):** [Release and checksums](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v480-r10b-2026-10-10) · [Controls, source and native previews](v480/r10/README.md). Preserves native Sender long press/swipe and adds M/A–D group editors with TTL/M, pause/resume and value-only rotary control. Receiver gains TTL/M direct rotary and persistent A–E group selection, including across Wi-Off/Sender shutdowns. 23,652 functional checks, 1,562 interrupt cases and 53 image checks passed; hardware acceptance remains pending.
+
+## Baseline features by model
 
 | Feature | V100F R7 | V480F v2 |
 |---|---|---|
@@ -61,7 +70,7 @@ The project also includes a **browser-based V100F offline emulator (debugging wo
 
 ## Progress
 
-Work began with both firmware formats and ARM input chains, followed by direct rotary adjustment. V100 then gained wireless-role SUB controls, separate TEST and exposure-path work, main-OFF SUB support, stacking repairs and a verified native glyph. V480 retains its independent on-camera rotary scope. The bilingual history preserves the failures, revisions and supporting evidence.
+Work began with both firmware formats and ARM input chains, followed by direct rotary adjustment. V100 then gained wireless-role SUB controls, separate TEST and exposure-path work, main-OFF SUB support, stacking repairs and a verified native glyph. V480 adds Sender group editors, Receiver direct rotary and remembered RX groups to its on-camera rotary controls. The bilingual history preserves the failures, revisions and supporting evidence.
 
 The public source reproduces the recorded bytes. Portable V100 results contain 9,399 functional checks and 90 separate TTL observations; V480-only results contain 12,489 functional checks, 746 interrupt injections and 1,386 whole-image checks. **These are computer-side checks; full hardware acceptance and failed-update recovery remain incomplete.** [Validation](docs/native/VALIDATION.md) · [Recovery and gates](docs/native/RECOVERY.md)
 

@@ -1,5 +1,15 @@
 # 更新记录 / Changelog
 
+## 2026-10-10 · V480F R10b
+
+- 发布 V480F V1.03 R10b 源码、BIN、补丁清单与验证记录；首页和下载页按 V100 / V480 拆分下载表格。
+- 保留原厂主控长按 TTL/OFF/M 和滑动调节，新增 M/A–D 单灯页、TTL/M、暂停/恢复及旋钮固定调值。
+- 从属 TTL/M 旋钮直调，主控 A–D 字块匹配原厂从属页；确认 A–E 选组后自动保存，跨角色关机仍保留。
+- 23,652 项功能检查、1,562 次中断检查和 53 项镜像检查通过，尚待本版本真机验收。
+
+- Published V480F V1.03 R10b with source, BIN, manifests and validation. V100 and V480 downloads now use separate tables.
+- Adds native Sender group editors, Receiver TTL/M direct rotary and persistent RX group selection, retaining stock gestures and Wi-Off controls. Hardware acceptance remains pending.
+
 ## 2026-10-10 · V100 C/N/S/O R10
 
 - 分别基于 C 1.11、N 1.05、S 1.06、O 1.04 移植 R10 单灯页、原厂彩色组名、副灯拖动、旋钮及从属 UI 修复。

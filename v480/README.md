@@ -1,6 +1,8 @@
 # V480F V1.03 · 旋钮直调 v2 / Direct rotary v2
 
-**后续本地实验版：[R10b 主控单灯页、从属直调与组别记忆](r10/README.md)** 在保留本页 v2 机顶直调功能的基础上，加入主控 M/A–D 短按独立页、TTL/M、暂停/恢复与单灯旋钮固定调值。新增从属 TTL/M 旋钮直调及 TTL 补偿实时显示，A–D 字块与原厂从属页 44×44 外观完全一致。从属 A–E 选组确认后加入断电保存，跨机顶/主控模式关机仍保留。原厂列表长按和滑动保留，按 V480 的 320×240 屏幕排版；本版本尚待真机验收。以下内容仍说明既有 v2 发布文件，不将新功能计入旧 BIN。
+**当前实验发布版：[R10b 主控单灯页、从属直调与组别记忆](r10/README.md)** 在保留本页 v2 机顶直调功能的基础上，加入主控 M/A–D 短按独立页、TTL/M、暂停/恢复与单灯旋钮固定调值。新增从属 TTL/M 旋钮直调及 TTL 补偿实时显示，A–D 字块与原厂从属页 44×44 外观完全一致。从属 A–E 选组确认后加入断电保存，跨机顶/主控模式关机仍保留。原厂列表长按和滑动保留，按 V480 的 320×240 屏幕排版；本版本尚待真机验收。以下内容仍说明既有 v2 发布文件，不将新功能计入旧 BIN。
+
+[R10b BIN 下载 / Download](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v480-r10b-2026-10-10/v480f-v1.03r10b.bin) · [发布与校验 / Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v480-r10b-2026-10-10)
 
 [型号说明 / Model guide](../docs/devices/V480F.md) · [统一复现 / Reproduction](../docs/REPRODUCE.md)
 [项目首页](../README.md) · [English home](../README.en.md) · [BIN 下载 / Download](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin)

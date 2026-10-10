@@ -8,6 +8,8 @@
 
 ## BIN 下载
 
+### V100
+
 | 设备 | 当前下载版本 | 文件 | 主要功能 |
 |---|---|---|---|
 | **V100F V1.03** | R10 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) | 保留 R9 单灯控制与原厂手势，新增原厂彩色组名和主控 S 行拖动调功率 |
@@ -15,17 +17,24 @@
 | **V100N V1.05** | R10 experimental | [下载 V100N BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100n-r10-2026-10-10/v1.05r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
 | **V100S V1.06** | R10 experimental | [下载 V100S BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100s-r10-2026-10-10/v1.06r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
 | **V100O V1.04** | R10 experimental | [下载 V100O BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100o-r10-2026-10-10/v1.04r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
-| **V480F V1.03** | Rotary-direct v2 | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | 机顶 Wi-Off 主界面直调 TTL 曝光补偿或 M 功率，保留原厂步进与加速逻辑 |
+
+### V480
+
+| 设备 | 当前下载版本 | 文件 | 主要功能 |
+|---|---|---|---|
+| **V480F V1.03** | R10b experimental | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v480-r10b-2026-10-10/v480f-v1.03r10b.bin) | 主控单灯页、TTL/M 与暂停；机顶/从属旋钮直调；从属 A–E 组别断电记忆 |
 
 [R7 / V480 基线发布与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09) · [全部型号下载、功能对照与 SHA-256 校验](docs/DOWNLOADS.md)
 
-请下载与设备型号后缀和原厂版本完全匹配的固件，不同后缀不可混用。以上均为实验修改版，非官方固件；所有 V100 R10 版本尚待真机验收。**V100 副灯 TTL 暂未实现；V480 版不含 V100 的 SU-1 扩展与 RX 直调功能。**
+请下载与设备型号后缀和原厂版本完全匹配的固件，不同后缀不可混用。以上均为实验修改版，非官方固件；所有 V100 R10 与 V480 R10b 版本尚待真机验收。**V100 副灯 TTL 暂未实现；V480 R10b 已加入从属直调，不含 V100 的 SU-1 扩展。**
 
 **V100F R10（2026-10-10）：** [发布与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10) · [操作、源码与原生预览](native/r10/README.md)。下载文件简化为 `v1.03r10.bin`，仅用于 V100F V1.03。已通过 13,966 项原生功能检查及 37 项镜像检查，尚待真机验收；此前的刷入反馈不代表 R10 已验收。下表保留 R7/V480 基线功能记录。
 
 **V100 C/N/S/O R10：** [各型号说明、源码与验证记录](native/ports/README.md)。Canon 版保留 A–E，其余保留 M/A–D；均从对应原厂版本单独构建。
 
-## 功能对比
+**V480F R10b（2026-10-10）：** [发布与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v480-r10b-2026-10-10) · [操作、源码与原生预览](v480/r10/README.md)。保留原厂主控长按和滑动，单击 M/A–D 进入单灯页，提供 TTL/M、暂停/恢复；旋钮只调当前灯数值。从属 TTL/M 直调，组选项 A–E 确认后保存，切换机顶/主控再关机也保留。23,652 项功能检查、1,562 次中断检查与 53 项镜像检查通过，尚待真机验收。
+
+## 基线功能对比
 
 | 功能 | V100F R7 | V480F v2 |
 |---|---|---|
@@ -61,7 +70,7 @@
 
 ## 项目进度
 
-项目从两款机型的固件格式与 ARM 输入链路逆向分析起步，先实现了旋钮直接调整闪光灯 TTL 曝光补偿与 M 手动功率的功能，之后逐步修复 V100 无线模式下副灯 UI 异常、TEST 与实际曝光分支冲突、主灯关闭后副灯独立工作、界面重叠缺字等问题。V480 则保持独立的机顶旋钮直调方向。所有问题现象、修改理由与验证依据记录在中英文项目历程中。
+项目从两款机型的固件格式与 ARM 输入链路逆向分析起步，先实现了旋钮直接调整闪光灯 TTL 曝光补偿与 M 手动功率的功能，之后逐步修复 V100 无线模式下副灯 UI 异常、TEST 与实际曝光分支冲突、主灯关闭后副灯独立工作、界面重叠缺字等问题。V480 在机顶旋钮直调基础上加入主控单灯页、从属直调与组别记忆。所有问题现象、修改理由与验证依据记录在中英文项目历程中。
 
 目前已公开可复现源码与离线测试记录：V100F R7 基线的可移植子集包含 9,399 项功能检查与 90 项独立 TTL 研究观测；V480 单机型通过 12,489 项功能检查、746 次条件中断注入、1,386 次整镜像执行与 10 项补丁工具测试。R10 的新增验证分别记录在 F 版与 C/N/S/O 版说明中。
 

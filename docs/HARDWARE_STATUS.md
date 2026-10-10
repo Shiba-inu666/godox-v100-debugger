@@ -6,6 +6,12 @@ Updated: **2026-10-10**.
 
 **R10 release note:** V100F R10 is offline-validated; no hardware acceptance report is bound to its SHA. The 2026-10-09 maintainer report and R7/V480 download records below remain historical evidence.
 
+## V480F R10b · 2026-10-10
+
+R10b 的主控单灯页、从属 TTL/M 直调和组选项断电记忆已完成离线验证：23,652 项功能检查、1,562 次通信中断检查、53 项镜像检查。尚未刷写或进行本版本真机验收；2026-10-09 的 V480 反馈不用于证明 R10b。实际断电保持、写入/擦除中掉电及无线时序仍待设备验证。
+
+R10b is offline-validated only. No R10b device write or hardware acceptance is claimed; physical flash retention, interrupted programming/erase and RF timing remain unverified. [发布与验证 / Release evidence](../v480/r10/README.md)。
+
 ## C/N/S/O · 2026-10-10
 
 作者确认暂时没有 V100C、V100N、V100S、V100O 实机。因此新增四款 R10 仅记录离线验证，`hardware_verified: false`；未刷入设备，也没有借用 F 版的实机反馈作为证明。
