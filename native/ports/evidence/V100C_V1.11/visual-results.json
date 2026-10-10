@@ -1,0 +1,12 @@
+{
+  "status": "PASS_VISIBLE_CONTROLS",
+  "model": "V100C_V1.11",
+  "checks": 15,
+  "hardware_verified": false,
+  "candidate_sha256": "22cb2649abe04c0048f901d6a23597ad95275fa38fd8672b8f2ac8f091a172fc",
+  "preview_sha256": {
+    "manual.png": "f70d7e005465151eb65c4f9820fd05909fbefa7a5bc38ab43523715b3b5897aa",
+    "ttl.png": "847a616ef3cad4e3d47a7925229f31a8e101d0bab2440cc66912dee5866c422d",
+    "paused.png": "27c194aa3ba8fc012634a0fee9f531563ad95e2ccb02333567a635b16648de14"
+  }
+}

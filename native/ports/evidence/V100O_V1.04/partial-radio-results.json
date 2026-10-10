@@ -1,0 +1,7 @@
+{
+  "status": "PASS_RF",
+  "model": "V100O_V1.04",
+  "checks": 540,
+  "hardware_verified": false,
+  "candidate_sha256": "b1c6a3cf37a4fae7a6dd92516a10b0f5eae76cdf215fbd8ff6ae69e804b5b13f"
+}

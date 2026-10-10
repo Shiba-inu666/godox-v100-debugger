@@ -2,6 +2,10 @@
 
 [文档索引 / Docs](README.md) · [V100 工具 / Tool](../native/README.md) · [V480 工具 / Tool](../v480/README.md)
 
+V100 R10 请分别使用 [F 版复现说明](../native/r10/README.md) 与 [C/N/S/O 复现说明](../native/ports/README.md)。下面保留 R7 / V480 v2 的基线命令。
+
+For R10, use the separate F and C/N/S/O guides above. The commands below reproduce the historical R7 / V480 v2 baselines.
+
 ## 1. 准备 / Prepare
 
 使用 Python 3.11+。从[原件准备页](../firmware/README.md)核对两款官方输入的大小与 SHA-256。官方输入由使用者自行准备；直接获取修改版见[下载页](DOWNLOADS.md)。

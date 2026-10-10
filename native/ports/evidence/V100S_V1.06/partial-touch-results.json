@@ -1,0 +1,7 @@
+{
+  "status": "PASS_NATIVE_TOUCH",
+  "model": "V100S_V1.06",
+  "checks": 308,
+  "hardware_verified": false,
+  "candidate_sha256": "fca3793e0a7a813ac000bc904005c0f6b2ec91dd14faa813094e86fff5967fe4"
+}

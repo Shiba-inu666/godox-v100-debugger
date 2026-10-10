@@ -89,11 +89,36 @@ def main() -> int:
             if not target.is_file() or digest(target) != expected:
                 errors.append(f"Saved evidence hash mismatch: {target.relative_to(ROOT)}")
 
+    for device in catalog.get("experimental_ports", []):
+        model = device["model"]
+        package = ROOT / device["source_directory"]
+        profile = json.loads((ROOT / device["profile"]).read_text())
+        evidence = ROOT / device["validation"]
+        saved = json.loads(evidence.read_text())
+        manifest = json.loads((ROOT / device["patch_manifest"]).read_text())
+        for key in ("model", "firmware_version", "original_sha256"):
+            if not device[key] == profile[key] == saved[key] == manifest[key]:
+                errors.append(f"Port identity mismatch for {model}: {key}")
+        if not device["modified_sha256"] == saved["candidate_sha256"] == manifest["candidate_sha256"]:
+            errors.append(f"Port image mismatch: {model}")
+        if device["bytes"] != profile["size"] or device["filename"] != profile["output_filename"]:
+            errors.append(f"Port size/filename mismatch: {model}")
+        if saved["hardware_verified"] or saved["status"] != "PASS_OFFLINE_EXPERIMENTAL":
+            errors.append(f"Incorrect experimental port status: {model}")
+        checks = [(package / rel, sha) for rel, sha in saved["source_sha256"].items()]
+        checks += [(evidence.parent / s["result"], s["result_sha256"])
+                   for s in saved["suites"].values()]
+        for target, expected in checks:
+            hash_count += 1
+            if not target.is_file() or digest(target) != expected:
+                errors.append(f"Port evidence hash mismatch: {target.relative_to(ROOT)}")
+
     if errors:
         print("FAIL\n" + "\n".join(errors), file=sys.stderr)
         return 1
     print(f"PASS: {len(files)} public files; {link_count} local links; "
-          f"{len(catalog['devices'])} model identities; {hash_count} evidence/source hashes")
+          f"{len(catalog['devices']) + len(catalog.get('experimental_ports', []))} model identities; "
+          f"{hash_count} evidence/source hashes")
     print("No firmware was read, generated, downloaded or written to hardware.")
     return 0
 

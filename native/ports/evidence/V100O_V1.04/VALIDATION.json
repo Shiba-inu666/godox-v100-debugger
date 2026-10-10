@@ -1,0 +1,108 @@
+{
+  "status": "PASS_OFFLINE_EXPERIMENTAL",
+  "model": "V100O",
+  "firmware_version": "1.04",
+  "candidate_sha256": "b1c6a3cf37a4fae7a6dd92516a10b0f5eae76cdf215fbd8ff6ae69e804b5b13f",
+  "original_sha256": "ed75d761ba9ddc52f9bbc8855480a75298de539f2f48582d0157390e85c3b732",
+  "total_checks": 4077,
+  "functional_checks": 3972,
+  "image_checks": 105,
+  "hardware_verified": false,
+  "device_written": false,
+  "physical_output_measured": false,
+  "release_channel": "prerelease",
+  "source_sha256": {
+    "build.py": "b2640cc384fdb1dff58a7acf90aec6b299bb86486f8c725eba01bc918dd56d73",
+    "lab/check_excluded.py": "5533ffcff4288027a122e2c595a127127cd8bb66b01a9fcbac78df1f9a0ed351",
+    "lab/check_fire.py": "fb479a50f83ff1985ca8eacc2b1cd1e48cdf5d8983eebfa3c83aa210ce98e99a",
+    "lab/check_integrity.py": "457365d1754826f7f4935457ec19108d2cee3d597a58e961ba181c2d2286886e",
+    "lab/check_lifecycle.py": "5b3f2cc8307c085a4d8c602c9e0ed285ab984e4f15e301cf6a753a98f879ed3c",
+    "lab/check_radio.py": "2db4c992207d8b9c64f4d4d33ad25813b0ac6ec78862fd6d4ba97f9acb73c28b",
+    "lab/check_rx_endpoints.py": "b9e2f92402499ac535a615260e432d43ec980f8d731d10761177bcee1433c7eb",
+    "lab/check_touch.py": "6bd00b023278d2aa029ef44cfa6be1e413e9451d73764e8c0a799618d6562537",
+    "lab/check_ui.py": "fd177bd76f91f640f17b15d75ed92d94966b7d032c7c27c938ae07e41877970c",
+    "lab/check_values.py": "7548fcc1f433210e32dd0f99cb4dab4c986c9ad2502525f1560afcce6fa23490",
+    "lab/check_visual.py": "d8529f2aa2ff88872d968960e89e8f1694bf4b7d2afcf7f9328f7c42e7b8552a",
+    "lab/fire_probe.py": "7808b6fb7b29ecd30a97bb1ca2cf694e4ed831f9a23a3409ffd49770825adde7",
+    "lab/legacy_operations.py": "9199bf2bfa41f6dd9b8f5985d0cd4587c1a4c610c38e74d31819c33000d4e5c3",
+    "lab/machine.py": "053dee27c841f7ff67eb0515c87d8fffccc497315ebf6159b02cc1717be31919",
+    "lab/port_input.py": "069ce868bb14fb2b4216f05751c71e79a024e9f2722e061f1e4cfe6fb7460470",
+    "lab/port_vm.py": "af96db9eabb622a5a83d7cf9fd7b106941088adb875e32f3d70f88a0ff5c0687",
+    "lab/trace.py": "69f0ee508be0845ce2128762219266c6c3ae7533d550b059ca9e2f486a69bdb1",
+    "package.py": "fb0af664a5beeb4e3d50ed1e569e2cfe5edb63911cd2a5d4650c1909490d20f7",
+    "profiles/V100O_V1.04.json": "322c03e30b432fb8dbd31a72883086d3b6ed2749efb6e47932c888b1a6fcf112",
+    "src/V100O_V1.04/fire.S": "ba8c28ddffc169ac7d18c2c5605c95b22824e403f1abd0f1a7d6b7b6927c7f51",
+    "src/V100O_V1.04/rotary.S": "a0c77390c8fe3d73ab65f5eb7a77dadd7c6946813714d7fd130c95a40e69cc8e",
+    "src/V100O_V1.04/ui.c": "d156192b9070439e64e3692f63b79549b415ee33bb001e975cfe4b4bead7b806",
+    "src/V100O_V1.04/ui_trampolines.S": "76d89517d6513e1b9e1cc8ff284d8578aafca52e725d2f7faa20fb402e96cf95",
+    "validate.py": "4204abdca5b7f13a86f737c6f17dc52705754d414fb0a078c44618a848d51734"
+  },
+  "suites": {
+    "visual": {
+      "script": "lab/check_visual.py",
+      "checks": 15,
+      "result": "visual-results.json",
+      "result_sha256": "4db0ad74cd678b9030db75c245e41f2e7b168a9c995e57b67e778174a28db2e9"
+    },
+    "rx_endpoints": {
+      "script": "lab/check_rx_endpoints.py",
+      "checks": 16,
+      "result": "rx-endpoint-results.json",
+      "result_sha256": "739a289c04da1ac21c84848206406963c711adb68dcdd6575ebcce4e9f1f794f"
+    },
+    "ui": {
+      "script": "lab/check_ui.py",
+      "checks": 317,
+      "result": "partial-results.json",
+      "result_sha256": "7cb170eb326ae0c22cfc04a60e0c893716dfc8847c519d585febe642ab9d42ab"
+    },
+    "touch": {
+      "script": "lab/check_touch.py",
+      "checks": 308,
+      "result": "partial-touch-results.json",
+      "result_sha256": "020410afee54a33585c2e131b4b2bcc9d0116d19b47944d34f363f7f6b2c55b4"
+    },
+    "firing": {
+      "script": "lab/check_fire.py",
+      "checks": 2244,
+      "result": "partial-fire-results.json",
+      "result_sha256": "355f68e7d62cdd26d7e78c28ef02bb8478b3f8c2c719da46d30bcd693b44d9a5"
+    },
+    "radio": {
+      "script": "lab/check_radio.py",
+      "checks": 540,
+      "result": "partial-radio-results.json",
+      "result_sha256": "746b168059c4a93a8b31174ad59b09e55b28b841e462fbb968b6c4a9c9e9421b"
+    },
+    "lifecycle": {
+      "script": "lab/check_lifecycle.py",
+      "checks": 202,
+      "result": "lifecycle-results.json",
+      "result_sha256": "2dc66de1ef3e287ce2e0505cf4c16da72631d68f2701656246157a494fe26a9d"
+    },
+    "values": {
+      "script": "lab/check_values.py",
+      "checks": 306,
+      "result": "value-results.json",
+      "result_sha256": "8a0ef2dacb36cf477827b16995268166f6a635497b23e510eb289d804e793dc1"
+    },
+    "excluded": {
+      "script": "lab/check_excluded.py",
+      "checks": 24,
+      "result": "excluded-results.json",
+      "result_sha256": "1971eaae5696637a6aa6891ea1ea46c70605d4810eef923fed8da8a7c14fd64a"
+    },
+    "integrity": {
+      "script": "lab/check_integrity.py",
+      "checks": 105,
+      "result": "integrity-results.json",
+      "result_sha256": "c168966163233e1e6176c8c09630dd0be42850eb263d1862dd8c83e026ac78c0"
+    }
+  },
+  "limitations": [
+    "No C/N/S/O hardware was available.",
+    "Virtual GPIO, LCD and RF transport; no measured light output or camera timing.",
+    "HSS/Multi dispatch parity is bounded; no SUB TTL/HSS/Multi extension.",
+    "No sustained shooting, thermal, bootloader flashing or recovery acceptance."
+  ]
+}

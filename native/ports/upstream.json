@@ -1,0 +1,73 @@
+{
+  "checked_on": "2026-10-10",
+  "models": [
+    {
+      "model": "V100C",
+      "firmware_version": "1.11",
+      "source_page": "https://www.godox.com/product-b/Flash/V100.html",
+      "source_url": "https://www.godox.com/Downloads/Godox_Firmware_V100C_V1.11.zip",
+      "download_filename": "Godox_Firmware_V100C_V1.11.zip",
+      "download_sha256": "5e9f77e001c7083dbe86afd520c6a7f3747a8c6ab3203bfc913b89c0b89749ac",
+      "filename": "V100C_V1.11.bin",
+      "size": 1007224,
+      "sha256": "a3a3107a7198eca7a5b642b299f27e99ccb7f002c29e19f21b48f1b22def75cd",
+      "r10_status": "offline_validated_experimental",
+      "prerelease_ready": true,
+      "hardware_verified": false,
+      "release_tag": "v100c-r10-2026-10-10",
+      "modified_sha256": "22cb2649abe04c0048f901d6a23597ad95275fa38fd8672b8f2ac8f091a172fc",
+      "output_filename": "v1.11r10.bin"
+    },
+    {
+      "model": "V100N",
+      "firmware_version": "1.05",
+      "source_page": "https://www.godox.com/product-b/Flash/V100.html",
+      "source_url": "https://www.godox.com/Downloads/Godox_Firmware_V100N_V1.05.zip",
+      "download_filename": "Godox_Firmware_V100N_V1.05.zip",
+      "download_sha256": "bfd8e5161ebef0b24b10d0c664e8c92d4dc4532b3d87d897c68648dd0cc9541c",
+      "filename": "V100N_V1.05.bin",
+      "size": 1015808,
+      "sha256": "f0c033412ac92a062c59f664fb933203c93386da3c80f405988ff4d421ee7b00",
+      "r10_status": "offline_validated_experimental",
+      "prerelease_ready": true,
+      "hardware_verified": false,
+      "release_tag": "v100n-r10-2026-10-10",
+      "modified_sha256": "d2d31c27ccf96961d66f5930b4bcfd698a386448321abf11d0f735580e40024d",
+      "output_filename": "v1.05r10.bin"
+    },
+    {
+      "model": "V100S",
+      "firmware_version": "1.06",
+      "source_page": "https://www.godox.com/product-b/Flash/V100.html",
+      "source_url": "https://www.godox.com/Downloads/Godox_Firmware_V100S_V1.06.zip",
+      "download_filename": "Godox_Firmware_V100S_V1.06.zip",
+      "download_sha256": "a5b7541c494413722e006849af8079860f06c49bed75fb257ed299dadf8e119d",
+      "filename": "V100S_V1.06.bin",
+      "size": 1013192,
+      "sha256": "f11908d90e71f53fa5cf19329d27b330bffbe12ed5172376b5f82a1b977ecd02",
+      "r10_status": "offline_validated_experimental",
+      "prerelease_ready": true,
+      "hardware_verified": false,
+      "release_tag": "v100s-r10-2026-10-10",
+      "modified_sha256": "fca3793e0a7a813ac000bc904005c0f6b2ec91dd14faa813094e86fff5967fe4",
+      "output_filename": "v1.06r10.bin"
+    },
+    {
+      "model": "V100O",
+      "firmware_version": "1.04",
+      "source_page": "https://www.godox.com/product-b/Flash/V100.html",
+      "source_url": "https://www.godox.com/Downloads/Godox_Firmware_V100O_V1.04.zip",
+      "download_filename": "Godox_Firmware_V100O_V1.04.zip",
+      "download_sha256": "48d41e5b514b17bf7e9aaa6ca8b5d7672273a6356200e28ed3dfebb9c0cf1de2",
+      "filename": "V100O_V1.04.bin",
+      "size": 999956,
+      "sha256": "ed75d761ba9ddc52f9bbc8855480a75298de539f2f48582d0157390e85c3b732",
+      "r10_status": "offline_validated_experimental",
+      "prerelease_ready": true,
+      "hardware_verified": false,
+      "release_tag": "v100o-r10-2026-10-10",
+      "modified_sha256": "b1c6a3cf37a4fae7a6dd92516a10b0f5eae76cdf215fbd8ff6ae69e804b5b13f",
+      "output_filename": "v1.04r10.bin"
+    }
+  ]
+}

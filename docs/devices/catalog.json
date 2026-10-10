@@ -28,5 +28,71 @@
       "filename": "Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin",
       "release_tag": "v100-v480-2026-10-09"
     }
+  ],
+  "experimental_ports": [
+    {
+      "model": "V100C",
+      "firmware_version": "1.11",
+      "revision": "R10 experimental",
+      "source_directory": "native/ports",
+      "profile": "native/ports/profiles/V100C_V1.11.json",
+      "validation": "native/ports/evidence/V100C_V1.11/VALIDATION.json",
+      "patch_manifest": "native/ports/evidence/V100C_V1.11/PATCH_MANIFEST.json",
+      "model_guide": "native/ports/README.md",
+      "original_sha256": "a3a3107a7198eca7a5b642b299f27e99ccb7f002c29e19f21b48f1b22def75cd",
+      "modified_sha256": "22cb2649abe04c0048f901d6a23597ad95275fa38fd8672b8f2ac8f091a172fc",
+      "bytes": 1007224,
+      "filename": "v1.11r10.bin",
+      "release_tag": "v100c-r10-2026-10-10",
+      "hardware_verified": false
+    },
+    {
+      "model": "V100N",
+      "firmware_version": "1.05",
+      "revision": "R10 experimental",
+      "source_directory": "native/ports",
+      "profile": "native/ports/profiles/V100N_V1.05.json",
+      "validation": "native/ports/evidence/V100N_V1.05/VALIDATION.json",
+      "patch_manifest": "native/ports/evidence/V100N_V1.05/PATCH_MANIFEST.json",
+      "model_guide": "native/ports/README.md",
+      "original_sha256": "f0c033412ac92a062c59f664fb933203c93386da3c80f405988ff4d421ee7b00",
+      "modified_sha256": "d2d31c27ccf96961d66f5930b4bcfd698a386448321abf11d0f735580e40024d",
+      "bytes": 1015808,
+      "filename": "v1.05r10.bin",
+      "release_tag": "v100n-r10-2026-10-10",
+      "hardware_verified": false
+    },
+    {
+      "model": "V100S",
+      "firmware_version": "1.06",
+      "revision": "R10 experimental",
+      "source_directory": "native/ports",
+      "profile": "native/ports/profiles/V100S_V1.06.json",
+      "validation": "native/ports/evidence/V100S_V1.06/VALIDATION.json",
+      "patch_manifest": "native/ports/evidence/V100S_V1.06/PATCH_MANIFEST.json",
+      "model_guide": "native/ports/README.md",
+      "original_sha256": "f11908d90e71f53fa5cf19329d27b330bffbe12ed5172376b5f82a1b977ecd02",
+      "modified_sha256": "fca3793e0a7a813ac000bc904005c0f6b2ec91dd14faa813094e86fff5967fe4",
+      "bytes": 1013192,
+      "filename": "v1.06r10.bin",
+      "release_tag": "v100s-r10-2026-10-10",
+      "hardware_verified": false
+    },
+    {
+      "model": "V100O",
+      "firmware_version": "1.04",
+      "revision": "R10 experimental",
+      "source_directory": "native/ports",
+      "profile": "native/ports/profiles/V100O_V1.04.json",
+      "validation": "native/ports/evidence/V100O_V1.04/VALIDATION.json",
+      "patch_manifest": "native/ports/evidence/V100O_V1.04/PATCH_MANIFEST.json",
+      "model_guide": "native/ports/README.md",
+      "original_sha256": "ed75d761ba9ddc52f9bbc8855480a75298de539f2f48582d0157390e85c3b732",
+      "modified_sha256": "b1c6a3cf37a4fae7a6dd92516a10b0f5eae76cdf215fbd8ff6ae69e804b5b13f",
+      "bytes": 999956,
+      "filename": "v1.04r10.bin",
+      "release_tag": "v100o-r10-2026-10-10",
+      "hardware_verified": false
+    }
   ]
 }

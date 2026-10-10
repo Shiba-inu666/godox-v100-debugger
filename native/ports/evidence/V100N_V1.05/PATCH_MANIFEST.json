@@ -1,0 +1,187 @@
+{
+  "model": "V100N",
+  "firmware_version": "1.05",
+  "filename": "v1.05r10.bin",
+  "size": 1015808,
+  "original_sha256": "f0c033412ac92a062c59f664fb933203c93386da3c80f405988ff4d421ee7b00",
+  "candidate_sha256": "d2d31c27ccf96961d66f5930b4bcfd698a386448321abf11d0f735580e40024d",
+  "hardware_verified": false,
+  "profile_sha256": "55de9e85ee6e61d0d3a9332335700bbe7470b226e7afa6cf29f3200a44c5f7fa",
+  "source_sha256": {
+    "fire.S": "e976a6fc3174a36017c4c75e3258bdc685f98cf3fb8d40ac14b8d4f0d7ac5818",
+    "rotary.S": "d803bff599ab2550839d31c20aaf185b6f58ae943838199583da24eaeec6c1cf",
+    "ui.c": "673aa35df228310556b4e9fe208e178445cd1194706b156a8e4367bae823a648",
+    "ui_trampolines.S": "51e7771a9c7b7890c994c4a4f558abdd1d9e2cc6aabda191a0ae2f3d06bf4f35"
+  },
+  "patches": [
+    {
+      "name": "ui_module",
+      "address": "0x80be800",
+      "size": 7956,
+      "before_sha256": "113ef6918e01f009f9a5cb8927b731ee59f58a32c4ef76bde61342c9b0951951",
+      "after_sha256": "40c1cd4000dd9d9beeef1d5306722359e9304ba61114291fe7643c0cb39de600"
+    },
+    {
+      "name": "rotary_module",
+      "address": "0x80bdd00",
+      "size": 508,
+      "before_sha256": "c5298fa426e927387dafeee13f558f4a0a517c7f3fafaf4c7e1df7f95662a42c",
+      "after_sha256": "a95dfdcfd87e37f68391c08a325b7ddb00d54cdd937f6143bac3989829a54b0d"
+    },
+    {
+      "name": "fire_module",
+      "address": "0x80be000",
+      "size": 524,
+      "before_sha256": "1812cc7a6c9919c6e7404bcc1c94d188c4e59ddae1a97cf2d81e45d19c241abd",
+      "after_sha256": "8c66f7a7e699d396b1b63dd8668c2f8fda16f5603307017405bc9af0ba6886e3"
+    },
+    {
+      "name": "ui_sender",
+      "address": "0x804bcac",
+      "size": 4,
+      "before_sha256": "cfa045938b57940b57930f97cd7cdf3e1a8c3b1ddb72c2609b95b97c1b1921ed",
+      "after_sha256": "2eee60fcef4fae00f5576d317414a5cd05c6ea1320a2e0ff080bad7fc7fa8a0a"
+    },
+    {
+      "name": "ui_rx",
+      "address": "0x804c1d8",
+      "size": 4,
+      "before_sha256": "cfa045938b57940b57930f97cd7cdf3e1a8c3b1ddb72c2609b95b97c1b1921ed",
+      "after_sha256": "295186f363ed007b2d286852f24630750a847c1a86f49a8cd58980846cd99980"
+    },
+    {
+      "name": "ui_focus",
+      "address": "0x802c2ec",
+      "size": 4,
+      "before_sha256": "e9e80fde0135702f970426b02ccd623130331d744cdb986d390f76226bdea363",
+      "after_sha256": "cde9574899ddc5f4686469161e296e153e3bfcc9376ec87a03a3d48ee8d4bd5e"
+    },
+    {
+      "name": "ui_close",
+      "address": "0x801d36c",
+      "size": 4,
+      "before_sha256": "3e25fa6a77e1c0254eb85937c1ab5213e29ad661704e63835d372dc1e1fd94ea",
+      "after_sha256": "fa86c03e824cf8f4e91f71b41a0467452d490427ccd5f9b12f77d4e875b03071"
+    },
+    {
+      "name": "ui_activity",
+      "address": "0x8050fcc",
+      "size": 4,
+      "before_sha256": "d3182163c5276a4bde22e830b7b5fb14ba4fa0e8311970aa9e6fd4ea95a1eb9c",
+      "after_sha256": "d4db0359e1eb6a01265f92633b49b065ebe62c1e6ae79d74a95674ec86c4a95a"
+    },
+    {
+      "name": "ui_tick",
+      "address": "0x8041e0c",
+      "size": 4,
+      "before_sha256": "cfa045938b57940b57930f97cd7cdf3e1a8c3b1ddb72c2609b95b97c1b1921ed",
+      "after_sha256": "c92973c05791a42ef38460ffd05f40c7baf054e7028ccb3d40a5ca4c2bfc7765"
+    },
+    {
+      "name": "ui_page",
+      "address": "0x801c294",
+      "size": 6,
+      "before_sha256": "3d0beb8a0e0c8d08aa6c10c250f26aaf0d1a3d0ca3746d97140d4bbd2c780e02",
+      "after_sha256": "671203aca7db9efce6c75204c5a23a40d977ca96267c11fd9f75b0625c176ce3"
+    },
+    {
+      "name": "ui_sender_event",
+      "address": "0x801b380",
+      "size": 4,
+      "before_sha256": "90d0f4dca8b9cfa14674e9ea1f57cd8990bc17f089a15557bb19199796fb4535",
+      "after_sha256": "860f343b69b91cb8bf5f99ce22d4ca65cef9c0146de4aeff463f1612c018eb42"
+    },
+    {
+      "name": "ui_rx_event",
+      "address": "0x801b87c",
+      "size": 4,
+      "before_sha256": "90d0f4dca8b9cfa14674e9ea1f57cd8990bc17f089a15557bb19199796fb4535",
+      "after_sha256": "ceeaf141a2494dabd468525586c4d4f3e9708908616045d6812ddc858cc12c81"
+    },
+    {
+      "name": "ui_rx_mode",
+      "address": "0x80169dc",
+      "size": 4,
+      "before_sha256": "004d670961932c0a3b04992b54c0d0af3bf642bc68bc7b05b76063f8e8c9cd25",
+      "after_sha256": "bbe5fac02a545657a63a5c2d1c69cfcb7919c396451fa828d17101adea92fe49"
+    },
+    {
+      "name": "ui_format",
+      "address": "0x8011670",
+      "size": 4,
+      "before_sha256": "f4ff6093dac86792e8d45d4686af2eae2524e32816bf5046d663bfab9bf28d3e",
+      "after_sha256": "28c074a00e14cd5c2e9ba32d96d83434b1dea46e90e62e197ec45d97f2c136d7"
+    },
+    {
+      "name": "rotary_positive",
+      "address": "0x800fb28",
+      "size": 4,
+      "before_sha256": "5c24fff883711dcc7e926f64c17d64b3a2780b108d87575acf508401955fa648",
+      "after_sha256": "d31205cf628b4709f8a1a9213ac6764a645ea1ac1e7c89b271dc7d36f7dc71b9"
+    },
+    {
+      "name": "rotary_negative",
+      "address": "0x800b4e8",
+      "size": 4,
+      "before_sha256": "e84b7ffc97979ff5d54d133f5516a856bf53174d171eb7a2236de45930838215",
+      "after_sha256": "4044ebe2af5079782128e84e48e83eecf3d6e032bf4a77838537fd154b58e530"
+    },
+    {
+      "name": "rotary_decoder",
+      "address": "0x800afb0",
+      "size": 4,
+      "before_sha256": "9cdcbf1ff8d338b30f4ad09a9100d2b05c0cb2eabaccaf941d6b6e78e9eac0f3",
+      "after_sha256": "8fb24fe23df2dd7c9ce2a5b051785fca18b7a0a929d5cde2f5b370011f3909d1"
+    },
+    {
+      "name": "rotary_gui",
+      "address": "0x80292d8",
+      "size": 4,
+      "before_sha256": "f1231a43486723ba9f8f321e7c7721e9cf5fab829d4319788572fe84e4bb067c",
+      "after_sha256": "048d2e2c53aa767f661e78df14318afa5bfb4da127c0e3850341de89d648b72d"
+    },
+    {
+      "name": "fire_ttl",
+      "address": "0x800d1aa",
+      "size": 4,
+      "before_sha256": "1b0bd7d5eb6e1e72440907164b6e81d8bf9ad214cb65f129e8c85c7987dd2604",
+      "after_sha256": "7113e86e73032c37f7abc59af495920322b3384295b811a77a1f581b346dcad7"
+    },
+    {
+      "name": "fire_manual",
+      "address": "0x80113de",
+      "size": 4,
+      "before_sha256": "31eecebb56810afc6f9a081d6f7aa0d7c0280e2f8b5406ae150be58db21e124f",
+      "after_sha256": "7d2df251e981673f245630c7fb94b78d946b73708746ee4ba06ec5f65b068375"
+    },
+    {
+      "name": "fire_exposure_ttl",
+      "address": "0x8009e38",
+      "size": 6,
+      "before_sha256": "177299e857d50839eb22c15825c596251bce49dc26e5c2ffade5de36afa95568",
+      "after_sha256": "bd14848e7f7b973002d4deb107e8463925768d217ac87bf0ff8d65153e37cd36"
+    },
+    {
+      "name": "fire_exposure_m",
+      "address": "0x800a42c",
+      "size": 6,
+      "before_sha256": "177299e857d50839eb22c15825c596251bce49dc26e5c2ffade5de36afa95568",
+      "after_sha256": "d86994cb6873a05a4b1bbcc2aa8906c25c22281686c5fcb6288ada5b127b5900"
+    },
+    {
+      "name": "fire_radio",
+      "address": "0x801f8ce",
+      "size": 4,
+      "before_sha256": "d9933cb979ef680a1139e253ea624eb79c81df96f8906e311cc35c6fcff380db",
+      "after_sha256": "d8fbe4793f6be1f506a800f883e11f45a21fcdf18a165cf8701c98ca68a76a2d"
+    },
+    {
+      "name": "fire_sender_off",
+      "address": "0x800ad90",
+      "size": 4,
+      "before_sha256": "7ccc62bc4a409c62167e2531d6bedf21104428800a6cf34b0ce5e16bb5e42d57",
+      "after_sha256": "24e158973fcb62b79a043fced3240b8d3d7dabc77ce5f6c128668adfe3aa8668"
+    }
+  ],
+  "compiler": "Homebrew clang version 20.1.8"
+}

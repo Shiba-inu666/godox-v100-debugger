@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | **English**
 
-Firmware research and practical improvements for Godox flashes. **The project currently covers two models: V100 and V480, specifically V100F / V480F V1.03.** It started with direct rotary adjustment and grew to include V100 SU-1 extensions, native UI repairs, offline debugging and reproducible patch tools.
+Firmware research and practical improvements for Godox flashes. **The project covers V100F/C/N/S/O and V480F, using a separate original firmware version for each model.** It started with direct rotary adjustment and grew to include V100 SU-1 extensions, native UI repairs, offline debugging and reproducible patch tools.
 
 **The maintainer reports having flashed project-modified firmware onto both their V100F and V480F** (2026-10-09). Their feature sets differ. Deployment feedback and complete acceptance coverage are recorded separately in [hardware status](docs/HARDWARE_STATUS.md). This project is independent of Godox.
 
@@ -11,13 +11,19 @@ Firmware research and practical improvements for Godox flashes. **The project cu
 | Device | Download version | File | Main changes |
 |---|---|---|---|
 | **V100F V1.03** | R10 experimental | [Download V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) | R9 controls and native gestures, plus native colored group badges and Sender S-row power dragging |
+| **V100C V1.11** | R10 experimental | [Download V100C BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100c-r10-2026-10-10/v1.11r10.bin) | Separate R10 port; group editors, native badges and SUB dragging; no hardware acceptance |
+| **V100N V1.05** | R10 experimental | [Download V100N BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100n-r10-2026-10-10/v1.05r10.bin) | Separate R10 port; group editors, native badges and SUB dragging; no hardware acceptance |
+| **V100S V1.06** | R10 experimental | [Download V100S BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100s-r10-2026-10-10/v1.06r10.bin) | Separate R10 port; group editors, native badges and SUB dragging; no hardware acceptance |
+| **V100O V1.04** | R10 experimental | [Download V100O BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100o-r10-2026-10-10/v1.04r10.bin) | Separate R10 port; group editors, native badges and SUB dragging; no hardware acceptance |
 | **V480F V1.03** | Rotary-direct v2 | [Download V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | Wi-Off main-screen TTL FEC / manual-power adjustment, retaining factory step and acceleration paths |
 
 [Release and checksum files](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09) · [Download matrix and SHA-256](docs/DOWNLOADS.md)
 
-Match the exact model suffix. Both are experimental modified images, not official firmware; other camera suffixes are not supported. **SU-1 TTL remains unimplemented on V100; V480 v2 does not include V100's SU-1 extensions or RX direct adjustment.**
+Match the exact model suffix. All are experimental modified images, not official firmware. The new C/N/S/O ports have no hardware acceptance. **SU-1 TTL remains unimplemented on V100; V480 v2 does not include V100's SU-1 extensions or RX direct adjustment.**
 
 **V100F R10 (2026-10-10):** [Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10) · [Controls, source and native previews](native/r10/README.md). The simplified filename is `v1.03r10.bin`, for V100F V1.03 only. 13,966 native functional checks and 37 image checks passed; hardware acceptance remains pending. The earlier deployment report does not validate R10. The table below records the R7/V480 baseline.
+
+**V100 C/N/S/O R10:** [Per-model controls, sources and evidence](native/ports/README.md). Canon retains A–E; N/S/O retain M/A–D. Each port uses its own exact original.
 
 ## Implemented features by model
 

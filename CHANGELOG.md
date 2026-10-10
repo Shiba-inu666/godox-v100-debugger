@@ -1,5 +1,11 @@
 # 更新记录 / Changelog
 
+## 2026-10-10 · V100 C/N/S/O R10
+
+- 分别基于 C 1.11、N 1.05、S 1.06、O 1.04 移植 R10 单灯页、原厂彩色组名、副灯拖动、旋钮及从属 UI 修复。
+- C 版保留 A–E；N/S/O 保留 M/A–D。每款提供固定源码、严格输入校验、独立离线报告和简短 BIN 文件名。
+- 四款均未实机验收；不增加副灯 TTL/HSS/Multi。详见 [移植说明](native/ports/README.md)。
+
 [首页 / Home](README.md) · [完整中文历程](docs/PROJECT_HISTORY.md) · [Full English history](docs/PROJECT_HISTORY.en.md)
 
 下面按公开整理时间和固件修订顺序记录；早期步骤没有独立日期的，不补造日期。仓库名称变化不代表固件版本变化。

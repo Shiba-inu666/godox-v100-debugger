@@ -1,8 +1,12 @@
 # 原件准备与修改版下载 / Original inputs and modified downloads
 
-现成的 **V100F R7 / V480F v2 修改版 BIN** 请到[下载页](../docs/DOWNLOADS.md)。若要自己复现或运行离线测试，请自行准备相应官方原件，放入本目录。原厂原件不随仓库分发。
+现成的 **V100 F/C/N/S/O R10 / V480F v2 修改版 BIN** 请到[下载页](../docs/DOWNLOADS.md)。若要自己复现或运行离线测试，请自行准备相应官方原件，放入本目录。原厂原件不随仓库分发。
 
-Ready-made **V100F R7 / V480F v2 modified BINs** are on the [download page](../docs/DOWNLOADS.md). To reproduce them or run offline tests, supply the corresponding official originals locally. Official originals are not distributed here.
+Ready-made **V100 F/C/N/S/O R10 / V480F v2 modified BINs** are on the [download page](../docs/DOWNLOADS.md). To reproduce them or run offline tests, supply the corresponding official originals locally. Official originals are not distributed here.
+
+C/N/S/O 原厂文件的下载地址与摘要见 [upstream.json](../native/ports/upstream.json)，复现方式见 [R10 移植说明](../native/ports/README.md)。F 与 V480 的原件如下。
+
+C/N/S/O inputs have their own [pinned catalog](../native/ports/upstream.json) and [build instructions](../native/ports/README.md). The F/V480 baseline inputs follow.
 
 | Path | Bytes | SHA-256 |
 |---|---:|---|

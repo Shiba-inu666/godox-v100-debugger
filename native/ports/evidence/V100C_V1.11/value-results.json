@@ -1,0 +1,7 @@
+{
+  "status": "PASS_NATIVE_VALUE_FORMATS",
+  "model": "V100C_V1.11",
+  "checks": 306,
+  "hardware_verified": false,
+  "candidate_sha256": "22cb2649abe04c0048f901d6a23597ad95275fa38fd8672b8f2ac8f091a172fc"
+}

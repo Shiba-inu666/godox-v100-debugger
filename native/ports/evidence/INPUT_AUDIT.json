@@ -1,0 +1,671 @@
+{
+  "status": "INPUT_IDENTITIES_VERIFIED",
+  "checked_on": "2026-10-10",
+  "scope": "Exact identities, model markers and F patch contract incompatibility only",
+  "models": [
+    {
+      "model": "V100C",
+      "firmware_version": "1.11",
+      "original_sha256": "a3a3107a7198eca7a5b642b299f27e99ccb7f002c29e19f21b48f1b22def75cd",
+      "size": 1007224,
+      "model_marker_offset": "0x41e74",
+      "initial_sp": "0x200ad6b8",
+      "reset_vector": "0x800829d",
+      "f_patcher_rejects": true,
+      "rejection": "Unknown firmware/model/version: exact original V100F V1.03 required",
+      "contexts_at_f_offsets": 0,
+      "required_hook_contexts": 21,
+      "hooks": [
+        {
+          "family": "rotary",
+          "hook": "positive",
+          "f_address": "0x8010924",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "rotary",
+          "hook": "negative",
+          "f_address": "0x800ba84",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "rotary",
+          "hook": "decoder",
+          "f_address": "0x800b564",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "rotary",
+          "hook": "gui",
+          "f_address": "0x8029c0c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "fire",
+          "hook": "ttl",
+          "f_address": "0x800d7c6",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "manual",
+          "f_address": "0x80121fe",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "exposure_ttl",
+          "f_address": "0x800a0d8",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "exposure_m",
+          "f_address": "0x800a756",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "radio",
+          "f_address": "0x8020266",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "sender_off",
+          "f_address": "0x800b320",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "sender",
+          "f_address": "0x804c75c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx",
+          "f_address": "0x804cc88",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "focus",
+          "f_address": "0x802cc20",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "close",
+          "f_address": "0x801dd20",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "activity",
+          "f_address": "0x8051aa0",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "tick",
+          "f_address": "0x80426bc",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "page",
+          "f_address": "0x801d008",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "sender_event",
+          "f_address": "0x801c0f4",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx_event",
+          "f_address": "0x801c5f0",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx_mode",
+          "f_address": "0x80175e8",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "format",
+          "f_address": "0x801249c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        }
+      ],
+      "r10_status": "not_evaluated_by_input_preflight",
+      "functional_validation": "not_run_by_input_preflight",
+      "hardware_verified": false,
+      "candidate_emitted": false
+    },
+    {
+      "model": "V100N",
+      "firmware_version": "1.05",
+      "original_sha256": "f0c033412ac92a062c59f664fb933203c93386da3c80f405988ff4d421ee7b00",
+      "size": 1015808,
+      "model_marker_offset": "0x416d8",
+      "initial_sp": "0x200ad678",
+      "reset_vector": "0x800829d",
+      "f_patcher_rejects": true,
+      "rejection": "Unknown firmware/model/version: exact original V100F V1.03 required",
+      "contexts_at_f_offsets": 0,
+      "required_hook_contexts": 21,
+      "hooks": [
+        {
+          "family": "rotary",
+          "hook": "positive",
+          "f_address": "0x8010924",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "rotary",
+          "hook": "negative",
+          "f_address": "0x800ba84",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "rotary",
+          "hook": "decoder",
+          "f_address": "0x800b564",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "rotary",
+          "hook": "gui",
+          "f_address": "0x8029c0c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "fire",
+          "hook": "ttl",
+          "f_address": "0x800d7c6",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "manual",
+          "f_address": "0x80121fe",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "exposure_ttl",
+          "f_address": "0x800a0d8",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "exposure_m",
+          "f_address": "0x800a756",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "radio",
+          "f_address": "0x8020266",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "sender_off",
+          "f_address": "0x800b320",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "sender",
+          "f_address": "0x804c75c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx",
+          "f_address": "0x804cc88",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "focus",
+          "f_address": "0x802cc20",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "close",
+          "f_address": "0x801dd20",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "activity",
+          "f_address": "0x8051aa0",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "tick",
+          "f_address": "0x80426bc",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "page",
+          "f_address": "0x801d008",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "sender_event",
+          "f_address": "0x801c0f4",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx_event",
+          "f_address": "0x801c5f0",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx_mode",
+          "f_address": "0x80175e8",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "format",
+          "f_address": "0x801249c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        }
+      ],
+      "r10_status": "not_evaluated_by_input_preflight",
+      "functional_validation": "not_run_by_input_preflight",
+      "hardware_verified": false,
+      "candidate_emitted": false
+    },
+    {
+      "model": "V100S",
+      "firmware_version": "1.06",
+      "original_sha256": "f11908d90e71f53fa5cf19329d27b330bffbe12ed5172376b5f82a1b977ecd02",
+      "size": 1013192,
+      "model_marker_offset": "0x42050",
+      "initial_sp": "0x200ad6b8",
+      "reset_vector": "0x800829d",
+      "f_patcher_rejects": true,
+      "rejection": "Unknown firmware/model/version: exact original V100F V1.03 required",
+      "contexts_at_f_offsets": 0,
+      "required_hook_contexts": 21,
+      "hooks": [
+        {
+          "family": "rotary",
+          "hook": "positive",
+          "f_address": "0x8010924",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "rotary",
+          "hook": "negative",
+          "f_address": "0x800ba84",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "rotary",
+          "hook": "decoder",
+          "f_address": "0x800b564",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "rotary",
+          "hook": "gui",
+          "f_address": "0x8029c0c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "fire",
+          "hook": "ttl",
+          "f_address": "0x800d7c6",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "manual",
+          "f_address": "0x80121fe",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "exposure_ttl",
+          "f_address": "0x800a0d8",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "exposure_m",
+          "f_address": "0x800a756",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "radio",
+          "f_address": "0x8020266",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "sender_off",
+          "f_address": "0x800b320",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "sender",
+          "f_address": "0x804c75c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx",
+          "f_address": "0x804cc88",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "focus",
+          "f_address": "0x802cc20",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "close",
+          "f_address": "0x801dd20",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "activity",
+          "f_address": "0x8051aa0",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "tick",
+          "f_address": "0x80426bc",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "page",
+          "f_address": "0x801d008",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "sender_event",
+          "f_address": "0x801c0f4",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx_event",
+          "f_address": "0x801c5f0",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx_mode",
+          "f_address": "0x80175e8",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "format",
+          "f_address": "0x801249c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        }
+      ],
+      "r10_status": "not_evaluated_by_input_preflight",
+      "functional_validation": "not_run_by_input_preflight",
+      "hardware_verified": false,
+      "candidate_emitted": false
+    },
+    {
+      "model": "V100O",
+      "firmware_version": "1.04",
+      "original_sha256": "ed75d761ba9ddc52f9bbc8855480a75298de539f2f48582d0157390e85c3b732",
+      "size": 999956,
+      "model_marker_offset": "0x414ac",
+      "initial_sp": "0x200ad6b8",
+      "reset_vector": "0x800829d",
+      "f_patcher_rejects": true,
+      "rejection": "Unknown firmware/model/version: exact original V100F V1.03 required",
+      "contexts_at_f_offsets": 0,
+      "required_hook_contexts": 21,
+      "hooks": [
+        {
+          "family": "rotary",
+          "hook": "positive",
+          "f_address": "0x8010924",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "rotary",
+          "hook": "negative",
+          "f_address": "0x800ba84",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "rotary",
+          "hook": "decoder",
+          "f_address": "0x800b564",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "rotary",
+          "hook": "gui",
+          "f_address": "0x8029c0c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "fire",
+          "hook": "ttl",
+          "f_address": "0x800d7c6",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "manual",
+          "f_address": "0x80121fe",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "exposure_ttl",
+          "f_address": "0x800a0d8",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "exposure_m",
+          "f_address": "0x800a756",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "radio",
+          "f_address": "0x8020266",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "fire",
+          "hook": "sender_off",
+          "f_address": "0x800b320",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "sender",
+          "f_address": "0x804c75c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx",
+          "f_address": "0x804cc88",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "focus",
+          "f_address": "0x802cc20",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 1
+        },
+        {
+          "family": "ui",
+          "hook": "close",
+          "f_address": "0x801dd20",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "activity",
+          "f_address": "0x8051aa0",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "tick",
+          "f_address": "0x80426bc",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "page",
+          "f_address": "0x801d008",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "sender_event",
+          "f_address": "0x801c0f4",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx_event",
+          "f_address": "0x801c5f0",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "rx_mode",
+          "f_address": "0x80175e8",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        },
+        {
+          "family": "ui",
+          "hook": "format",
+          "f_address": "0x801249c",
+          "same_context_at_f_offset": false,
+          "exact_context_occurrences": 0
+        }
+      ],
+      "r10_status": "not_evaluated_by_input_preflight",
+      "functional_validation": "not_run_by_input_preflight",
+      "hardware_verified": false,
+      "candidate_emitted": false
+    }
+  ]
+}

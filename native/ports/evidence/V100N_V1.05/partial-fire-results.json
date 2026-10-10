@@ -1,0 +1,7 @@
+{
+  "status": "PASS_FIRING",
+  "model": "V100N_V1.05",
+  "checks": 2244,
+  "hardware_verified": false,
+  "candidate_sha256": "d2d31c27ccf96961d66f5930b4bcfd698a386448321abf11d0f735580e40024d"
+}

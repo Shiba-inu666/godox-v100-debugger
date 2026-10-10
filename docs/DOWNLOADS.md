@@ -2,6 +2,19 @@
 
 [项目首页 / Home](../README.md) · [Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09)
 
+## V100 C/N/S/O R10 · 2026-10-10
+
+四款分别移植 R10 单灯控制、原厂彩色组名和副灯拖动。全部为实验版，尚无 C/N/S/O 实机验收。详见[操作与验证](../native/ports/README.md)。
+
+| 设备 | 下载版本 | 文件 | 状态 |
+|---|---|---|---|
+| **V100C V1.11** | R10 experimental | [下载 V100C BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100c-r10-2026-10-10/v1.11r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
+| **V100N V1.05** | R10 experimental | [下载 V100N BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100n-r10-2026-10-10/v1.05r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
+| **V100S V1.06** | R10 experimental | [下载 V100S BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100s-r10-2026-10-10/v1.06r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
+| **V100O V1.04** | R10 experimental | [下载 V100O BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100o-r10-2026-10-10/v1.04r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
+
+Separate exact-model R10 ports; all four are offline-tested prereleases without hardware acceptance. See each release for its SHA-256 and report.
+
 ## V100F R10 · 2026-10-10
 
 当前 V100F 实验版：[下载 v1.03r10.bin](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) · [发布页与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10) · [操作与原生预览](../native/r10/README.md)。单灯页使用原厂 A/B/C/D 彩色字母块，主控列表 S 行支持左右拖动功率，保留 R9 单灯页、长按、滑动和旋钮操作。副灯仍为手动。简化文件名不改变 BIN 内容；只适用于 V100F V1.03。

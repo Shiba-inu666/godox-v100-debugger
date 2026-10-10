@@ -1,5 +1,6 @@
 # Local Python environment and generated files
 .venv/
+.venv
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -54,3 +55,7 @@ __pycache__/
 /native/r10/.build/
 /native/r10/.lab/
 /native/r10/out/
+
+# Cross-model analysis intermediates
+/native/ports/.work/
+/native/ports/.lab/

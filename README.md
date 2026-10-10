@@ -2,7 +2,7 @@
 
 **简体中文** | [English](README.en.md)
 
-这是一个神牛闪光灯固件逆向与功能增强项目，**目前覆盖 V100、V480 两款机型，仅适配 V100F / V480F V1.03 版本**。项目最初落地了旋钮直接调整闪光灯TTL/M功率的功能，后续逐步为 V100 加入 SU-1 副闪功能扩展、原生界面修复、离线调试工具以及可复现补丁套件。
+这是一个神牛闪光灯固件逆向与功能增强项目，**目前覆盖 V100F/C/N/S/O 与 V480F；各型号使用自己的原厂版本**。项目最初落地了旋钮直接调整闪光灯TTL/M功率的功能，后续逐步为 V100 加入 SU-1 副闪功能扩展、原生界面修复、离线调试工具以及可复现补丁套件。
 
 **作者已在自用的 V100F 与 V480F 上刷入并验证了修改后的固件**（2026-10-09 更新）。两款机型当前支持的功能各有侧重，具体见下表；实机刷入反馈与完整场景验收分开记录在[设备状态](docs/HARDWARE_STATUS.md)中。本项目为个人开源研究项目，与 Godox 官方无任何隶属关系。
 
@@ -11,13 +11,19 @@
 | 设备 | 当前下载版本 | 文件 | 主要功能 |
 |---|---|---|---|
 | **V100F V1.03** | R10 experimental | [下载 V100F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r10-2026-10-10/v1.03r10.bin) | 保留 R9 单灯控制与原厂手势，新增原厂彩色组名和主控 S 行拖动调功率 |
+| **V100C V1.11** | R10 experimental | [下载 V100C BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100c-r10-2026-10-10/v1.11r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
+| **V100N V1.05** | R10 experimental | [下载 V100N BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100n-r10-2026-10-10/v1.05r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
+| **V100S V1.06** | R10 experimental | [下载 V100S BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100s-r10-2026-10-10/v1.06r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
+| **V100O V1.04** | R10 experimental | [下载 V100O BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100o-r10-2026-10-10/v1.04r10.bin) | R10 独立移植；单灯页、彩色组名、副灯拖动；未实机验收 |
 | **V480F V1.03** | Rotary-direct v2 | [下载 V480F BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-v480-2026-10-09/Godox_V480F_V1.03_rotary-direct_CANARY_v2.bin) | 机顶 Wi-Off 主界面 TTL / M 功率直调，保留原厂步进与加速逻辑 |
 
 [完整发布页与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09) · [下载说明、功能对照与 SHA-256 校验](docs/DOWNLOADS.md)
 
-请务必下载与设备型号后缀完全匹配的固件，两款不可混用。两者均为实验修改版，非官方固件；暂不支持其他相机后缀机型。**V100 副灯 TTL 暂未实现；V480 版不含 V100 的 SU-1 扩展与 RX 直调功能。**
+请务必下载与设备型号后缀完全匹配的固件，不同后缀不可混用。以上均为实验修改版，非官方固件；新增 C/N/S/O 版尚无实机验收。**V100 副灯 TTL 暂未实现；V480 版不含 V100 的 SU-1 扩展与 RX 直调功能。**
 
 **V100F R10（2026-10-10）：** [发布与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r10-2026-10-10) · [操作、源码与原生预览](native/r10/README.md)。下载文件简化为 `v1.03r10.bin`，仅用于 V100F V1.03。已通过 13,966 项原生功能检查及 37 项镜像检查，尚待真机验收；此前的刷入反馈不代表 R10 已验收。下表保留 R7/V480 基线功能记录。
+
+**V100 C/N/S/O R10：** [各型号说明、源码与验证记录](native/ports/README.md)。Canon 版保留 A–E，其余保留 M/A–D；均从对应原厂版本单独构建。
 
 ## 功能对比
 

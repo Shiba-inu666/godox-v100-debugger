@@ -1,0 +1,27 @@
+{
+  "status": "PASS_LIFECYCLE_AND_BADGES",
+  "model": "V100O_V1.04",
+  "checks": 202,
+  "counts": {
+    "native_group_picker_contains_letter": 4,
+    "native_group_index": 4,
+    "badge_text": 12,
+    "exact_native_badge_pixels": 12,
+    "RX_and_hotshoe_label": 2,
+    "S_native_group_cap_height": 1,
+    "SUB_modal_drag_isolated": 6,
+    "SUB_encoder_fixed_after_control_focus": 18,
+    "main_encoder_current_RX_group": 36,
+    "main_encoder_preserves_SUB": 36,
+    "locked_busy_no_encoder_change": 12,
+    "PRIMASK_preserved": 8,
+    "old_screen_freed": 9,
+    "SUB_retained_during_exit": 7,
+    "modal_freed_before_page_change": 3,
+    "RX_power_key_retains_SUB": 1,
+    "repeated_editor_free": 30,
+    "Multi_closes_editor": 1
+  },
+  "hardware_verified": false,
+  "candidate_sha256": "b1c6a3cf37a4fae7a6dd92516a10b0f5eae76cdf215fbd8ff6ae69e804b5b13f"
+}

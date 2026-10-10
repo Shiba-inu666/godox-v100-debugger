@@ -1,10 +1,16 @@
-# 两台设备的刷入与验证状态 / Device deployment status
+# 设备刷入与验证状态 / Device deployment status
 
 Updated: **2026-10-10**.
 
 **R10 发布补充：** V100F R10 已完成离线验证，尚无绑定该版本 SHA 的真机验收记录。下列 2026-10-09 作者反馈与 R7/V480 下载记录保留为历史证据。
 
 **R10 release note:** V100F R10 is offline-validated; no hardware acceptance report is bound to its SHA. The 2026-10-09 maintainer report and R7/V480 download records below remain historical evidence.
+
+## C/N/S/O · 2026-10-10
+
+作者确认暂时没有 V100C、V100N、V100S、V100O 实机。因此新增四款 R10 仅记录离线验证，`hardware_verified: false`；未刷入设备，也没有借用 F 版的实机反馈作为证明。
+
+No C/N/S/O hardware was available. Their R10 ports are offline-validated prereleases only; no device writes or hardware acceptance are claimed.
 
 ## 作者反馈 / Maintainer report
 
