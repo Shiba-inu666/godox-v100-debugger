@@ -1,0 +1,163 @@
+{
+  "status": "CONFIRMED_STOCK_READY_SKIP_NO_READY_WAIT_LOOP",
+  "candidate_sha256": "250523b8634d75e2ccb3124cd80695def5e8b056c79e71cee4fd4c0e4924353d",
+  "stock_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+  "counts": {
+    "original_readiness_promotion_all_roles": 384,
+    "original_drop_trigger_no_auto_replay_on_ready": 14
+  },
+  "total": 398,
+  "not_ready_records": [
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "camera",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "camera",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 1,
+      "radio_serial": "7fa950c001353b7fa90ab101353b7fa90bb100353b7fa90cb101353b7fa90db101353b7fa90abc1e353b7fa90cbcff353b7fa90dbc32353b7fd580353b7fd540353b7fd509353b"
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "camera",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 1,
+      "radio_serial": "7fa950c001353b7fa90ab101353b7fa90bb100353b7fa90cb101353b7fa90db101353b7fa90abc1e353b7fa90cbcff353b7fa90dbc32353b7fd580353b7fd540353b7fd509353b"
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "camera",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "camera",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "radio",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "camera",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "radio",
+      "ready": 0,
+      "main": 0,
+      "sub": 0,
+      "remote_TEST_commands": 0,
+      "radio_serial": ""
+    }
+  ],
+  "evidence": [
+    "0800B480 promotes overall ready only when protection counters clear and attached SUB ready",
+    "0800EF78/0800B1EC/08020534 return and clear the trigger when not ready",
+    "08010F98 Sender sends radio TEST before its local EF78 ready check",
+    "0802A9D0 returns without either local pulse if SUB ready != 1"
+  ],
+  "limits": [
+    "Firmware local flags and selected trigger chains; camera can independently delay shutter based on ready line",
+    "No all-receiver-ready barrier found in traced normal TEST/exposure paths; other model receiver firmware not inspected",
+    "No analog charge voltage or physical capacitor timing measurement"
+  ]
+}

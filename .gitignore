@@ -49,3 +49,8 @@ __pycache__/
 /native/r9/.build/
 /native/r9/.lab/
 /native/r9/out/
+
+# V100 R10 color badges and SUB drag development
+/native/r10/.build/
+/native/r10/.lab/
+/native/r10/out/

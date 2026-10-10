@@ -1,0 +1,12 @@
+{
+  "model": "V100F",
+  "firmware_version": "1.03",
+  "base_revision": "R7",
+  "base_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "previous_revision": "R9",
+  "previous_sha256": "6373f518f30e0582c9fde4c18efc6da81978207bbd8def1781219c2ddd3e24e5",
+  "previous_release": "https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r9-2026-10-10",
+  "previous_source_commit": "a6c3bcc84907fc714e972b5a71444e95eae2ddb0",
+  "original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787",
+  "hardware_verified": false
+}

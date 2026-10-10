@@ -1,0 +1,39 @@
+{
+  "status": "PASS_R10_BADGE_AND_SUB_DRAG",
+  "candidate_sha256": "250523b8634d75e2ccb3124cd80695def5e8b056c79e71cee4fd4c0e4924353d",
+  "total": 1807,
+  "counts": {
+    "group_opens": 12,
+    "native_RX_group_text": 12,
+    "RX_badge_size_and_header_placement": 12,
+    "exact_native_RX_badge_pixels": 12,
+    "badge_does_not_intercept_control_touches": 12,
+    "drag_matches_five_native_SUB_steps": 568,
+    "drag_only_changes_SUB_power": 568,
+    "drag_release_does_not_open_SUB_editor": 568,
+    "SUB_drag_clamps_at_native_1_to_128_limits": 4,
+    "out_and_back_restores_power_without_opening": 1,
+    "tap_and_small_jitter_open_without_adjustment": 3,
+    "disabled_locked_hidden_or_transition_SUB_not_adjusted": 10,
+    "exact_published_R9_reference": 1,
+    "vertical_scroll_does_not_change_SUB": 1,
+    "vertical_scroll_does_not_open_SUB_editor": 1,
+    "vertical_scroll_matches_R9": 1,
+    "SUB_plus_minus_unchanged": 2,
+    "S_title_still_opens_editor": 1,
+    "native_SUB_editor_drag_parity": 6,
+    "SUB_editor_drag_does_not_change_main_or_groups": 6,
+    "encoder_after_SUB_drag_only_adjusts_SUB": 6
+  },
+  "hardware_verified": false,
+  "preview_sha256": {
+    "group_A.png": "606c751412d9e97dc36ef8492f7822f18f21a569d4f3dc78572f621a9fe57f8a",
+    "group_B.png": "c52673d89b5af0a6d01e84223b71b6d314edd59c45ca52d2a650a37afcc516fb",
+    "group_C.png": "2d77bc2fb60d4b862ea1d089fa6bff5b83899a1ab499c5973a8da495ac3d7d0d",
+    "group_D.png": "06521f154a21d6c156c403c0e59192b85d16c6ba25253f8204c151bfdffc285e",
+    "sub_list_drag.png": "378e1061533a7f2f28c32c93cb97c52b5f78ec63e08292841d3e6a56074f4bf1",
+    "sub_editor.png": "add8bb126fc74844cb6885e0a7d88152108986e279817b7b2ccc42a594c6ed90"
+  },
+  "reference_R9_sha256": "6373f518f30e0582c9fde4c18efc6da81978207bbd8def1781219c2ddd3e24e5",
+  "reference_original_sha256": "fe92fbacce29e2ec22784371900f73bbe3e5052c49cc7e66845c276ab5fc7787"
+}

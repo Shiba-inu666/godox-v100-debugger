@@ -1,0 +1,806 @@
+{
+  "status": "PASS_BOUNDED_R5_FIRING_AND_READINESS",
+  "candidate_sha256": "250523b8634d75e2ccb3124cd80695def5e8b056c79e71cee4fd4c0e4924353d",
+  "counts": {
+    "ready_on_presence_head_TEST_exposure_matrix": 384,
+    "RF_FIFO_remote_main_local_SUB_power_independence": 2640,
+    "Sender_camera_main_preparation_and_radio_preserved": 352,
+    "excluded_command_HSS_original_parity": 60,
+    "Sender_local_OFF_SUB_independent": 2,
+    "RX_M_group_OFF_original": 1,
+    "new_path_invalid_state_fail_closed": 948,
+    "normal_exposure_independent_of_UI_focus_lock_page": 12
+  },
+  "total": 4399,
+  "readiness_matrix": [
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 0
+    },
+    {
+      "role": 0,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 0
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 1
+    },
+    {
+      "role": 3,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 1
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 0,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 0,
+      "subready": 1,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 0,
+      "main": false,
+      "sub": false,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "TEST",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 0
+    },
+    {
+      "role": 4,
+      "mode": 1,
+      "event": "exposure",
+      "ready": 1,
+      "subready": 1,
+      "main": true,
+      "sub": true,
+      "radio_commands": 0
+    }
+  ],
+  "RF_examples": [
+    {
+      "mode": 0,
+      "remote_main_code": 0,
+      "local_SUB_code": 0,
+      "duration_code": 266,
+      "timer_reloads": [
+        12768,
+        35232
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 0,
+      "local_SUB_code": 30,
+      "duration_code": 266,
+      "timer_reloads": [
+        2352,
+        10416
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 0,
+      "local_SUB_code": 70,
+      "duration_code": 266,
+      "timer_reloads": [
+        624,
+        12144
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 10,
+      "local_SUB_code": 0,
+      "duration_code": 266,
+      "timer_reloads": [
+        12768,
+        35232
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 10,
+      "local_SUB_code": 30,
+      "duration_code": 266,
+      "timer_reloads": [
+        2352,
+        10416
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 10,
+      "local_SUB_code": 70,
+      "duration_code": 266,
+      "timer_reloads": [
+        624,
+        12144
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 40,
+      "local_SUB_code": 0,
+      "duration_code": 266,
+      "timer_reloads": [
+        12768,
+        35232
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 40,
+      "local_SUB_code": 30,
+      "duration_code": 266,
+      "timer_reloads": [
+        2352,
+        10416
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 40,
+      "local_SUB_code": 70,
+      "duration_code": 266,
+      "timer_reloads": [
+        624,
+        12144
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 70,
+      "local_SUB_code": 0,
+      "duration_code": 266,
+      "timer_reloads": [
+        12768,
+        35232
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 70,
+      "local_SUB_code": 30,
+      "duration_code": 266,
+      "timer_reloads": [
+        2352,
+        10416
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 70,
+      "local_SUB_code": 70,
+      "duration_code": 266,
+      "timer_reloads": [
+        624,
+        12144
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 80,
+      "local_SUB_code": 0,
+      "duration_code": 266,
+      "timer_reloads": [
+        12768,
+        35232
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 80,
+      "local_SUB_code": 30,
+      "duration_code": 266,
+      "timer_reloads": [
+        2352,
+        10416
+      ]
+    },
+    {
+      "mode": 0,
+      "remote_main_code": 80,
+      "local_SUB_code": 70,
+      "duration_code": 266,
+      "timer_reloads": [
+        624,
+        12144
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 0,
+      "local_SUB_code": 0,
+      "duration_code": 4500,
+      "timer_reloads": [
+        48000,
+        168000
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 0,
+      "local_SUB_code": 30,
+      "duration_code": 4500,
+      "timer_reloads": [
+        2352,
+        213648
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 0,
+      "local_SUB_code": 70,
+      "duration_code": 4500,
+      "timer_reloads": [
+        624,
+        215376
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 10,
+      "local_SUB_code": 0,
+      "duration_code": 1080,
+      "timer_reloads": [
+        48000,
+        3840
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 10,
+      "local_SUB_code": 30,
+      "duration_code": 1080,
+      "timer_reloads": [
+        2352,
+        49488
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 10,
+      "local_SUB_code": 70,
+      "duration_code": 1080,
+      "timer_reloads": [
+        624,
+        51216
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 40,
+      "local_SUB_code": 0,
+      "duration_code": 178,
+      "timer_reloads": [
+        8544,
+        39456
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 40,
+      "local_SUB_code": 30,
+      "duration_code": 178,
+      "timer_reloads": [
+        2352,
+        6192
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 40,
+      "local_SUB_code": 70,
+      "duration_code": 178,
+      "timer_reloads": [
+        624,
+        7920
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 70,
+      "local_SUB_code": 0,
+      "duration_code": 67,
+      "timer_reloads": [
+        3216,
+        44784
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 70,
+      "local_SUB_code": 30,
+      "duration_code": 67,
+      "timer_reloads": [
+        2352,
+        864
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 70,
+      "local_SUB_code": 70,
+      "duration_code": 67,
+      "timer_reloads": [
+        624,
+        2592
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 80,
+      "local_SUB_code": 0,
+      "duration_code": 53,
+      "timer_reloads": [
+        2544,
+        45456
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 80,
+      "local_SUB_code": 30,
+      "duration_code": 53,
+      "timer_reloads": [
+        2352,
+        192
+      ]
+    },
+    {
+      "mode": 1,
+      "remote_main_code": 80,
+      "local_SUB_code": 70,
+      "duration_code": 53,
+      "timer_reloads": [
+        624,
+        1920
+      ]
+    }
+  ],
+  "hardware_verified": false,
+  "limits": [
+    "Original CPU code and FIFO dispatcher; virtual GPIO/SysTick",
+    "Transport/delay/HSS and thermal completion stubbed, unchanged completion call retained",
+    "No physical microseconds/energy/temperature/recovery proof",
+    "RX main OFF tested in M; TTL original semantics retained"
+  ]
+}

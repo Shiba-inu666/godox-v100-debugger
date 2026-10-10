@@ -1,0 +1,93 @@
+{
+  "status": "PASS_R10_NATIVE_REGRESSION",
+  "candidate_sha256": "250523b8634d75e2ccb3124cd80695def5e8b056c79e71cee4fd4c0e4924353d",
+  "source_sha256": {
+    "native/lab/analyze_su1_ttl.py": "a248c00cee800396a69048a092b27db4dd5844b5565682907a03839188e2477d",
+    "native/lab/config.py": "6c1d4087638fc6e508976927d17b69430b0e1c0735a0b48c16b44f2ebbc2014a",
+    "native/lab/fire_vm.py": "806b86e89e03a0e82d1bd24da987bac674767e7e0a56450e35e530725fa04fd3",
+    "native/lab/native_vm.py": "eb55cd0a36a7fd3cacc96db6a4adc4df9eab4baf1c07a7df0ff3fb10bce8a45e",
+    "native/lab/profiles.py": "d4250336a8b505ff33713208bb4d41e5245eb03ed13f1f9b304cc4bdb232937e",
+    "native/lab/revision_vm.py": "c8a405f5abe864af89c1131ab92686a1673fe012382aad5641ba5dc84778a010",
+    "native/lab/run.py": "d9aaf93cc593a30952f7b0d245bdc9a60f40ec1ef04a13c42ae300dae03b0182",
+    "native/lab/stock_trace.py": "9bdc4c7a8d69079d12f88009177539d08511914a637d384b62f344f4557aebb6",
+    "native/lab/stock_vm.py": "03f2ba590be0f94d4332c94931dbccc0df1d289331df7ca9429457902b1192f7",
+    "native/lab/test_drawer.py": "d4fa072aeb2d4bd0ce17ed0117a17af651320dbabd2c6a84a86e1e519031984d",
+    "native/lab/test_firing.py": "e3d683b729e65eb4138ced88b5b136680413b523e5e784ce3be8a353089c79de",
+    "native/lab/test_glyph.py": "3be3ab9f741fd60eea68ef72a737dc42cdd100a18be1ab25b10852c05640f02b",
+    "native/lab/test_modal.py": "e97b323296d9d5ef83772f75e73295c3166b7c30d1a3ff18b8b8211b6b6acf37",
+    "native/lab/test_sender_off.py": "0d929564ec2640800edf2ec5bbaf66e85f4c39f7b542ea7476a39df70586772f",
+    "native/lab/test_sender_row.py": "7b110b9f27b83b954e59eee55293b0f9ea6303c303b9b3492c5a27837f1ec73e",
+    "native/lab/test_stock_readiness.py": "37f3ec3b9a17a89bc7b18187f5927208a23330cb4c82604f1c7fd2b148f6ab72",
+    "native/lab/test_wrapper.py": "2f242b8c7d34dedbaa0eae5e3acc2e2730f23aca52c64101effe0342e0eff27c",
+    "native/patcher.py": "850cc48d427c0d946b3f99f011fa0c137fc1cdbb818bb93889e1fbc50499d981",
+    "native/patches/r7.json": "b7ec2417983a6aee30b563635b3c8cf08812c52e0efe6daff81e35e16e646157",
+    "native/r10/build.py": "4ea46da7948d2812a3fe08e5591d85006e5379936e0d83766b064745e0662d49",
+    "native/r10/lab/check_image.py": "f68f1ec0e8104aa36c8c025b2013aa5480b33b23f840743579c137fd290421f9",
+    "native/r10/lab/input_driver.py": "60528fa1c4b8026c51a20322b6a92439affcc7eb66a3564009eb5a63ba1ec91b",
+    "native/r10/lab/probe.py": "1bc52521e995232b1d961e97695d3adfdc4deea0fe403b6be5dbc02d41481fce",
+    "native/r10/lab/run_legacy.py": "0d5c766512739e40a4c6635ff72452c2a675b87e86ba00b3eab429e710c2c8c8",
+    "native/r10/lab/test_changes.py": "97ae2250bd402f1ed77deb71d37dacdaa38cd4688dabbf23bae7d3b6919f97db",
+    "native/r10/lab/test_r10.py": "17eb071f49fda48272f0fe54b6f75c944b1ca3fccd267e5f67df7e51e9fa5c19",
+    "native/r10/package.py": "6b67060ace3e8f48347816cc2a2c45b555808a0b56f9e93ba78dde56db8bdfd8",
+    "native/r10/src/native.ld": "f7ad88e90ffd4fc5b8707e65d55237000e39183fb741d822a59027c2fb1b0525",
+    "native/r10/src/native_sub.c": "1ebcd387f24d8e3ad3fa68a92f7f33b5ef558c629bcb74971d2a71d61ec48a98",
+    "native/r10/src/native_trampolines.S": "40218c0fd06b0adac1cccfbee164997e56bb01734ca1071edf7831842b7607e7",
+    "native/r10/validate.py": "d3f2346fcdd22617f0e72657be112658cc7f9b1f3ec11dec409c6014f2746e53",
+    "native/r9/evidence/r9.json": "abf3243b649cd2280b73f89c68811122c297d623dea182d89c299c965d574077"
+  },
+  "suites": {
+    "image": {
+      "checks": 37,
+      "result": "IMAGE_INTEGRITY.json",
+      "result_sha256": "069b10b099657aece92eac4be9c2c8fabd9ac2d63b1373292d4f27f834bcc2cc"
+    },
+    "r10_ui": {
+      "checks": 2797,
+      "result": "R10_UI_RESULTS.json",
+      "result_sha256": "ddf88d28fca12b687881f90c70d7b6a355d6dc99538ee968a283f121fc18f998"
+    },
+    "changes": {
+      "checks": 1807,
+      "result": "R10_CHANGES_RESULTS.json",
+      "result_sha256": "0c52ebb3f03f50f03f7a6ddeca782584c66fe523c0cfe5c0b5aba4b3f1ee208d"
+    },
+    "drawer": {
+      "checks": 296,
+      "result": "analysis/DRAWER_RESULTS.json",
+      "result_sha256": "5c8c0449511e33ddf516d452911df5192f31767ab1a334ded4ee9e1e84e26f30"
+    },
+    "sender_row": {
+      "checks": 171,
+      "result": "analysis/SENDER_ROW_RESULTS.json",
+      "result_sha256": "7f0bf97663d14c6a79433e9373bba4899e699efbae4b0c72cdd52f82f5228222"
+    },
+    "firing": {
+      "checks": 4399,
+      "result": "analysis/FIRING_RESULTS.json",
+      "result_sha256": "276ca579c38b011f8088b1d1b72b34681ba2ef4468b7d85e45f4028f2c33955a"
+    },
+    "sender_off": {
+      "checks": 1389,
+      "result": "analysis/SENDER_OFF_RESULTS.json",
+      "result_sha256": "2969b3e2ebfa79ce72b76a8524c45ac9a00c12cf42560fa818c8b09fd49e7d38"
+    },
+    "readiness": {
+      "checks": 398,
+      "result": "analysis/STOCK_READINESS_RESULTS.json",
+      "result_sha256": "7a35c28bcc90872d34278964adef9de94e991e57026c8779efc0af3dbce9fe5f"
+    },
+    "wrapper": {
+      "checks": 2317,
+      "result": "analysis/WRAPPER_RESULTS.json",
+      "result_sha256": "7625bffe89e63a84846bed3ca4e226dd54dea99360f895d42db59d2c09ed7834"
+    },
+    "modal": {
+      "checks": 392,
+      "result": "analysis/MODAL_RESULTS.json",
+      "result_sha256": "e3ba6f1bc66667a44689f17aaa5cabe664e5c959ce037400df88f148e47b1fa7"
+    }
+  },
+  "functional_checks": 13966,
+  "integrity_checks": 37,
+  "hardware_verified": false
+}
