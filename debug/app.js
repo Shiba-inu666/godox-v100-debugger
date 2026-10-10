@@ -52,7 +52,7 @@ function render(s){
  if(menu&&s.focus==='INFO'){$('plus').disabled=true;$('minus').disabled=true;}
  $('radio').disabled=!s.active||s.screen!=='sender';for(const id of ['serialize','channel'])$(id).disabled=!s.active;
  $('rxTools').hidden=s.screen!=='receiver';$('rxGroup').value=s.rx_group;
- $('rxResult').textContent=s.last_rx?`目标 ${String.fromCharCode(s.last_rx.destination+55)} · ${s.last_rx.command}=${s.last_rx.value} · ${s.last_rx.matched?'匹配组，原厂解析器已接收':'地址不匹配，原厂解析器忽略'}`:'仅执行原厂接收参数解析，不模拟空口传输或触发闪光。';
+ $('rxResult').textContent=s.last_rx?`目标 ${String.fromCharCode(s.last_rx.destination+55)} · ${s.last_rx.command}=${s.last_rx.value} · ${s.last_rx.matched?'匹配组，原厂解析器已接收':'地址不匹配，原厂解析器忽略'}`:'仅执行原厂接收参数解析，不模拟无线传输或触发闪光。';
  const log=s.logs.at(-1),changed=log?.diff||{};renderMemory(changed);
  $('trace').innerHTML=s.logs.slice(-80).reverse().map(x=>`<div class="traceRow"><span>#${x.seq} ${esc(actionNames[x.action]||x.action)} ${esc(actionValue(x.value))}</span><code>${x.calls.length?x.calls.join('<br>'):'电脑端适配'}</code><code class="diff">${Object.keys(x.diff).length?Object.entries(x.diff).map(([k,v])=>`${esc(s.watch[k]||k)}　${v[0]} → ${v[1]}`).join('<br>'):'监视字段无变化'}</code></div>`).join('')||'<p class="notice">操作后显示函数调用和内存变化。</p>';
  $('packets').textContent=s.radio.length?s.radio.map(f=>{const b=f.match(/../g);return `${b.join(' ').toUpperCase()}${parseInt(b[1],16)>=10&&parseInt(b[1],16)<=13?'　→ Group '+String.fromCharCode(65+parseInt(b[1],16)-10):''}`}).join('\n'):'最近一次未捕获到参数变化包，或尚未捕获。首次捕获通常包含所有组同步。';

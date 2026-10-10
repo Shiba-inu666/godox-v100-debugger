@@ -1,28 +1,28 @@
 # R7 experimental · 原生补丁公开版 / Native patch publication
 
-> 历史首次源码发布记录。此后项目加入 V480，并提供两款 BIN 下载：[当前下载](https://github.com/Shiba-inu666/godox-firmware-mods/blob/main/docs/DOWNLOADS.md)。
+> 历史首次源码发布记录。后续版本与各型号 BIN 请见：[最新下载](https://github.com/Shiba-inu666/godox-firmware-mods/blob/main/docs/DOWNLOADS.md)。
 > Historical first source-only publication. V480 and both BIN downloads are now available: [current downloads](https://github.com/Shiba-inu666/godox-firmware-mods/blob/main/docs/DOWNLOADS.md).
 
 ## 中文
 
-这是 V100F V1.03 原生补丁的公开复现包，并保留原有的电脑端调试工作台。
+这是 V100F V1.03 原生补丁的公开复现包，同时保留原有的电脑端调试工作台。
 
-累计功能：
+本版包含的功能：
 
-- Wi-Off / Receiver 主界面旋钮直接调整 TTL FEC 或 M 功率。
-- Sender 原生本机副灯行，Receiver 原生副灯入口与弹窗。
-- 已覆盖的 TEST、普通相机曝光和 RX 无线触发路径支持手动功率 SU-1。
-- 主控普通曝光中，主灯 OFF 时副灯可独立进入发光路径。
-- 原生行样式、弹窗布局、对象生命周期、下拉面板层级和命中区域修复。
-- R7 专项修复：用原厂字体实际包含的单字母 **S**，替代显示为空框的 SUB 标签。
+- 机顶 Wi-Off 与从属 Receiver 主界面，旋钮直接调整主灯 TTL 曝光补偿或 M 功率。
+- 主控 Sender 中原生的本机副灯行，以及从属 Receiver 原生的副灯入口和弹窗。
+- 在已覆盖的 TEST、普通相机曝光和 RX 无线触发路径上，支持手动功率的 SU-1 副灯。
+- 主控普通曝光下，主灯 OFF 时副灯可以独立走发光路径。
+- 原生行样式、弹窗布局、对象生命周期、下拉面板层级和点击命中的修复。
+- R7 专项修复：用原厂字体里实际存在的单字母 **S**，替换原来显示为空框的 SUB 标签。
 
-公开包新增精确版本补丁工具、三段 C/汇编辅助代码、可移植离线验证、中英文完整历程和风险记录。R7 的发光代码与 R6/R5 相同；**副灯 TTL 未实现**。
+这个公开包新增了精确版本补丁工具、三段 C/汇编辅助代码、可移植离线验证，以及中英文完整历程和风险记录。R7 的发光代码与 R6/R5 相同；**SU-1 副灯的 TTL 未实现**。
 
-验证记录：9,399 项可移植功能检查、90 项 TTL 研究观测、10 项补丁工具测试和 26 项工作台测试；辅助代码重编译后与既有 R7 字节完全一致。历史 39,851 项离线工程记录单独归档，不与本次数量相加。
+验证记录：9,399 项可移植功能检查、90 项 TTL 研究观测、10 项补丁工具测试和 26 项工作台测试；辅助代码重新编译后与既有 R7 字节完全一致。更早的 39,851 项离线工程记录单独归档，与上述数量有重叠，不相加。
 
-实机整体验收、真实同步与光量、设备完整性机制及失败恢复仍未完成。此发布为 **prerelease**，不代表正式 Canary 放行。
+实机整体验收、真实的同步与光量、设备完整性机制以及失败恢复流程仍未完成。本次为 **prerelease**，不代表正式 Canary 放行。
 
-完整原厂/修改版 BIN 不附在这次发布里。请自行提供指定的官方原件，用补丁工具在本地生成；工具不连接设备、不刷机、也不覆盖原件。
+完整的原厂/修改版 BIN 没有随发布附上。请自行准备指定的官方原件，用补丁工具在本地生成候选文件；工具不连接设备、不刷机、也不覆盖原件。
 
 - [中文完整历程](https://github.com/Shiba-inu666/godox-firmware-mods/blob/r7-experimental/docs/PROJECT_HISTORY.md)
 - [生成与验证说明](https://github.com/Shiba-inu666/godox-firmware-mods/blob/r7-experimental/native/README.md)

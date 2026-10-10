@@ -4,12 +4,12 @@
 
 ## 报告问题 / Report an issue
 
-使用 [Bug 表单](https://github.com/Shiba-inu666/godox-firmware-mods/issues/new?template=bug_report.yml)，尽量提供：
+使用 [Bug 表单](https://github.com/Shiba-inu666/godox-firmware-mods/issues/new?template=bug_report.yml)，尽量提供以下信息：
 
-- 完整型号后缀、BIN 文件名和 SHA-256；“最新版本”不足以定位。
-- Wi-Off / Sender / Receiver，TTL / M，HSS、主灯与副灯开关和功率。
-- 实体 TEST、相机快门或无线触发；相机/引闪器型号和可重复操作步骤。
-- 预期结果、实际结果，是否影响照片曝光；UI 问题可附去除私人信息后的照片。
+- 完整型号后缀、BIN 文件名和 SHA-256；只说"最新版本"无法定位问题。
+- 当前角色（Wi-Off / Sender / Receiver）、闪光模式（TTL / M）、HSS 状态，以及主灯与副灯的开关和功率。
+- 触发方式：实体 TEST、相机快门还是无线触发；附上相机/引闪器型号和可重复的操作步骤。
+- 预期结果和实际结果，是否影响照片曝光；UI 问题可附去除私人信息后的照片。
 
 Use the [bug form](https://github.com/Shiba-inu666/godox-firmware-mods/issues/new?template=bug_report.yml). Include the exact model suffix, BIN filename/hash, role, flash mode, HSS and main/SUB settings. Distinguish physical TEST, camera shutter and radio triggering. Describe the camera/transmitter, reproduction steps, expected/actual behavior and effect on the photograph. A redacted photo helps with UI issues. “Latest version” alone is insufficient.
 

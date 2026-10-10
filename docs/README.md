@@ -16,7 +16,7 @@
 | 内容 / Topic | 入口 / Document |
 |---|---|
 | 原件准备、两款工具命令、测试 / Inputs, both patchers and tests | [Reproduce](REPRODUCE.md) |
-| V100F R7 原生源码与精确补丁 / Native source and exact patch | [V100 source guide](../native/README.md) |
+| V100F 原生源码与精确补丁 / Native source and exact patch | [V100 source guide](../native/README.md) |
 | V480F v2 原生源码与精确补丁 / Native source and exact patch | [V480 source guide](../v480/README.md) |
 | 电脑端参数工作台 / Desktop parameter workbench | [中文](debugger/README.zh-CN.md) · [English](debugger/README.en.md) |
 | 反馈与贡献 / Reporting and contributing | [Contributing](../CONTRIBUTING.md) |

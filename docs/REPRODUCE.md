@@ -74,7 +74,7 @@ python3 -m venv .venv
 
 Results go to `native/.lab/` and `v480/.lab/`. Do not disable assertions with `python -O`. The 90 TTL observations are research evidence, not implemented SU-1 TTL. Counts have distinct and overlapping scopes; they are not a hardware-test total.
 
-仅修改文档或目录索引时，运行下面的标准库检查即可检查本地链接、JSON、型号目录及既有源码证据摘要；它不运行设备仿真、不下载固件，也不连接硬件：
+仅修改文档或目录索引时，运行下面的标准库检查即可校验本地链接、JSON、型号目录及既有源码证据摘要；它不运行设备仿真、不下载固件，也不连接硬件：
 
 For documentation/catalog work, this standard-library check validates local links, JSON, model entries and saved source/evidence hashes. It does not emulate devices, download firmware or access hardware:
 

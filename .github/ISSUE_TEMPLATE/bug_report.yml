@@ -1,22 +1,22 @@
 name: "问题反馈 / Bug report"
-description: "报告固件行为、UI 或工具问题 / Report firmware, UI or tool behavior"
+description: "报告固件、界面或工具的问题 / Report firmware, UI or tool behavior"
 title: "[Bug] "
 body:
   - type: dropdown
     id: model
     attributes:
-      label: "机型 / Model"
+      label: "设备型号 / Model"
       options:
         - V100F V1.03
         - V480F V1.03
-        - "其他（请在下方注明完整后缀）/ Other (specify suffix below)"
+        - "其他机型（请在下方写完整型号后缀）/ Other (specify suffix below)"
     validations:
       required: true
   - type: textarea
     id: identity
     attributes:
       label: "BIN 身份 / BIN identity"
-      description: "文件名、SHA-256、补丁修订；未知项请写未知 / Filename, SHA-256 and revision; mark unknown fields."
+      description: "BIN 文件名、SHA-256、补丁版本（如 R9）；不确定的项写“不知道” / Filename, SHA-256 and revision; mark unknown fields."
     validations:
       required: true
   - type: dropdown
@@ -24,22 +24,22 @@ body:
     attributes:
       label: "触发方式 / Trigger"
       options:
-        - "实体 TEST / Physical TEST"
+        - "实体 TEST 键 / Physical TEST"
         - "相机快门 / Camera shutter"
         - "无线触发 / Radio trigger"
-        - "旋钮或 UI / Dial or UI"
-        - "电脑工具 / Desktop tool"
+        - "旋钮或界面操作 / Dial or UI"
+        - "电脑调试工具 / Desktop tool"
   - type: textarea
     id: setup
     attributes:
-      label: "设备与状态 / Setup and state"
-      description: "相机/引闪器、Wi-Off/Sender/Receiver、TTL/M、HSS、主灯和副灯开关/功率 / Camera/transmitter, role, mode, HSS, main/SUB enable and power."
+      label: "设备与当时状态 / Setup and state"
+      description: "相机或引闪器型号、角色（机顶 / 主控 / 从属）、TTL 或 M、HSS、主灯与副灯的开关和功率 / Camera/transmitter, role, mode, HSS, main/SUB enable and power."
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: "操作、预期和实际结果 / Steps, expected and actual result"
-      description: "说明能否重复、是否影响曝光；UI 问题可附照片 / Include reproducibility, exposure effect and a photo for UI issues."
+      label: "操作步骤、预期结果和实际结果 / Steps, expected and actual result"
+      description: "按顺序写清你做了什么、预期是什么、实际发生了什么；说明能否稳定复现、是否影响曝光；界面问题请附截图或照片 / Include reproducibility, exposure effect and a photo for UI issues."
     validations:
       required: true
