@@ -1,0 +1,380 @@
+{
+  "status": "PASS_R4_MODAL_EXACT_HOTSHOE_GEOMETRY",
+  "candidate_sha256": "4e986a26ecf38b362b3b3e4b78adb551572cd5e6f4e091a7b4deb34f1ab5bdc8",
+  "total": 392,
+  "counts": {
+    "modal_initial_exact_hotshoe_geometry": 8,
+    "all_SUB_values_exact_hotshoe_no_visual_overlap": 176,
+    "full_tick_preserves_SUB_modal_geometry": 176,
+    "native_touch_plus_minus_switch_geometry": 24,
+    "close_reopen_geometry": 8
+  },
+  "samples": [
+    {
+      "page": 1,
+      "language": 0,
+      "geometry": {
+        "0x1578": {
+          "rect": [
+            187,
+            84,
+            282,
+            144
+          ],
+          "text": "16"
+        },
+        "0x157c": {
+          "rect": [
+            145,
+            115,
+            166,
+            142
+          ],
+          "text": "1"
+        },
+        "0x1580": {
+          "rect": [
+            168,
+            111,
+            184,
+            142
+          ],
+          "text": "/"
+        },
+        "0x1584": {
+          "rect": [
+            286,
+            112,
+            285,
+            142
+          ],
+          "text": ""
+        },
+        "0x1588": {
+          "rect": [
+            32,
+            73,
+            447,
+            210
+          ]
+        },
+        "0x158c": {
+          "rect": [
+            32,
+            182,
+            447,
+            189
+          ]
+        },
+        "0x1594": {
+          "rect": [
+            408,
+            94,
+            451,
+            137
+          ]
+        },
+        "0x159c": {
+          "rect": [
+            8,
+            74,
+            91,
+            157
+          ]
+        },
+        "0x15a4": {
+          "rect": [
+            4,
+            264,
+            475,
+            343
+          ]
+        },
+        "0x15ac": {
+          "rect": [
+            382,
+            282,
+            461,
+            325
+          ]
+        }
+      }
+    },
+    {
+      "page": 1,
+      "language": 1,
+      "geometry": {
+        "0x1578": {
+          "rect": [
+            187,
+            84,
+            282,
+            144
+          ],
+          "text": "16"
+        },
+        "0x157c": {
+          "rect": [
+            145,
+            115,
+            166,
+            142
+          ],
+          "text": "1"
+        },
+        "0x1580": {
+          "rect": [
+            168,
+            111,
+            184,
+            142
+          ],
+          "text": "/"
+        },
+        "0x1584": {
+          "rect": [
+            286,
+            112,
+            285,
+            142
+          ],
+          "text": ""
+        },
+        "0x1588": {
+          "rect": [
+            32,
+            73,
+            447,
+            210
+          ]
+        },
+        "0x158c": {
+          "rect": [
+            32,
+            182,
+            447,
+            189
+          ]
+        },
+        "0x1594": {
+          "rect": [
+            408,
+            94,
+            451,
+            137
+          ]
+        },
+        "0x159c": {
+          "rect": [
+            8,
+            74,
+            91,
+            157
+          ]
+        },
+        "0x15a4": {
+          "rect": [
+            4,
+            264,
+            475,
+            343
+          ]
+        },
+        "0x15ac": {
+          "rect": [
+            382,
+            282,
+            461,
+            325
+          ]
+        }
+      }
+    },
+    {
+      "page": 2,
+      "language": 0,
+      "geometry": {
+        "0x1578": {
+          "rect": [
+            187,
+            84,
+            282,
+            144
+          ],
+          "text": "16"
+        },
+        "0x157c": {
+          "rect": [
+            145,
+            115,
+            166,
+            142
+          ],
+          "text": "1"
+        },
+        "0x1580": {
+          "rect": [
+            168,
+            111,
+            184,
+            142
+          ],
+          "text": "/"
+        },
+        "0x1584": {
+          "rect": [
+            286,
+            112,
+            285,
+            142
+          ],
+          "text": ""
+        },
+        "0x1588": {
+          "rect": [
+            32,
+            73,
+            447,
+            210
+          ]
+        },
+        "0x158c": {
+          "rect": [
+            32,
+            182,
+            447,
+            189
+          ]
+        },
+        "0x1594": {
+          "rect": [
+            408,
+            94,
+            451,
+            137
+          ]
+        },
+        "0x159c": {
+          "rect": [
+            8,
+            74,
+            91,
+            157
+          ]
+        },
+        "0x15a4": {
+          "rect": [
+            4,
+            264,
+            475,
+            343
+          ]
+        },
+        "0x15ac": {
+          "rect": [
+            382,
+            282,
+            461,
+            325
+          ]
+        }
+      }
+    },
+    {
+      "page": 2,
+      "language": 1,
+      "geometry": {
+        "0x1578": {
+          "rect": [
+            187,
+            84,
+            282,
+            144
+          ],
+          "text": "16"
+        },
+        "0x157c": {
+          "rect": [
+            145,
+            115,
+            166,
+            142
+          ],
+          "text": "1"
+        },
+        "0x1580": {
+          "rect": [
+            168,
+            111,
+            184,
+            142
+          ],
+          "text": "/"
+        },
+        "0x1584": {
+          "rect": [
+            286,
+            112,
+            285,
+            142
+          ],
+          "text": ""
+        },
+        "0x1588": {
+          "rect": [
+            32,
+            73,
+            447,
+            210
+          ]
+        },
+        "0x158c": {
+          "rect": [
+            32,
+            182,
+            447,
+            189
+          ]
+        },
+        "0x1594": {
+          "rect": [
+            408,
+            94,
+            451,
+            137
+          ]
+        },
+        "0x159c": {
+          "rect": [
+            8,
+            74,
+            91,
+            157
+          ]
+        },
+        "0x15a4": {
+          "rect": [
+            4,
+            264,
+            475,
+            343
+          ]
+        },
+        "0x15ac": {
+          "rect": [
+            382,
+            282,
+            461,
+            325
+          ]
+        }
+      }
+    }
+  ],
+  "hardware_verified": false,
+  "root_cause": "Generic formatter sets center Y: Wi-Off -66, RX -20, Sender 0; inherited SUB modal bar stays Y182..189. R4 restores Wi-Off font/anchors only for owned SUB modal.",
+  "limits": [
+    "Actual LVGL objects, labels and native events execute",
+    "Geometry/render layout validated; incomplete native framebuffer model not treated as LCD acceptance"
+  ]
+}

@@ -6,6 +6,17 @@
 
 Entries follow publication dates and firmware revision order. Dates are not invented for early revisions. Repository naming changes do not imply new firmware behavior.
 
+## 2026-10-10 · V100F R9
+
+- 发布 R9 实验 BIN、源码、完整补丁和摘要绑定的验证记录；保留 R7 与中间 R8 源码。
+- 主控 M/A–D 保留原厂长按 TTL/M/OFF 与滑动调节，新增单击进入独立页；左侧 TTL/M、右侧暂停/恢复，旋钮固定调当前灯功率或 TTL 补偿。
+- 修复从属页“副灯”命名和退出时提前消失、主控 S 字号；副灯仍为手动。
+- 12,159 项原生功能检查和 37 项镜像检查通过；R9 尚待真机验收。
+
+- Published R9 experimental BIN, source, full patch and hash-bound validation, retaining R7 and intermediate R8 source.
+- Preserves Sender long press and swipe; adds short-tap M/A–D editors with TTL/M, pause/resume and a power-only encoder.
+- Retains SUB naming/lifecycle and S typography repairs. SUB remains manual. 12,159 native functional checks and 37 image checks passed; R9 hardware acceptance is pending.
+
 ## 2026-10-09 · Godox Firmware Mods
 
 - 项目正式采用 **Godox Firmware Mods｜神牛闪光灯固件修改项目**；重新组织中英文首页、型号入口、文档索引、复现说明与反馈模板。
@@ -27,9 +38,9 @@ Entries follow publication dates and firmware revision order. Dates are not inve
 | R3 | 主控/从属 TEST 路径副灯支持 / SUB support in Sender/RX TEST paths |
 | R2 | RX 副灯布局，分开 ZOOM 区域 / RX SUB layout separated from ZOOM |
 
-以上修订之前，已完成机顶主灯直调原型，随后扩展到 V100 RX 主屏。各阶段的实机反馈、离线证据与限制见完整历程；当前下载仅推荐核对 R7 身份，不提供旧修订降级建议。
+以上修订之前，已完成机顶主灯直调原型，随后扩展到 V100 RX 主屏。各阶段的实机反馈、离线证据与限制见完整历程；该历史发布按 R7 身份核对，不提供旧修订降级建议。
 
-The earlier main-screen rotary work preceded these revisions and later extended to V100 RX. See the full history for feedback, evidence and limits. The current download identifies R7; historical revisions are not downgrade recommendations.
+The earlier main-screen rotary work preceded these revisions and later extended to V100 RX. See the full history for feedback, evidence and limits. That historical download identifies R7; historical revisions are not downgrade recommendations.
 
 ## V480F · Rotary-direct v2
 

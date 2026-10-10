@@ -1,0 +1,8 @@
+{
+  "status": "PASS_R8_IMAGE_INTEGRITY",
+  "checks": 21,
+  "sha256": "4e986a26ecf38b362b3b3e4b78adb551572cd5e6f4e091a7b4deb34f1ab5bdc8",
+  "size": 1002732,
+  "inverse_exact": true,
+  "fire_and_rotary_exact_R7": true
+}

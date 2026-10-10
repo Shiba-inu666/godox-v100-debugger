@@ -2,6 +2,20 @@
 
 [项目首页 / Home](../README.md) · [Release](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09)
 
+## V100F R9 · 2026-10-10
+
+最新 V100F 实验版：[下载 R9 BIN](https://github.com/Shiba-inu666/godox-firmware-mods/releases/download/v100-r9-2026-10-10/V100F_V1.03_GROUP_CONTROL_R9_EXPERIMENTAL.bin) · [发布页与校验文件](https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-r9-2026-10-10) · [操作、源码与原生预览](../native/r9/README.md)。新增 M/A–D 独立控制页，保留原厂长按切换和滑动调节，单灯页旋钮只调功率 / TTL 补偿，修复副灯命名、退出显示与 S 字号。副灯仍为手动。
+
+Latest V100F experimental revision: dedicated M/A–D editors, native long press/swipe, power-only editor encoder and SUB UI repairs. SUB remains manual. **12,159 native functional checks + 37 image checks; R9 hardware acceptance remains pending.**
+
+Size: **1,002,732 bytes**. SHA-256:
+
+```text
+6373f518f30e0582c9fde4c18efc6da81978207bbd8def1781219c2ddd3e24e5  V100F_V1.03_GROUP_CONTROL_R9_EXPERIMENTAL.bin
+```
+
+## 2026-10-09 基线发布 / Baseline release
+
 目前仅提供 **V100F 与 V480F，均基于 V1.03**。作者报告两台均已刷入修改固件；[具体证据范围](HARDWARE_STATUS.md)。
 
 Currently **V100F and V480F only, both based on V1.03**. The maintainer reports both devices flashed; see [evidence scope](HARDWARE_STATUS.md).

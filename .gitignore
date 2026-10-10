@@ -39,3 +39,13 @@ __pycache__/
 /v480/.lab/
 /v480/out/
 /release-assets/
+
+# V100 R8 reproducible build and local verification outputs
+/native/r8/.build/
+/native/r8/.lab/
+/native/r8/out/
+
+# V100 R9 build and native input regression outputs
+/native/r9/.build/
+/native/r9/.lab/
+/native/r9/out/

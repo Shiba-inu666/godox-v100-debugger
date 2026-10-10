@@ -1,0 +1,20 @@
+{
+  "status": "PASS_EXACT_VERSION_WRAPPER_ABI_AND_SOURCE",
+  "candidate_sha256": "4e986a26ecf38b362b3b3e4b78adb551572cd5e6f4e091a7b4deb34f1ab5bdc8",
+  "counts": {
+    "all_role_values_ABI_no_global_writes": 1024,
+    "caller_provenance_bit_mutations_reject": 256,
+    "mode_flags_HSS_Multi_filter": 1024,
+    "direct_leaf_or_dispatch_reject": 8,
+    "patch_input_fails_closed": 5
+  },
+  "total": 2317,
+  "extra_stack_bytes": 16,
+  "global_RAM_writes": 0,
+  "PRIMASK_modified": false,
+  "limits": [
+    "Frame offsets apply only to the exact SHA-256-locked V100F V1.03",
+    "Stack provenance constrains control flow; this is not an adversarial security boundary",
+    "Offline emulator registers, not physical MCU instrumentation"
+  ]
+}

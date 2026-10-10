@@ -1,0 +1,12 @@
+{
+  "model": "V100F",
+  "firmware_version": "1.03",
+  "release_tag": "v100-v480-2026-10-09",
+  "release_url": "https://github.com/Shiba-inu666/godox-firmware-mods/releases/tag/v100-v480-2026-10-09",
+  "main_commit": "d445b7f342ef12c9ac7878c06beb9dbbed5e6b56",
+  "asset": "V100F_V1.03_SINGLE_S_LABEL_R7_EXPERIMENTAL.bin",
+  "asset_sha256": "8c07a4f6672ffa575081d2aa11df29c50487f978aa6155321c95a19cb032c761",
+  "asset_size": 1002732,
+  "verification_date": "2026-10-10",
+  "downloaded_asset_matches_local_reconstruction": true
+}

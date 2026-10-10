@@ -1,0 +1,45 @@
+{
+  "status": "PASS_R6_NATIVE_DRAWER_LAYER_AND_HIT_TEST",
+  "candidate_sha256": "6373f518f30e0582c9fde4c18efc6da81978207bbd8def1781219c2ddd3e24e5",
+  "baseline_sha256": "7cb6a3a634a366adc0ae166ae6e1c35781a6e2989020db45fe1b2d3647a23244",
+  "counts": {
+    "R5_observed_overlap_reproduced_native_touch_search": 1,
+    "R6_same_geometry_immediately_below_native_drawer": 1,
+    "open_drawer_native_touch_priority_matrix": 160,
+    "brightness_slider_and_drawer_focus_matrix": 32,
+    "actual_brightness_target_click_cannot_open_SUB": 32,
+    "close_restores_main_focus_and_SUB_modal_matrix": 32,
+    "full_tick_attachment_power_changes_keep_drawer_focus": 20,
+    "native_close_restores_focus_after_hot_attachment": 2,
+    "scroll_in_progress_never_rebuilds_focus": 2,
+    "repeated_open_close_stable_layer_and_hit_target": 12,
+    "absent_then_late_native_drawer_safe": 1,
+    "foreign_screen_drawer_ownership_guard": 1
+  },
+  "total": 296,
+  "evidence": [
+    {
+      "version": "R5",
+      "SUB_index": 28,
+      "drawer_index": 27,
+      "target_at_380_320": "SUB"
+    },
+    {
+      "version": "R7",
+      "SUB_index": 27,
+      "drawer_index": 28,
+      "SUB_rectangle": [
+        324,
+        304,
+        479,
+        358
+      ]
+    }
+  ],
+  "hardware_verified": false,
+  "limits": [
+    "Executes native LVGL sibling ordering, recursive touch search, immediate scroll, callbacks and focus",
+    "Physical LCD compositing, touch controller and animated gesture timing require hardware confirmation",
+    "No firing logic change in this revision"
+  ]
+}

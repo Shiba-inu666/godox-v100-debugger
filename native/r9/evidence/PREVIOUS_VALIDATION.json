@@ -1,0 +1,86 @@
+{
+  "status": "PASS_R9_NATIVE_REGRESSION",
+  "candidate_sha256": "6373f518f30e0582c9fde4c18efc6da81978207bbd8def1781219c2ddd3e24e5",
+  "source_sha256": {
+    "native/lab/analyze_su1_ttl.py": "a248c00cee800396a69048a092b27db4dd5844b5565682907a03839188e2477d",
+    "native/lab/config.py": "6c1d4087638fc6e508976927d17b69430b0e1c0735a0b48c16b44f2ebbc2014a",
+    "native/lab/fire_vm.py": "806b86e89e03a0e82d1bd24da987bac674767e7e0a56450e35e530725fa04fd3",
+    "native/lab/native_vm.py": "eb55cd0a36a7fd3cacc96db6a4adc4df9eab4baf1c07a7df0ff3fb10bce8a45e",
+    "native/lab/profiles.py": "d4250336a8b505ff33713208bb4d41e5245eb03ed13f1f9b304cc4bdb232937e",
+    "native/lab/revision_vm.py": "c8a405f5abe864af89c1131ab92686a1673fe012382aad5641ba5dc84778a010",
+    "native/lab/run.py": "d9aaf93cc593a30952f7b0d245bdc9a60f40ec1ef04a13c42ae300dae03b0182",
+    "native/lab/stock_trace.py": "9bdc4c7a8d69079d12f88009177539d08511914a637d384b62f344f4557aebb6",
+    "native/lab/stock_vm.py": "03f2ba590be0f94d4332c94931dbccc0df1d289331df7ca9429457902b1192f7",
+    "native/lab/test_drawer.py": "d4fa072aeb2d4bd0ce17ed0117a17af651320dbabd2c6a84a86e1e519031984d",
+    "native/lab/test_firing.py": "e3d683b729e65eb4138ced88b5b136680413b523e5e784ce3be8a353089c79de",
+    "native/lab/test_glyph.py": "3be3ab9f741fd60eea68ef72a737dc42cdd100a18be1ab25b10852c05640f02b",
+    "native/lab/test_modal.py": "e97b323296d9d5ef83772f75e73295c3166b7c30d1a3ff18b8b8211b6b6acf37",
+    "native/lab/test_sender_off.py": "0d929564ec2640800edf2ec5bbaf66e85f4c39f7b542ea7476a39df70586772f",
+    "native/lab/test_sender_row.py": "7b110b9f27b83b954e59eee55293b0f9ea6303c303b9b3492c5a27837f1ec73e",
+    "native/lab/test_stock_readiness.py": "37f3ec3b9a17a89bc7b18187f5927208a23330cb4c82604f1c7fd2b148f6ab72",
+    "native/lab/test_wrapper.py": "2f242b8c7d34dedbaa0eae5e3acc2e2730f23aca52c64101effe0342e0eff27c",
+    "native/patcher.py": "850cc48d427c0d946b3f99f011fa0c137fc1cdbb818bb93889e1fbc50499d981",
+    "native/patches/r7.json": "b7ec2417983a6aee30b563635b3c8cf08812c52e0efe6daff81e35e16e646157",
+    "native/r9/build.py": "eec5a1c3f0ee8769d3ec3841cf8b98a57a04c02322943b1491437cbbfb0db1ce",
+    "native/r9/lab/check_image.py": "f9b0e1a319959a31f5715dd68e00084f8399f5c6123c4ac2e2d6a304c990c07b",
+    "native/r9/lab/input_driver.py": "60528fa1c4b8026c51a20322b6a92439affcc7eb66a3564009eb5a63ba1ec91b",
+    "native/r9/lab/probe.py": "3587771c66b1ac89157a7645870977da3593161049cc7f3ab0848136ad403f86",
+    "native/r9/lab/run_legacy.py": "de319613774aad129d06b944a4ba4a779dd354651fe2958f01834989be4c24d5",
+    "native/r9/lab/test_r9.py": "db262e12dd8de61999ed3a63f9ff0386e4ce0de114604ca494b649b14203eb20",
+    "native/r9/package.py": "9a591d5daad8b850e2609b9b8ec6f7c644bd6fab0e4d28d2cf8d73516ac3070f",
+    "native/r9/src/native.ld": "f7ad88e90ffd4fc5b8707e65d55237000e39183fb741d822a59027c2fb1b0525",
+    "native/r9/src/native_sub.c": "c07c6c223229138bc21aef1ec36e34bb0f9a64a8b021fdd91492ae56290414d9",
+    "native/r9/src/native_trampolines.S": "40218c0fd06b0adac1cccfbee164997e56bb01734ca1071edf7831842b7607e7",
+    "native/r9/validate.py": "8fb5abcb371dfe9d05097b68c166a599bb997af913122015dc8b01227945ca0f"
+  },
+  "suites": {
+    "image": {
+      "checks": 37,
+      "result": "IMAGE_INTEGRITY.json",
+      "result_sha256": "7496513daba390208769c078b68e8dfe4243afc78c5ca3765bb5702cb683c9d2"
+    },
+    "r9_ui": {
+      "checks": 2782,
+      "result": "R9_UI_RESULTS.json",
+      "result_sha256": "cb313e2cd706e817f9dda830e04789cd0784a35b61602a7fcece79d2bc290a5f"
+    },
+    "drawer": {
+      "checks": 296,
+      "result": "analysis/DRAWER_RESULTS.json",
+      "result_sha256": "7787e77020e5dc4a0e5dd9e97018b29bee173ad9ac5e445667df6e7e7b9d7437"
+    },
+    "sender_row": {
+      "checks": 171,
+      "result": "analysis/SENDER_ROW_RESULTS.json",
+      "result_sha256": "a82653ca9a1bac6dcdedf439363fe81678a03b665f670451d24bb83f34938252"
+    },
+    "firing": {
+      "checks": 4399,
+      "result": "analysis/FIRING_RESULTS.json",
+      "result_sha256": "e56f58a87b6604cfb8853b3a0d25010735dd4ae625f2736d1b16fbed0712803b"
+    },
+    "sender_off": {
+      "checks": 1389,
+      "result": "analysis/SENDER_OFF_RESULTS.json",
+      "result_sha256": "38ace01041d707aaf3d0ab4bd33fd2f9752c90bf3ae5cf6d5afc32aaee731756"
+    },
+    "readiness": {
+      "checks": 398,
+      "result": "analysis/STOCK_READINESS_RESULTS.json",
+      "result_sha256": "0a3795efedb1ce3cc75f0a9d3cad2cb8d01a2059e3ddf49d3a4a0f6fa0707330"
+    },
+    "wrapper": {
+      "checks": 2317,
+      "result": "analysis/WRAPPER_RESULTS.json",
+      "result_sha256": "43fb2bc05f390798a67d12de54dd20b9e41aa10aa5c3f7a56d51ba16b741ac90"
+    },
+    "modal": {
+      "checks": 392,
+      "result": "analysis/MODAL_RESULTS.json",
+      "result_sha256": "dd728c127e17e475b135eb0b6cb9e5e4248acc0c7c847b43e50bb85540a7be23"
+    }
+  },
+  "functional_checks": 12144,
+  "integrity_checks": 37,
+  "hardware_verified": false
+}

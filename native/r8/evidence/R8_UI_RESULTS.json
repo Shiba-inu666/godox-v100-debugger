@@ -1,0 +1,61 @@
+{
+  "status": "PASS_R8_NATIVE_UI",
+  "candidate_sha256": "4e986a26ecf38b362b3b3e4b78adb551572cd5e6f4e091a7b4deb34f1ab5bdc8",
+  "total": 5287,
+  "counts": {
+    "RX_native_hotshoe_name": 16,
+    "RX_native_hotshoe_label_geometry": 16,
+    "RX_close_preserves_label": 16,
+    "S_matches_M_row_height_and_baseline": 1,
+    "S_glyph_exists": 1,
+    "S_glyph_real_cap_height_and_baseline": 1,
+    "S_real_bitmap": 1,
+    "S_font_missing_character_fails_cleanly": 1,
+    "title_and_number_native_hit_test_reaches_row": 15,
+    "actual_title_and_number_tap_opens_editor": 15,
+    "native_row_plus_minus_hit_targets_preserved": 10,
+    "each_row_single_click_opens_own_editor": 60,
+    "TTL_M_left_of_enable": 60,
+    "native_touch_hits_editor_control": 360,
+    "TTL_M_updates_original_group_state": 120,
+    "mode_button_readback": 120,
+    "OFF_updates_mode_enable_mask_and_display": 60,
+    "OFF_blocks_power_adjustment": 60,
+    "mode_choice_does_not_enable_OFF_group": 60,
+    "close_returns_focus_to_selected_row": 60,
+    "OFF_mode_choice_survives_editor_reopen": 60,
+    "all_group_power_FEC_steps_match_R7_native_buttons": 4000,
+    "encoder_changes_selected_group": 10,
+    "encoder_keeps_dedicated_editor_open": 10,
+    "physical_back_closes_editor_without_leaving_sender": 1,
+    "blocked_state_rejects_row_open": 7,
+    "blocked_state_rejects_editor_mutations": 7,
+    "modal_prevents_nested_group_or_SUB_editor": 5,
+    "Multi_switch_closes_group_editor_before_native_relayout": 1,
+    "Receiver_physical_exit_retains_SUB_during_animation": 1,
+    "direct_Sender_transition_reclaims_SUB_for_heap_capacity": 2,
+    "native_screen_deletion_reclaims_outgoing_screen": 9,
+    "outgoing_SUB_survives_native_transition": 7,
+    "outgoing_SUB_not_hidden_early": 7,
+    "native_screen_deletion_reclaims_outgoing_SUB": 7,
+    "repeat_open_50_cycles": 50,
+    "repeat_close_releases_panel": 50
+  },
+  "samples": [
+    {
+      "mode": [
+        20,
+        292,
+        175,
+        346
+      ],
+      "switch": [
+        304,
+        292,
+        459,
+        346
+      ]
+    }
+  ],
+  "hardware_verified": false
+}

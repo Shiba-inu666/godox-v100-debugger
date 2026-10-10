@@ -1,5 +1,7 @@
 # R7 原生补丁 / Native patch kit
 
+后续修订：[R8 独立灯组控制与 UI 修复](r8/README.md) · [R9 原生手势与单灯功率控制](r9/README.md)。R9 已发布实验 BIN；下文保留 R7 的复现说明。
+
 [型号说明 / Model guide](../docs/devices/V100F.md) · [统一复现 / Reproduction](../docs/REPRODUCE.md)
 [中文项目说明](../README.md) · [English overview](../README.en.md)
 

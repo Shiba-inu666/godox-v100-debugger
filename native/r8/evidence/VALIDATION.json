@@ -1,0 +1,78 @@
+{
+  "status": "PASS_R8_NATIVE_REGRESSION",
+  "candidate_sha256": "4e986a26ecf38b362b3b3e4b78adb551572cd5e6f4e091a7b4deb34f1ab5bdc8",
+  "source_sha256": {
+    "native/lab/analyze_su1_ttl.py": "a248c00cee800396a69048a092b27db4dd5844b5565682907a03839188e2477d",
+    "native/lab/config.py": "6c1d4087638fc6e508976927d17b69430b0e1c0735a0b48c16b44f2ebbc2014a",
+    "native/lab/fire_vm.py": "806b86e89e03a0e82d1bd24da987bac674767e7e0a56450e35e530725fa04fd3",
+    "native/lab/native_vm.py": "eb55cd0a36a7fd3cacc96db6a4adc4df9eab4baf1c07a7df0ff3fb10bce8a45e",
+    "native/lab/profiles.py": "d4250336a8b505ff33713208bb4d41e5245eb03ed13f1f9b304cc4bdb232937e",
+    "native/lab/revision_vm.py": "c8a405f5abe864af89c1131ab92686a1673fe012382aad5641ba5dc84778a010",
+    "native/lab/run.py": "d9aaf93cc593a30952f7b0d245bdc9a60f40ec1ef04a13c42ae300dae03b0182",
+    "native/lab/stock_trace.py": "9bdc4c7a8d69079d12f88009177539d08511914a637d384b62f344f4557aebb6",
+    "native/lab/stock_vm.py": "03f2ba590be0f94d4332c94931dbccc0df1d289331df7ca9429457902b1192f7",
+    "native/lab/test_drawer.py": "d4fa072aeb2d4bd0ce17ed0117a17af651320dbabd2c6a84a86e1e519031984d",
+    "native/lab/test_firing.py": "e3d683b729e65eb4138ced88b5b136680413b523e5e784ce3be8a353089c79de",
+    "native/lab/test_glyph.py": "3be3ab9f741fd60eea68ef72a737dc42cdd100a18be1ab25b10852c05640f02b",
+    "native/lab/test_modal.py": "e97b323296d9d5ef83772f75e73295c3166b7c30d1a3ff18b8b8211b6b6acf37",
+    "native/lab/test_sender_off.py": "0d929564ec2640800edf2ec5bbaf66e85f4c39f7b542ea7476a39df70586772f",
+    "native/lab/test_sender_row.py": "7b110b9f27b83b954e59eee55293b0f9ea6303c303b9b3492c5a27837f1ec73e",
+    "native/lab/test_stock_readiness.py": "37f3ec3b9a17a89bc7b18187f5927208a23330cb4c82604f1c7fd2b148f6ab72",
+    "native/lab/test_wrapper.py": "2f242b8c7d34dedbaa0eae5e3acc2e2730f23aca52c64101effe0342e0eff27c",
+    "native/patcher.py": "850cc48d427c0d946b3f99f011fa0c137fc1cdbb818bb93889e1fbc50499d981",
+    "native/patches/r7.json": "b7ec2417983a6aee30b563635b3c8cf08812c52e0efe6daff81e35e16e646157",
+    "native/r8/build.py": "3732a1e8236a573b6e0af9b7baadadf23e2028dea588a52707746aa34c216071",
+    "native/r8/lab/probe.py": "5dbb06146d17ba2d09ddc63afec193ec0f6858688df13dce95fe99f2651c0957",
+    "native/r8/lab/run_legacy.py": "d488cea3f2ea82e022cf9c3b894e47a9afa3955afbafb43c6ddaf9e7aac1fb84",
+    "native/r8/lab/test_r8.py": "88bc17825061bbbde860aca5803e3114df57f6c797fe88519004fdb0558998f3",
+    "native/r8/package.py": "9e5886426fddd2c8a9e68f975ef947c103fe012ce05d4b3851b218cd7ece75ea",
+    "native/r8/src/native.ld": "f7ad88e90ffd4fc5b8707e65d55237000e39183fb741d822a59027c2fb1b0525",
+    "native/r8/src/native_sub.c": "8d50fc86a00eb7da458139a07b14cf6b60d373bd4858231f808f4dc41cc078e6",
+    "native/r8/src/native_trampolines.S": "6d33b27c73662535dbc84187b0f0f4154f4ca330c0601a7f5e4495faee994997",
+    "native/r8/validate.py": "d69649ca1d238e627d0de62f3b1e9c47f1b732210e74cffbf831b1b572ba2611"
+  },
+  "suites": {
+    "r8_ui": {
+      "checks": 5287,
+      "result": "R8_UI_RESULTS.json",
+      "result_sha256": "12d9b66dbecc2a851144a9f1162a2aa2ed7444bf9c0682a617da5145a174d7be"
+    },
+    "drawer": {
+      "checks": 296,
+      "result": "analysis/DRAWER_RESULTS.json",
+      "result_sha256": "18d13da739b64da5fc90c9204288b02853f524d4e02e19cfe4e6c1b064fdcf90"
+    },
+    "sender_row": {
+      "checks": 171,
+      "result": "analysis/SENDER_ROW_RESULTS.json",
+      "result_sha256": "c6903b3c728bf442a91ae18acb8115f6b61b9bf36731ae2805e12da64d270e16"
+    },
+    "firing": {
+      "checks": 4399,
+      "result": "analysis/FIRING_RESULTS.json",
+      "result_sha256": "c3145977a904e03eacf448007bdc6c1f71f68b0c1c9f3c773bdd6e879a78d5c1"
+    },
+    "sender_off": {
+      "checks": 1389,
+      "result": "analysis/SENDER_OFF_RESULTS.json",
+      "result_sha256": "13ca79ef7526fae202ce4278004766e353e1aa68a8f1a43ea712a8d249f83d00"
+    },
+    "readiness": {
+      "checks": 398,
+      "result": "analysis/STOCK_READINESS_RESULTS.json",
+      "result_sha256": "cb53f9fcf0cd5ebeac7131756c4552184e50fb9171ecd1e9d06abca6541f3cea"
+    },
+    "wrapper": {
+      "checks": 2317,
+      "result": "analysis/WRAPPER_RESULTS.json",
+      "result_sha256": "1a04ce2bbe19e7237d120838899e53d701f1affc8e19deb01212b7c9b1a00cc3"
+    },
+    "modal": {
+      "checks": 392,
+      "result": "analysis/MODAL_RESULTS.json",
+      "result_sha256": "978e03ca795dc7dbadb87f72014fe1596beab024e31112460af036433045cab8"
+    }
+  },
+  "functional_checks": 14649,
+  "hardware_verified": false
+}
